@@ -1,0 +1,158 @@
+/* line 5, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 106, ../../../../../../../../.rvm/gems/ruby-2.1.3@webdesign/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5em;
+}
+
+/* line 8, ../../scss/_typography.scss */
+body {
+  font-family: "Open Sans", sasns-serif;
+}
+
+/* line 5, ../../scss/main.scss */
+body {
+  background-color: white;
+  color: #0da508;
+}
+/* line 8, ../../scss/main.scss */
+body a {
+  color: #054403;
+}
+
+/**
+ * Main menu
+ */
+/* line 17, ../../scss/main.scss */
+.navbar-brand {
+  height: auto;
+}
+
+/* line 20, ../../scss/main.scss */
+#navbar-main-menu {
+  width: 100%;
+}
+
+/* line 24, ../../scss/main.scss */
+.region {
+  border: 1px dotted black;
+}
+
+/**
+ * Region Top header
+ */
+/* line 31, ../../scss/main.scss */
+.region-top-header {
+  overflow: hidden;
+  font-size: 0.625em;
+  line-height: 2.4em;
+}
+/* line 36, ../../scss/main.scss */
+.region-top-header #block-system-user-menu .content ul {
+  text-align: right;
+}
+/* line 38, ../../scss/main.scss */
+.region-top-header #block-system-user-menu .content ul li {
+  display: inline;
+}
+/* line 44, ../../scss/main.scss */
+.region-top-header #block-user-login {
+  width: auto;
+  float: right;
+}
+/* line 47, ../../scss/main.scss */
+.region-top-header #block-user-login .form-item {
+  float: left;
+}
+/* line 49, ../../scss/main.scss */
+.region-top-header #block-user-login .form-item label {
+  display: block;
+}
+/* line 54, ../../scss/main.scss */
+.region-top-header #block-user-login .item-list {
+  display: none;
+}
+/* line 57, ../../scss/main.scss */
+.region-top-header #block-user-login .form-actions {
+  float: left;
+}
+/* line 59, ../../scss/main.scss */
+.region-top-header #block-user-login .form-actions #edit-submit {
+  margin-top: 24px;
+}
+
+/**
+ * Region Footer colummns
+ */
+/* line 75, ../../scss/main.scss */
+.region-footer-first-col ul.menu .leaf,
+.region-footer-second-col ul.menu .leaf,
+.region-footer-third-col ul.menu .leaf,
+.region-footer-fourth-col ul.menu .leaf {
+  list-style-type: none;
+  list-style-image: none;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "sba",
+  "version": "0.0.1",
+  "authors": [
+    "Iñaki García Blasco <txorua@txorua.com>"
+  ],
+  "description": "A Drupal 7 theme for SBA",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "a/j",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.4",
+    "html5shiv": "~3.7.2",
+    "slider-revolution": "~4.3.7"
+  }
+}

@@ -1,0 +1,80 @@
+@import 'compass/reset';
+@import 'colors';
+@import 'typography';
+
+body{
+  background-color: white;
+  color: $verde;
+  a {
+    color: darken($verde, 20%);
+  }
+}
+
+
+/**
+ * Main menu
+ */
+.navbar-brand {
+  height: auto;
+}
+#navbar-main-menu {
+  width: 100%;
+}
+
+.region {
+  border: 1px dotted black;
+}
+
+/**
+ * Region Top header
+ */
+.region-top-header {
+  overflow: hidden;
+  @include adjust-font-size-to(10px);
+  #block-system-user-menu {
+    .content {
+      ul {
+        text-align: right;
+        li {
+          display: inline;
+        }
+      }
+    }
+  }
+  #block-user-login {
+    width: auto;
+    float: right;
+    .form-item {
+      float: left;
+      label {
+        display: block;
+      }
+
+    }
+    .item-list {
+      display: none;
+    }
+    .form-actions {
+      float: left;
+      #edit-submit {
+        margin-top: 24px;
+      }
+    }
+  }
+}
+
+
+/**
+ * Region Footer colummns
+ */
+.region-footer-first-col,
+.region-footer-second-col,
+.region-footer-third-col,
+.region-footer-fourth-col {
+  ul.menu {
+    .leaf {
+      list-style-type: none;
+      list-style-image: none;
+    }
+  }
+}

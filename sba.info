@@ -1,0 +1,38 @@
+name = SBA
+description = A Drupal 7 theme for SBA
+core = 7.x
+
+;;;;;;;;;;;;;;;;;;;;
+;; Regions
+;;;;;;;;;;;;;;;;;;;;
+
+regions[page_top]          = Page top
+regions[page_bottom]       = Page bottom
+regions[content]           = Content
+
+regions[top_header]        = Top header
+regions[header]            = Header
+regions[slider]            = Slider
+regions[slogan]            = Slogan
+regions[sidebar_first]     = Sidebar first
+regions[footer_first_col]  = Footer first column
+regions[footer_second_col] = Footer second column
+regions[footer_third_col]  = Footer third column
+regions[footer_fourth_col] = Footer fourth column
+regions[legal]             = Legal
+
+;;;;;;;;;;;;;;;;;;;;
+;; stylesheets
+;;;;;;;;;;;;;;;;;;;;
+stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap.min.css
+stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap-theme.min.css
+stylesheets[all][] = a/j/slider-revolution/src/css/settings.css
+stylesheets[all][] = a/c/main.css
+ 
+;;;;;;;;;;;;;;;;;;;;
+;; Scripts
+;;;;;;;;;;;;;;;;;;;;
+scripts[] = a/j/bootstrap/dist/js/bootstrap.min.js
+scripts[] = a/j/slider-revolution/src/js/jquery.themepunch.revolution.min.js
+scripts[] = a/j/slider-revolution/src/js/jquery.themepunch.plugins.min.js
+
