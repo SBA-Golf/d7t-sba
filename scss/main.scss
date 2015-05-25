@@ -10,21 +10,6 @@ body{
   }
 }
 
-
-/**
- * Main menu
- */
-.navbar-brand {
-  height: auto;
-}
-#navbar-main-menu {
-  width: 100%;
-}
-
-.region {
-  border: 1px dotted black;
-}
-
 /**
  * Region Top header
  */
@@ -63,6 +48,29 @@ body{
   }
 }
 
+/**
+ * Main menu
+ */
+#main-menu {
+  margin: 0;
+}
+.navbar-brand {
+  height: auto;
+}
+#navbar-main-menu {
+  width: 100%;
+}
+
+.region {
+  border: 1px dotted black;
+}
+
+/**
+ * Slider
+ */
+#slider {
+  margin-bottom: 3em;
+}
 
 /**
  * Region Footer colummns

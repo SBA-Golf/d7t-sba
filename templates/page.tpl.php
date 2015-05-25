@@ -8,7 +8,7 @@
 <!-- Fin Header -->
 
 <!-- Menú principal -->
-<nav class="navbar navbar-default">
+<nav id="main-menu" class="navbar navbar-default">
   <div class="container">
     <div class="row">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main-menu">
@@ -28,6 +28,16 @@
 </nav>
 <!-- Fin Menú principal -->
 
+<!-- Slider -->
+<aside id="slider"><?php print render($page['slider']); ?></aside>
+<!-- Fin Slider -->
+
+<!-- Slogan -->
+<?php if ($site_slogan && drupal_is_frontpage()): ?>
+<aside id="slogan">  <?php print $site_slogan; ?></aside>
+<?php endif; ?>
+<!-- Fin Slogan -->
+
 <!-- Mensajes del sistema -->
 <?php if ($messages): ?>
 <aside id="messages">
@@ -37,14 +47,6 @@
 </aside>
 <?php endif; ?>
 <!-- Fin Mensajes -->
-
-<!-- Slider -->
-<aside id="slider"><?php print render($page['slider']); ?></aside>
-<!-- Fin Slider -->
-
-<!-- Slogan -->
-<aside id="slogan">  <?php print render($page['slogan']); ?></aside>
-<!-- Fin Slogan -->
 
 <!-- MAIN CONTENT -->
 <main>

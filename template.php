@@ -30,3 +30,9 @@ function sba_preprocess_block(&$variables) {
     $variables['title_attributes_array']['class'][] = 'element-invisible';
   }
 }
+
+function sba_preprocess_views_view(&$variables) {
+  if ($variables['view']->name == 'calendario_de_torneos' && $variables['view']->current_display == 'block_1') {
+    $variables['mini_calendar_month'] = strtolower(t(date('F', $variables['view']->date_info->month)));
+  }
+}

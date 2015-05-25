@@ -85,70 +85,83 @@ body a {
 }
 
 /**
- * Main menu
- */
-/* line 17, ../../scss/main.scss */
-.navbar-brand {
-  height: auto;
-}
-
-/* line 20, ../../scss/main.scss */
-#navbar-main-menu {
-  width: 100%;
-}
-
-/* line 24, ../../scss/main.scss */
-.region {
-  border: 1px dotted black;
-}
-
-/**
  * Region Top header
  */
-/* line 31, ../../scss/main.scss */
+/* line 16, ../../scss/main.scss */
 .region-top-header {
   overflow: hidden;
   font-size: 0.625em;
   line-height: 2.4em;
 }
-/* line 36, ../../scss/main.scss */
+/* line 21, ../../scss/main.scss */
 .region-top-header #block-system-user-menu .content ul {
   text-align: right;
 }
-/* line 38, ../../scss/main.scss */
+/* line 23, ../../scss/main.scss */
 .region-top-header #block-system-user-menu .content ul li {
   display: inline;
 }
-/* line 44, ../../scss/main.scss */
+/* line 29, ../../scss/main.scss */
 .region-top-header #block-user-login {
   width: auto;
   float: right;
 }
-/* line 47, ../../scss/main.scss */
+/* line 32, ../../scss/main.scss */
 .region-top-header #block-user-login .form-item {
   float: left;
 }
-/* line 49, ../../scss/main.scss */
+/* line 34, ../../scss/main.scss */
 .region-top-header #block-user-login .form-item label {
   display: block;
 }
-/* line 54, ../../scss/main.scss */
+/* line 39, ../../scss/main.scss */
 .region-top-header #block-user-login .item-list {
   display: none;
 }
-/* line 57, ../../scss/main.scss */
+/* line 42, ../../scss/main.scss */
 .region-top-header #block-user-login .form-actions {
   float: left;
 }
-/* line 59, ../../scss/main.scss */
+/* line 44, ../../scss/main.scss */
 .region-top-header #block-user-login .form-actions #edit-submit {
   margin-top: 24px;
 }
 
 /**
+ * Main menu
+ */
+/* line 54, ../../scss/main.scss */
+#main-menu {
+  margin: 0;
+}
+
+/* line 57, ../../scss/main.scss */
+.navbar-brand {
+  height: auto;
+}
+
+/* line 60, ../../scss/main.scss */
+#navbar-main-menu {
+  width: 100%;
+}
+
+/* line 64, ../../scss/main.scss */
+.region {
+  border: 1px dotted black;
+}
+
+/**
+ * Slider
+ */
+/* line 71, ../../scss/main.scss */
+#slider {
+  margin-bottom: 3em;
+}
+
+/**
  * Region Footer colummns
  */
-/* line 75, ../../scss/main.scss */
+/* line 83, ../../scss/main.scss */
 .region-footer-first-col ul.menu .leaf,
 .region-footer-second-col ul.menu .leaf,
 .region-footer-third-col ul.menu .leaf,
@@ -160,7 +173,7 @@ body a {
 /**
  * Region Sidebar First
  */
-/* line 86, ../../scss/main.scss */
+/* line 94, ../../scss/main.scss */
 .region-sidebar-first .block {
   margin-bottom: 1.5em;
 }
