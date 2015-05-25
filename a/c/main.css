@@ -156,3 +156,11 @@ body a {
   list-style-type: none;
   list-style-image: none;
 }
+
+/**
+ * Region Sidebar First
+ */
+/* line 86, ../../scss/main.scss */
+.region-sidebar-first .block {
+  margin-bottom: 1.5em;
+}
