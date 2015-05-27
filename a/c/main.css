@@ -140,45 +140,51 @@ blockquote::after {
   color: gray;
 }
 
+/* line 42, ../../scss/main.scss */
+a:focus,
+a:active {
+  outline: none;
+}
+
 /**
  * Region Top header
  */
-/* line 45, ../../scss/main.scss */
+/* line 50, ../../scss/main.scss */
 .region-top-header {
   overflow: hidden;
   font-size: 0.625em;
   line-height: 2.4em;
 }
-/* line 50, ../../scss/main.scss */
+/* line 55, ../../scss/main.scss */
 .region-top-header #block-system-user-menu .content ul {
   text-align: right;
 }
-/* line 52, ../../scss/main.scss */
+/* line 57, ../../scss/main.scss */
 .region-top-header #block-system-user-menu .content ul li {
   display: inline;
 }
-/* line 58, ../../scss/main.scss */
+/* line 63, ../../scss/main.scss */
 .region-top-header #block-user-login {
   width: auto;
   float: right;
 }
-/* line 61, ../../scss/main.scss */
+/* line 66, ../../scss/main.scss */
 .region-top-header #block-user-login .form-item {
   float: left;
 }
-/* line 63, ../../scss/main.scss */
+/* line 68, ../../scss/main.scss */
 .region-top-header #block-user-login .form-item label {
   display: block;
 }
-/* line 68, ../../scss/main.scss */
+/* line 73, ../../scss/main.scss */
 .region-top-header #block-user-login .item-list {
   display: none;
 }
-/* line 71, ../../scss/main.scss */
+/* line 76, ../../scss/main.scss */
 .region-top-header #block-user-login .form-actions {
   float: left;
 }
-/* line 73, ../../scss/main.scss */
+/* line 78, ../../scss/main.scss */
 .region-top-header #block-user-login .form-actions #edit-submit {
   margin-top: 24px;
 }
@@ -186,7 +192,7 @@ blockquote::after {
 /**
  * Main menu
  */
-/* line 85, ../../scss/main.scss */
+/* line 90, ../../scss/main.scss */
 #main-menu {
   margin: 0;
   border: none;
@@ -206,35 +212,35 @@ blockquote::after {
   right: 0;
 }
 
-/* line 97, ../../scss/main.scss */
+/* line 102, ../../scss/main.scss */
 .navbar-brand {
   height: auto;
 }
 
-/* line 100, ../../scss/main.scss */
+/* line 105, ../../scss/main.scss */
 #navbar-main-menu {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 103, ../../scss/main.scss */
+  /* line 108, ../../scss/main.scss */
   #navbar-main-menu ul {
     margin: 0;
     padding: 0;
     float: right;
   }
-  /* line 107, ../../scss/main.scss */
+  /* line 112, ../../scss/main.scss */
   #navbar-main-menu ul li {
     transition: background 0.6s ease 0s;
   }
-  /* line 109, ../../scss/main.scss */
+  /* line 114, ../../scss/main.scss */
   #navbar-main-menu ul li:hover {
     background-color: #0da508;
   }
-  /* line 111, ../../scss/main.scss */
+  /* line 116, ../../scss/main.scss */
   #navbar-main-menu ul li:hover a {
     color: white;
   }
-  /* line 115, ../../scss/main.scss */
+  /* line 120, ../../scss/main.scss */
   #navbar-main-menu ul li a {
     border-width: 0.0625em;
     border-style: solid;
@@ -244,11 +250,11 @@ blockquote::after {
     border: none;
     display: block;
   }
-  /* line 123, ../../scss/main.scss */
+  /* line 128, ../../scss/main.scss */
   #navbar-main-menu ul li.active-trail {
     background-color: #0da508;
   }
-  /* line 125, ../../scss/main.scss */
+  /* line 130, ../../scss/main.scss */
   #navbar-main-menu ul li.active-trail a {
     color: white;
   }
@@ -257,7 +263,7 @@ blockquote::after {
 /**
  * Slider
  */
-/* line 140, ../../scss/main.scss */
+/* line 145, ../../scss/main.scss */
 #slider {
   margin-bottom: 3em;
 }
@@ -265,7 +271,7 @@ blockquote::after {
 /**
  * Page title
  */
-/* line 147, ../../scss/main.scss */
+/* line 152, ../../scss/main.scss */
 main {
   border-width: 0.0625em;
   border-style: solid;
@@ -273,7 +279,7 @@ main {
   border: none;
 }
 
-/* line 152, ../../scss/main.scss */
+/* line 157, ../../scss/main.scss */
 #page-title {
   border-width: 0.0625em;
   border-style: solid;
@@ -287,9 +293,24 @@ main {
 }
 
 /**
+ * Back to top
+ */
+/* line 170, ../../scss/main.scss */
+a.back-to-top {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  color: white;
+  background-color: black;
+  opacity: 0.7;
+  padding: 0.5em;
+  display: none;
+}
+
+/**
  * Region Sidebar First
  */
-/* line 166, ../../scss/main.scss */
+/* line 185, ../../scss/main.scss */
 .region-sidebar-first .block {
   margin-bottom: 1.5em;
 }
@@ -297,14 +318,14 @@ main {
 /**
  * Region Content
  */
-/* line 176, ../../scss/main.scss */
+/* line 195, ../../scss/main.scss */
 .region-content .node-noticia .content {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 178, ../../scss/main.scss */
+/* line 197, ../../scss/main.scss */
 .region-content .node-noticia .content img {
   margin: 0 auto;
   margin-top: 1.5em;
@@ -316,7 +337,7 @@ main {
 /**
  * Region Footer colummns
  */
-/* line 189, ../../scss/main.scss */
+/* line 208, ../../scss/main.scss */
 footer#main-footer {
   border-width: 0.0625em;
   border-style: solid;
@@ -327,24 +348,24 @@ footer#main-footer {
   border: none;
   color: #d1d1d1;
 }
-/* line 196, ../../scss/main.scss */
+/* line 215, ../../scss/main.scss */
 footer#main-footer #footer-section-1 {
   background-color: #484f5e;
 }
-/* line 199, ../../scss/main.scss */
+/* line 218, ../../scss/main.scss */
 footer#main-footer #footer-section-2 {
   background-color: #303745;
 }
-/* line 202, ../../scss/main.scss */
+/* line 221, ../../scss/main.scss */
 footer#main-footer a {
   color: white;
 }
-/* line 204, ../../scss/main.scss */
+/* line 223, ../../scss/main.scss */
 footer#main-footer a:hover, footer#main-footer a:focus {
   color: #0da508;
 }
 
-/* line 215, ../../scss/main.scss */
+/* line 234, ../../scss/main.scss */
 .region-footer-first-col ul.menu .leaf,
 .region-footer-second-col ul.menu .leaf,
 .region-footer-third-col ul.menu .leaf,

@@ -47,6 +47,10 @@
 </div>
 <?php endif; ?>
 
+<!-- Back to top -->
+<a href="#" class="back-to-top">up</a>
+<!-- Fin Back to top -->
+
 <!-- Mensajes del sistema -->
 <?php if ($messages): ?>
 <aside id="messages">
