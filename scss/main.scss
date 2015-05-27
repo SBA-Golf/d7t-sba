@@ -2,6 +2,7 @@
 @import 'colors';
 @import 'typography';
 @import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
 
 body{
   background-color: white;
@@ -79,13 +80,17 @@ blockquote {
 /**
  * Main menu
  */
+#main-menu-sticky-wrapper {
+}
 #main-menu {
   margin: 0;
   border: none;
   background-color: white;
   background-image: none;
   @include single-box-shadow(0,0,0);
-  z-index: 100;
+  @include single-box-shadow(0,5px,5px);
+  @include border-radius(0);
+  z-index: 3000;
   left: 0;
   right: 0;
 }
@@ -94,6 +99,35 @@ blockquote {
 }
 #navbar-main-menu {
   width: 100%;
+  @media (min-width: 768px) {
+    ul {
+      margin: 0;
+      padding: 0;
+      float: right;
+      li {
+        transition: background 0.6s ease 0s;
+        &:hover {
+          background-color: $verde;
+          a {
+            color: white;
+          }
+        }
+        a {
+          @include rhythm-borders(1px,1.8);
+          padding-left: 1em;
+          padding-right: 1em;
+          border: none;
+          display: block;
+        }
+      }
+      li.active-trail {
+        background-color: $verde;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
 }
 
 .region {
@@ -154,9 +188,17 @@ main {
  */
 footer#main-footer {
   @include rhythm-borders;
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
   border: none;
-  background-color: $gris;
-  color: white;
+  color: $gris-claro;
+  #footer-section-1 {
+    background-color: $gris;
+  }
+  #footer-section-2 {
+    background-color: $gris-oscuro;
+  }
   a {
     color: white;
     &:hover,

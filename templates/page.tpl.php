@@ -12,7 +12,7 @@
   <div class="container">
     <div class="row">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-main-menu">
-        <span class="sr-only"<?php print t('Toggle navigation'); ?></span>
+        <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -77,6 +77,7 @@
 
 <!-- Footer -->
 <footer id="main-footer">
+  <section id="footer-section-1">
   <div class="container">
     <div class="row">
       <div class="col-md-3"><?php print render($page['footer_first_col']); ?></div>
@@ -84,9 +85,12 @@
       <div class="col-md-3"><?php print render($page['footer_third_col']); ?></div>
       <div class="col-md-3"><?php print render($page['footer_fourth_col']); ?></div>
     </div>
+  </section>
+  <section id="footer-section-2">
     <div class="row">
       <div class="col-xs-12"><?php print render($page['legal']); ?></div>
     </div>
+  </section>
   </div>
 </footer>
 <!-- Fin Footer -->
