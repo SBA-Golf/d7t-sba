@@ -211,6 +211,13 @@ a.back-to-top {
       }
     }
   }
+  // Corrijo posición del botón prev en calendario.
+  .date-nav.item-list {
+    li.date-prev {
+      left: 0;
+      right: auto;
+    }
+  }
 }
 
 /**
@@ -248,3 +255,6 @@ footer#main-footer {
     }
   }
 }
+
+
+

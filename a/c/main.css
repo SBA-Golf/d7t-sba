@@ -347,11 +347,16 @@ a.back-to-top {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
+/* line 216, ../../scss/main.scss */
+.region-content .date-nav.item-list li.date-prev {
+  left: 0;
+  right: auto;
+}
 
 /**
  * Region Footer colummns
  */
-/* line 219, ../../scss/main.scss */
+/* line 226, ../../scss/main.scss */
 footer#main-footer {
   border-width: 0.0625em;
   border-style: solid;
@@ -362,24 +367,24 @@ footer#main-footer {
   border: none;
   color: #d1d1d1;
 }
-/* line 226, ../../scss/main.scss */
+/* line 233, ../../scss/main.scss */
 footer#main-footer #footer-section-1 {
   background-color: #484f5e;
 }
-/* line 229, ../../scss/main.scss */
+/* line 236, ../../scss/main.scss */
 footer#main-footer #footer-section-2 {
   background-color: #303745;
 }
-/* line 232, ../../scss/main.scss */
+/* line 239, ../../scss/main.scss */
 footer#main-footer a {
   color: white;
 }
-/* line 234, ../../scss/main.scss */
+/* line 241, ../../scss/main.scss */
 footer#main-footer a:hover, footer#main-footer a:focus {
   color: #0da508;
 }
 
-/* line 245, ../../scss/main.scss */
+/* line 252, ../../scss/main.scss */
 .region-footer-first-col ul.menu .leaf,
 .region-footer-second-col ul.menu .leaf,
 .region-footer-third-col ul.menu .leaf,
