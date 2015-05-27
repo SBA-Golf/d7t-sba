@@ -21,6 +21,9 @@ function sba_preprocess_page(&$variables) {
   }
 }
 
+function sba_preprocess_node(&$variables) {
+}
+
 function sba_menu_tree__primary(&$variables) {
   return '<ul class="nav navbar-nav">' .$variables['tree'] . '</ul>';
 }
@@ -36,3 +39,16 @@ function sba_preprocess_views_view(&$variables) {
     $variables['mini_calendar_month'] = strtolower(t(date('F', $variables['view']->date_info->month)));
   }
 }
+
+function sba_field__field_noticia_foto__noticia($variables) {
+  $output = '';
+
+  foreach ($variables ['items'] as $delta => $item) {
+    $uri = $item ['#item']['uri'];
+    $src = image_style_url('large', $uri);
+    $output = '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+  }
+
+  return $output;
+}
+

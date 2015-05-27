@@ -29,14 +29,23 @@
 <!-- Fin Menú principal -->
 
 <!-- Slider -->
+<?php if ($page['slider'] && drupal_is_front_page()): ?>
 <aside id="slider"><?php print render($page['slider']); ?></aside>
+<?php endif; ?>
 <!-- Fin Slider -->
 
 <!-- Slogan -->
-<?php if ($site_slogan && drupal_is_frontpage()): ?>
-<aside id="slogan">  <?php print $site_slogan; ?></aside>
+<?php if ($site_slogan && drupal_is_front_page()): ?>
+<aside id="slogan"><?php print $site_slogan; ?></aside>
 <?php endif; ?>
 <!-- Fin Slogan -->
+
+<!-- Page title if in not frontpage -->
+<?php if (!drupal_is_front_page()): ?>
+<div id="page-title">
+<h1><?php print $title; ?></h1>
+</div>
+<?php endif; ?>
 
 <!-- Mensajes del sistema -->
 <?php if ($messages): ?>
@@ -53,7 +62,6 @@
   <div class="container">
     <div class="row">
       <div class="col-md-9">
-        <h1><?php print $title; ?></h1>
         <aside id="tabs"><?php print render($tabs); ?></aside>
         <?php print render($page['content']); ?>
       </div>
@@ -68,8 +76,8 @@
 <!-- Fin  MAIN CONTENT-->
 
 <!-- Footer -->
-<footer>
-  <div class="container-fluid">
+<footer id="main-footer">
+  <div class="container">
     <div class="row">
       <div class="col-md-3"><?php print render($page['footer_first_col']); ?></div>
       <div class="col-md-3"><?php print render($page['footer_second_col']); ?></div>

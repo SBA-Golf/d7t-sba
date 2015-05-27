@@ -1,12 +1,40 @@
 @import 'compass/reset';
 @import 'colors';
 @import 'typography';
+@import "compass/css3/box-shadow";
 
 body{
   background-color: white;
-  color: $verde;
   a {
     color: darken($verde, 20%);
+    &:hover,
+    &:focus {
+      color: $verde;
+      text-decoration: none;
+    }
+  }
+}
+
+h1 { font-size: 1.7em; }
+h2 { font-size: 1.6em; }
+h3 { font-size: 1.5em; }
+h4 { font-size: 1.4em; }
+h5 { font-size: 1.3em; }
+h6 { font-size: 1.2em; }
+
+blockquote {
+  @include rhythm;
+  display: block;
+  font-size: 1.5em;
+  text-align: center;
+  font-style: italic;
+  &::before {
+    content: "\00ab\2003";
+    color: gray;
+  }
+  &::after {
+    content: "\2003\00bb";
+    color: gray;
   }
 }
 
@@ -53,6 +81,13 @@ body{
  */
 #main-menu {
   margin: 0;
+  border: none;
+  background-color: white;
+  background-image: none;
+  @include single-box-shadow(0,0,0);
+  z-index: 100;
+  left: 0;
+  right: 0;
 }
 .navbar-brand {
   height: auto;
@@ -62,7 +97,7 @@ body{
 }
 
 .region {
-  border: 1px dotted black;
+  //border: 1px dotted black;
 }
 
 /**
@@ -73,8 +108,63 @@ body{
 }
 
 /**
+ * Page title
+ */
+main {
+  @include rhythm-borders;
+  border: none;
+}
+
+#page-title {
+  @include rhythm-borders(1px,2);
+  margin-bottom: 1em;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background-color: darken($verde, 20%);
+}
+
+/**
+ * Region Sidebar First
+ */
+.region-sidebar-first {
+  .block {
+    margin-bottom: 1.5em;
+  }
+}
+
+/**
+ * Region Content
+ */
+.region-content {
+  .node-noticia {
+    .content {
+      @include rhythm;
+      img {
+        margin: 0 auto;
+        @include rhythm;
+      }
+    }
+  }
+}
+
+/**
  * Region Footer colummns
  */
+footer#main-footer {
+  @include rhythm-borders;
+  border: none;
+  background-color: $gris;
+  color: white;
+  a {
+    color: white;
+    &:hover,
+    &:focus {
+      color: $verde;
+    }
+  }
+}
 .region-footer-first-col,
 .region-footer-second-col,
 .region-footer-third-col,
@@ -84,14 +174,5 @@ body{
       list-style-type: none;
       list-style-image: none;
     }
-  }
-}
-
-/**
- * Region Sidebar First
- */
-.region-sidebar-first {
-  .block {
-    margin-bottom: 1.5em;
   }
 }
