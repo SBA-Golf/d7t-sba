@@ -44,6 +44,16 @@ a:active {
   outline: none;
 }
 
+#header {
+  background-color: $gris-oscuro;
+  a {
+    color: $gris-claro;
+    &:hover {
+      color: $verde;
+    }
+  }
+}
+
 /**
  * Region Top header
  */
