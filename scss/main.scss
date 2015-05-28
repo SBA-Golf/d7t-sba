@@ -16,12 +16,12 @@ body{
   }
 }
 
-h1 { font-size: 1.7em; }
-h2 { font-size: 1.6em; }
-h3 { font-size: 1.5em; }
-h4 { font-size: 1.4em; }
-h5 { font-size: 1.3em; }
-h6 { font-size: 1.2em; }
+h1 { font-size: 2.153846154em; }
+h2 { font-size: 1.692307692em; }
+h3 { font-size: 1.384615385em; }
+h4 { font-size: 1.230769231em; }
+h5 { font-size: 1.076923077em; }
+h6 { font-size: 0.923076923em; }
 
 blockquote {
   @include rhythm;
@@ -42,6 +42,14 @@ blockquote {
 a:focus,
 a:active {
   outline: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
 }
 
 #header {
@@ -195,6 +203,17 @@ a.back-to-top {
 .region-sidebar-first {
   .block {
     margin-bottom: 1.5em;
+    h2 {
+      border-bottom: 1px solid tint($gris-oscuro, 30%);
+      margin-bottom: 1em;
+      span {
+        border-bottom: 2px solid $verde-oscuro;
+        display: inline-block;
+        margin-bottom: -1px;
+        padding-bottom: 0.5em;
+        padding-right: 1em;
+      }
+    }
   }
   .date-nav.item-list {
     .date-heading {
@@ -275,6 +294,18 @@ footer#main-footer {
 .region-footer-second-col,
 .region-footer-third-col,
 .region-footer-fourth-col {
+  @include rhythm;
+  h2 {
+    border-bottom: 1px solid tint($gris-oscuro, 30%);
+    margin-bottom: 1em;
+    span {
+      border-bottom: 2px solid $verde-oscuro;
+      display: inline-block;
+      margin-bottom: -1px;
+      padding-bottom: 0.5em;
+      padding-right: 1em;
+    }
+  }
   ul.menu {
     .leaf {
       list-style-type: none;
@@ -283,5 +314,11 @@ footer#main-footer {
   }
 }
 
-
-
+/**
+ * Admin menu module
+ *
+ * Fix overlaping of menu
+ */
+#admin-menu {
+  z-index: 5000;
+}

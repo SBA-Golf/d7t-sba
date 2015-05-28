@@ -29,8 +29,20 @@ function sba_menu_tree__primary(&$variables) {
 }
 
 function sba_preprocess_block(&$variables) {
-  if ($variables['block']->region == 'top_header') {
+  $block = $variables['block'];
+  if ($block->region == 'top_header') {
     $variables['title_attributes_array']['class'][] = 'element-invisible';
+  }
+  $regiones = array(
+    "sidebar_first",
+    "footer_first_col",
+    "footer_second_col",
+    "footer_third_col",
+    "footer_fourth_col",
+  );
+
+  if (in_array($block->region, $regiones) && !empty($block->subject))  {
+    $block->subject = '<span>' . $block->subject . '</span>';
   }
 }
 
