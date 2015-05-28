@@ -35,12 +35,14 @@
     </a>
     <div class="portfolio-item-overlay">
       <div class="portfolio-item-overlay-actions">
-        <a class="magnificPopup-gallery portfolio-item-zoom">
+      <a href="/node/<?php print $variables['row']->nid; ?>" class="magnificPopup-gallery portfolio-item-zoom">
           <i class="glyphicon glyphicon-search"> </i>
         </a>
+<!--
         <a class="portfolio-item-link">
           <i class="glyphicon glyphicon-link"> </i>
         </a>
+-->
       </div>
       <div class="portfolio-item-description">
         <h4><?php print $fields['title']->content; ?></h4>
