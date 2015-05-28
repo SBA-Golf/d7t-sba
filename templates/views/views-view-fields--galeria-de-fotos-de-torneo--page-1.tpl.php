@@ -24,15 +24,27 @@
  * @ingroup views_templates
  */
 ?>
-<?php foreach ($fields as $id => $field): ?>
-  <?php if (!empty($field->separator)): ?>
-    <?php print $field->separator; ?>
-  <?php endif; ?>
-
-  <?php print $field->wrapper_prefix; ?>
-    <?php print $field->label_html; ?>
-    <?php print $field->content; ?>
-  <?php print $field->wrapper_suffix; ?>
-<?php endforeach; ?>
-
-  <?php print $fields['field_galeria_foto']->content; ?>
+<div class="portfolio-item">
+  <div class="portfolio-item-preview">
+    <a href="#">
+      <?php
+        $uri = $variables['row']->field_field_galeria_foto[0]['raw']['uri'];
+        $src = image_style_url('square_300x300', $uri);
+      ?>
+      <img src="<?php print $src; ?>" class="img-responsive" typeof="foaf:Image">
+    </a>
+    <div class="portfolio-item-overlay">
+      <div class="portfolio-item-overlay-actions">
+        <a class="magnificPopup-gallery portfolio-item-zoom">
+          <i class="glyphicon glyphicon-search"> </i>
+        </a>
+        <a class="portfolio-item-link">
+          <i class="glyphicon glyphicon-link"> </i>
+        </a>
+      </div>
+      <div class="portfolio-item-description">
+        <h4><?php print $fields['title']->content; ?></h4>
+      </div>
+    </div>
+  </div>
+</div>

@@ -64,3 +64,13 @@ function sba_field__field_noticia_foto__noticia($variables) {
   return $output;
 }
 
+function sba_field__field_galeria_foto__galeria($variables) {
+  $output = '';
+  foreach ($variables ['items'] as $delta => $item) {
+    $uri = $item ['#item']['uri'];
+    $src = image_style_url('square_300x300', $uri);
+    $output .= '<div class="col-md-4"><img src="' . $src . '" class="img-responsive" typeof="foaf:Image"></div>';
+  }
+
+  return $output;
+}

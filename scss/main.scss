@@ -180,6 +180,7 @@ main {
   text-transform: uppercase;
   color: white;
   background-color: darken($verde, 20%);
+  //background: url(../i/rush-70824_640.jpg) darken($verde, 20%) top left repeat;
 }
 
 /**
@@ -215,6 +216,11 @@ a.back-to-top {
       }
     }
   }
+  #block-user-login {
+    label {
+      display: block;
+    }
+  }
   .date-nav.item-list {
     .date-heading {
       a {
@@ -246,6 +252,11 @@ a.back-to-top {
         margin: 0 auto;
         @include rhythm;
       }
+    }
+  }
+  .node-galeria {
+    img {
+      @include rhythm;
     }
   }
   // Corrijo posición del botón prev en calendario.
@@ -280,6 +291,8 @@ footer#main-footer {
     background-color: $gris;
   }
   #footer-section-2 {
+  @include rhythm-borders;
+  border: none;
     background-color: $gris-oscuro;
   }
   a {
@@ -294,7 +307,7 @@ footer#main-footer {
 .region-footer-second-col,
 .region-footer-third-col,
 .region-footer-fourth-col {
-  @include rhythm;
+  @include rhythm(2);
   .block {
     h2 {
       border-bottom: 1px solid tint($gris-oscuro, 30%);
@@ -312,6 +325,76 @@ footer#main-footer {
         list-style-type: none;
         list-style-image: none;
       }
+    }
+  }
+}
+
+/**
+ * Galería de fotos
+ */
+.portfolio-item {
+  position: relative;
+  @include rhythm;
+  margin-top: 0;
+
+  .portfolio-item-preview {
+    overflow: hidden;
+    position: relative;
+
+    .portfolio-item-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      opacity: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      text-align: center;
+      transform: translateY(20%);
+      transition: transform 0.5s ease 0s;
+      .portfolio-item-overlay-actions {
+        position: absolute;
+        bottom: 15%;
+        width: 100%;
+        text-align: center;
+        margin-top: -24px;
+        box-sizing: border-box;
+        .portfolio-item-zoom,
+        .portfolio-item-link {
+          background-color: #10a084;
+          color: white;
+          display: inline-block;
+          @include border-radius(50%);
+          height: 48px;
+          text-align: center;
+          text-decoration: none;
+          width: 48px;
+          i {
+            font-size: 20px;
+            line-height: 48px;
+          }
+        }
+      }
+    }
+
+    .portfolio-item-description {
+      position: absolute;
+      top: 50px;
+      left: 0;
+      right: 0;
+      color: white;
+      h4 {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+
+  &:hover {
+    .portfolio-item-overlay {
+      opacity: 1;
+      transform: translateY(0px);
     }
   }
 }
