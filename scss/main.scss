@@ -196,6 +196,24 @@ a.back-to-top {
   .block {
     margin-bottom: 1.5em;
   }
+  .date-nav.item-list {
+    .date-heading {
+      a {
+        text-transform: lowercase;
+      }
+    }
+    li {
+      @include border-radius(5px);
+      padding: 5px;
+      a {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    li.date-prev {
+      margin-left: 0;
+    }
+  }
 }
 
 /**
@@ -213,9 +231,18 @@ a.back-to-top {
   }
   // Corrijo posición del botón prev en calendario.
   .date-nav.item-list {
+    li {
+      @include border-radius(5px);
+      padding: 5px;
+      a {
+        display: block;
+        margin: 0 auto;
+      }
+    }
     li.date-prev {
       left: 0;
       right: auto;
+      margin-left: 0;
     }
   }
 }
