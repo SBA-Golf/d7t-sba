@@ -450,30 +450,30 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 298, ../../scss/main.scss */
-.region-footer-first-col h2,
-.region-footer-second-col h2,
-.region-footer-third-col h2,
-.region-footer-fourth-col h2 {
+/* line 299, ../../scss/main.scss */
+.region-footer-first-col .block h2,
+.region-footer-second-col .block h2,
+.region-footer-third-col .block h2,
+.region-footer-fourth-col .block h2 {
   border-bottom: 1px solid #6e737c;
   margin-bottom: 1em;
 }
-/* line 301, ../../scss/main.scss */
-.region-footer-first-col h2 span,
-.region-footer-second-col h2 span,
-.region-footer-third-col h2 span,
-.region-footer-fourth-col h2 span {
+/* line 302, ../../scss/main.scss */
+.region-footer-first-col .block h2 span,
+.region-footer-second-col .block h2 span,
+.region-footer-third-col .block h2 span,
+.region-footer-fourth-col .block h2 span {
   border-bottom: 2px solid #054403;
   display: inline-block;
   margin-bottom: -1px;
   padding-bottom: 0.5em;
   padding-right: 1em;
 }
-/* line 310, ../../scss/main.scss */
-.region-footer-first-col ul.menu .leaf,
-.region-footer-second-col ul.menu .leaf,
-.region-footer-third-col ul.menu .leaf,
-.region-footer-fourth-col ul.menu .leaf {
+/* line 311, ../../scss/main.scss */
+.region-footer-first-col .block ul.menu .leaf,
+.region-footer-second-col .block ul.menu .leaf,
+.region-footer-third-col .block ul.menu .leaf,
+.region-footer-fourth-col .block ul.menu .leaf {
   list-style-type: none;
   list-style-image: none;
 }
@@ -483,7 +483,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
  *
  * Fix overlaping of menu
  */
-/* line 322, ../../scss/main.scss */
+/* line 324, ../../scss/main.scss */
 #admin-menu {
   z-index: 5000;
 }

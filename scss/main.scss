@@ -295,21 +295,23 @@ footer#main-footer {
 .region-footer-third-col,
 .region-footer-fourth-col {
   @include rhythm;
-  h2 {
-    border-bottom: 1px solid tint($gris-oscuro, 30%);
-    margin-bottom: 1em;
-    span {
-      border-bottom: 2px solid $verde-oscuro;
-      display: inline-block;
-      margin-bottom: -1px;
-      padding-bottom: 0.5em;
-      padding-right: 1em;
+  .block {
+    h2 {
+      border-bottom: 1px solid tint($gris-oscuro, 30%);
+      margin-bottom: 1em;
+      span {
+        border-bottom: 2px solid $verde-oscuro;
+        display: inline-block;
+        margin-bottom: -1px;
+        padding-bottom: 0.5em;
+        padding-right: 1em;
+      }
     }
-  }
-  ul.menu {
-    .leaf {
-      list-style-type: none;
-      list-style-image: none;
+    ul.menu {
+      .leaf {
+        list-style-type: none;
+        list-style-image: none;
+      }
     }
   }
 }

@@ -30,7 +30,7 @@
 
 <!-- Slider -->
 <?php if ($page['slider'] && drupal_is_front_page()): ?>
-<aside id="slider"><?php print render($page['slider']); ?></aside>
+<aside id="slider" class="boxedcontainer"><?php print render($page['slider']); ?></aside>
 <?php endif; ?>
 <!-- Fin Slider -->
 
@@ -91,10 +91,11 @@
     </div>
   </section>
   <section id="footer-section-2">
-    <div class="row">
-      <div class="col-xs-12"><?php print render($page['legal']); ?></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12"><?php print render($page['legal']); ?></div>
+      </div>
     </div>
   </section>
-  </div>
 </footer>
 <!-- Fin Footer -->
