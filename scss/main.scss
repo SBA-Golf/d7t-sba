@@ -7,7 +7,7 @@
 body{
   background-color: white;
   a {
-    color: darken($verde, 20%);
+    color: $verde-oscuro;
     &:hover,
     &:focus {
       color: $verde;
@@ -67,6 +67,7 @@ em {
  */
 .region-top-header {
   overflow: hidden;
+  font-weight: 700;
   @include adjust-font-size-to(10px);
   #block-system-user-menu {
     .content {
@@ -108,12 +109,12 @@ em {
 #main-menu {
   margin: 0;
   border: none;
-  background-color: white;
+  background-color: rgba(255,255,255,0.95);
   background-image: none;
   @include single-box-shadow(0,0,0);
-  @include single-box-shadow(0,5px,5px);
+  //@include single-box-shadow(0,5px,5px,null,rgba($gris-claro,0.5));
   @include border-radius(0);
-  z-index: 3000;
+  z-index: 300;
   left: 0;
   right: 0;
 }
@@ -129,8 +130,9 @@ em {
       float: right;
       li {
         transition: background 0.6s ease 0s;
+        border-right: 1px solid white;
         &:hover {
-          background-color: $verde;
+          background-color: $verde-oscuro;
           a {
             color: white;
           }
@@ -144,7 +146,7 @@ em {
         }
       }
       li.active-trail {
-        background-color: $verde;
+        background-color: $verde-oscuro;
         a {
           color: white;
         }
@@ -179,7 +181,7 @@ main {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  background-color: darken($verde, 20%);
+  background-color: $verde-oscuro;
   //background: url(../i/rush-70824_640.jpg) darken($verde, 20%) top left repeat;
 }
 
@@ -195,7 +197,7 @@ a.back-to-top {
   opacity: 0.7;
   padding: 0.5em;
   display: none;
-  z-index: 3000;
+  z-index: 300;
 }
 
 /**
@@ -398,6 +400,35 @@ footer#main-footer {
     }
   }
 }
+/**
+ * Magnific Popup
+ */
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
 
 /**
  * Admin menu module
@@ -405,5 +436,5 @@ footer#main-footer {
  * Fix overlaping of menu
  */
 #admin-menu {
-  z-index: 5000;
+  z-index: 500;
 }

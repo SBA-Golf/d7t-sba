@@ -28,5 +28,5 @@ vdj(document).ready(function($) {
     vdj('html, body').animate({scrollTop: 0}, duration);
     return false;
   })
-});
 
+});

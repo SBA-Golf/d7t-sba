@@ -93,7 +93,10 @@
   <section id="footer-section-2">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12"><?php print render($page['legal']); ?></div>
+        <div class="col-xs-12">
+          <img src="<?php print $logo; ?>" class="img-responsive" typeof="foaf:Image">
+          <?php print render($page['legal']); ?>
+        </div>
       </div>
     </div>
   </section>

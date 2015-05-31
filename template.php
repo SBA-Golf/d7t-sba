@@ -65,12 +65,22 @@ function sba_field__field_noticia_foto__noticia($variables) {
 }
 
 function sba_field__field_galeria_foto__galeria($variables) {
-  $output = '';
-  foreach ($variables ['items'] as $delta => $item) {
-    $uri = $item ['#item']['uri'];
-    $src = image_style_url('square_300x300', $uri);
-    $output .= '<div class="col-md-4"><img src="' . $src . '" class="img-responsive" typeof="foaf:Image"></div>';
-  }
+  if ($variables['element']['#formatter'] == 'magnific_popup_file_field_formatter') {
+    $output = '';
 
-  return $output;
+    // Render the label, if it's not hidden.
+    if (!$variables ['label_hidden']) {
+      $output .= '<div class="field-label"' . $variables ['title_attributes'] . '>' . $variables ['label'] . ':&nbsp;</div>';
+    }
+
+    // Render the items.
+    foreach ($variables ['items'] as $delta => $item) {
+      for ($i = 0; $i < count($variables['element']['#items']); $i++) {
+        $item['item-' . $i]['#options']['attributes']['class'][] = 'col-md-4';
+      }
+      $output .= drupal_render($item);
+    }
+
+    return $output;
+  }
 }
