@@ -43,7 +43,9 @@
 <!-- Page title if in not frontpage -->
 <?php if (!drupal_is_front_page()): ?>
 <div id="page-title">
+<?php if ($title): ?>
 <h1><?php print $title; ?></h1>
+<?php endif; ?>
 </div>
 <?php endif; ?>
 
