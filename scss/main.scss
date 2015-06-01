@@ -180,9 +180,12 @@ main {
   border: none;
   text-align: center;
   text-transform: uppercase;
-  color: white;
-  background-color: $verde;
+  color: $gris-oscuro;
+  font-weight: 700;
+  //background-color: $verde;
   //background: url(../i/rush-70824_640.jpg) darken($verde, 20%) top left repeat;
+  background: url(../i/hierba.jpg) white bottom center repeat-x;
+  @include background-size(contain);
 }
 
 /**
