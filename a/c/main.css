@@ -626,3 +626,28 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 #admin-menu {
   z-index: 500;
 }
+
+/**
+ * Calendario
+ */
+/* line 453, ../../scss/main.scss */
+.calendar-calendar tr td.today,
+.calendar-calendar tr.odd td.today,
+.calendar-calendar tr.even td.today {
+  background-color: #ceedcd;
+}
+
+/* line 459, ../../scss/main.scss */
+.calendar-calendar .month-view .full td.multi-day div.monthview,
+.calendar-calendar .week-view .full td.multi-day div.weekview,
+.calendar-calendar .day-view .full td.multi-day div.dayview {
+  background: #ceedcd none repeat scroll 0 0;
+}
+
+/* line 465, ../../scss/main.scss */
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
+.calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
+.calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
+  background: #ceedcd none repeat scroll 0 0;
+}
