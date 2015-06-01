@@ -132,7 +132,7 @@ em {
         transition: background 0.6s ease 0s;
         border-right: 1px solid white;
         &:hover {
-          background-color: $verde-oscuro;
+          background-color: $verde;
           a {
             color: white;
           }
@@ -146,7 +146,7 @@ em {
         }
       }
       li.active-trail {
-        background-color: $verde-oscuro;
+        background-color: $verde;
         a {
           color: white;
         }
@@ -181,7 +181,7 @@ main {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  background-color: $verde-oscuro;
+  background-color: $verde;
   //background: url(../i/rush-70824_640.jpg) darken($verde, 20%) top left repeat;
 }
 
@@ -363,7 +363,7 @@ footer#main-footer {
         box-sizing: border-box;
         .portfolio-item-zoom,
         .portfolio-item-link {
-          background-color: #10a084;
+          background-color: $verde;
           color: white;
           display: inline-block;
           @include border-radius(50%);

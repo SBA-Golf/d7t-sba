@@ -257,7 +257,7 @@ em {
   }
   /* line 134, ../../scss/main.scss */
   #navbar-main-menu ul li:hover {
-    background-color: #054403;
+    background-color: #0da508;
   }
   /* line 136, ../../scss/main.scss */
   #navbar-main-menu ul li:hover a {
@@ -275,7 +275,7 @@ em {
   }
   /* line 148, ../../scss/main.scss */
   #navbar-main-menu ul li.active-trail {
-    background-color: #054403;
+    background-color: #0da508;
   }
   /* line 150, ../../scss/main.scss */
   #navbar-main-menu ul li.active-trail a {
@@ -312,7 +312,7 @@ main {
   text-align: center;
   text-transform: uppercase;
   color: white;
-  background-color: #054403;
+  background-color: #0da508;
 }
 
 /**
@@ -535,7 +535,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /* line 364, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link {
-  background-color: #10a084;
+  background-color: #0da508;
   color: white;
   display: inline-block;
   -moz-border-radius: 50%;
