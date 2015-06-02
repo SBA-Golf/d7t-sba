@@ -70,6 +70,7 @@
       <div class="col-md-9">
         <aside id="tabs"><?php print render($tabs); ?></aside>
         <?php print render($page['content']); ?>
+        <?php if ($page['after_content']) print render($page['after_content']); ?>
       </div>
       <div class="col-md-3">
         <aside>

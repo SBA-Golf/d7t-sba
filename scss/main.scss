@@ -469,3 +469,12 @@ footer#main-footer {
   background: tint($verde, 80%) none repeat scroll 0 0;
 }
 
+/**
+ * Google Map
+ */
+#map-canvas {
+  height: 400px;
+  img {
+    max-width: inherit;
+  }
+}

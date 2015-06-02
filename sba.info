@@ -14,6 +14,7 @@ regions[top_header]        = Top header
 regions[header]            = Header
 regions[slider]            = Slider
 regions[slogan]            = Slogan
+regions[after_content]     = After content
 regions[sidebar_first]     = Sidebar first
 regions[footer_first_col]  = Footer first column
 regions[footer_second_col] = Footer second column
@@ -38,3 +39,12 @@ scripts[] = a/j/slider-revolution/src/js/jquery.themepunch.plugins.min.js
 scripts[] = a/j/sticky/jquery.sticky.js
 scripts[] = a/j/custom.js
 
+;;;;;;;;;;;;;;;;;;;;
+;; Settings
+;;;;;;;;;;;;;;;;;;;;
+settings[google_map_js] = 1
+settings[google_map_latitude] = '43.2852543'
+settings[google_map_longitude] = '-1.964525'
+settings[google_map_zoom] = 16
+settings[google_map_canvas] = 'map-canvas'
+settings[google_map_js] = 1

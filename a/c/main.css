@@ -651,3 +651,15 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
   background: #ceedcd none repeat scroll 0 0;
 }
+
+/**
+ * Google Map
+ */
+/* line 475, ../../scss/main.scss */
+#map-canvas {
+  height: 400px;
+}
+/* line 477, ../../scss/main.scss */
+#map-canvas img {
+  max-width: inherit;
+}
