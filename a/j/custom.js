@@ -18,8 +18,10 @@ vdj(document).ready(function($) {
   jQuery(window).scroll(function() {
     if (vdj(this).scrollTop() > offset) {
       vdj('.back-to-top').fadeIn(duration);
+      $('#main-menu').css('border-bottom', '1px solid #efefef');
     } else {
-        vdj('.back-to-top').fadeOut(duration);
+      vdj('.back-to-top').fadeOut(duration);
+      $('#main-menu').css('border-bottom', 'none');
     }
   });
     
