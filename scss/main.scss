@@ -52,6 +52,28 @@ em {
   font-style: italic;
 }
 
+input,
+textarea,
+select {
+  background: transparent none repeat scroll 0 0;
+  border: 1px solid #acacac;
+  box-sizing: border-box;
+  color: #666;
+  display: block;
+  margin-bottom: 15px;
+  max-width: 100%;
+  padding: 6px 10px;
+}
+input[type="submit"] {
+  background-color: $verde;
+  border: medium none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 18px;
+  padding: 6px 12px;
+}
+
 #header {
   background-color: $gris-oscuro;
   a {
@@ -478,3 +500,16 @@ footer#main-footer {
     max-width: inherit;
   }
 }
+
+/**
+ * Webform contacto
+ */
+.webform-client-form {
+  label {
+    display: none;
+  }
+  #edit-submitted-mensaje {
+    margin-bottom: 0;
+  }
+}
+
