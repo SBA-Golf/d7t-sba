@@ -461,20 +461,19 @@ a.back-to-top {
  */
 /* line 315, ../../scss/main.scss */
 footer#main-footer {
-  border-width: 0.07692em;
-  border-style: solid;
-  padding: 1.53846em;
+  /*@include rhythm-borders;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
-  border: none;
+  padding-top: 0;
+  border: none;*/
   color: #d1d1d1;
 }
-/* line 322, ../../scss/main.scss */
+/* line 323, ../../scss/main.scss */
 footer#main-footer #footer-section-1 {
   background-color: #484f5e;
 }
-/* line 325, ../../scss/main.scss */
+/* line 326, ../../scss/main.scss */
 footer#main-footer #footer-section-2 {
   border-width: 0.07692em;
   border-style: solid;
@@ -482,16 +481,16 @@ footer#main-footer #footer-section-2 {
   border: none;
   background-color: #303745;
 }
-/* line 330, ../../scss/main.scss */
+/* line 331, ../../scss/main.scss */
 footer#main-footer a {
   color: white;
 }
-/* line 332, ../../scss/main.scss */
+/* line 333, ../../scss/main.scss */
 footer#main-footer a:hover, footer#main-footer a:focus {
   color: #0da508;
 }
 
-/* line 338, ../../scss/main.scss */
+/* line 339, ../../scss/main.scss */
 .region-footer-first-col,
 .region-footer-second-col,
 .region-footer-third-col,
@@ -501,7 +500,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0em;
   margin-bottom: 3.23077em;
 }
-/* line 344, ../../scss/main.scss */
+/* line 345, ../../scss/main.scss */
 .region-footer-first-col .block h2,
 .region-footer-second-col .block h2,
 .region-footer-third-col .block h2,
@@ -509,7 +508,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border-bottom: 1px solid #6e737c;
   margin-bottom: 1em;
 }
-/* line 347, ../../scss/main.scss */
+/* line 348, ../../scss/main.scss */
 .region-footer-first-col .block h2 span,
 .region-footer-second-col .block h2 span,
 .region-footer-third-col .block h2 span,
@@ -520,7 +519,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0.5em;
   padding-right: 1em;
 }
-/* line 356, ../../scss/main.scss */
+/* line 357, ../../scss/main.scss */
 .region-footer-first-col .block ul.menu .leaf,
 .region-footer-second-col .block ul.menu .leaf,
 .region-footer-third-col .block ul.menu .leaf,
@@ -532,7 +531,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Galería de fotos
  */
-/* line 367, ../../scss/main.scss */
+/* line 368, ../../scss/main.scss */
 .portfolio-item {
   position: relative;
   margin-top: 1.61538em;
@@ -541,12 +540,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
   margin-top: 0;
 }
-/* line 372, ../../scss/main.scss */
+/* line 373, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview {
   overflow: hidden;
   position: relative;
 }
-/* line 376, ../../scss/main.scss */
+/* line 377, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay {
   position: absolute;
   top: 0;
@@ -559,7 +558,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transform: translateY(20%);
   transition: transform 0.5s ease 0s;
 }
-/* line 387, ../../scss/main.scss */
+/* line 388, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions {
   position: absolute;
   bottom: 15%;
@@ -568,7 +567,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-top: -24px;
   box-sizing: border-box;
 }
-/* line 394, ../../scss/main.scss */
+/* line 395, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link {
   background-color: #0da508;
@@ -582,13 +581,13 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   text-decoration: none;
   width: 48px;
 }
-/* line 404, ../../scss/main.scss */
+/* line 405, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom i,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link i {
   font-size: 20px;
   line-height: 48px;
 }
-/* line 412, ../../scss/main.scss */
+/* line 413, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description {
   position: absolute;
   top: 50px;
@@ -596,11 +595,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   right: 0;
   color: white;
 }
-/* line 419, ../../scss/main.scss */
+/* line 420, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description h4 a {
   color: white;
 }
-/* line 427, ../../scss/main.scss */
+/* line 428, ../../scss/main.scss */
 .portfolio-item:hover .portfolio-item-overlay {
   opacity: 1;
   transform: translateY(0px);
@@ -609,12 +608,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Magnific Popup
  */
-/* line 436, ../../scss/main.scss */
+/* line 437, ../../scss/main.scss */
 .image-source-link {
   color: #98C3D1;
 }
 
-/* line 440, ../../scss/main.scss */
+/* line 441, ../../scss/main.scss */
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -626,17 +625,17 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.3s ease-out;
 }
 
-/* line 451, ../../scss/main.scss */
+/* line 452, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready .mfp-container {
   opacity: 1;
 }
 
-/* line 454, ../../scss/main.scss */
+/* line 455, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
 
-/* line 458, ../../scss/main.scss */
+/* line 459, ../../scss/main.scss */
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
@@ -647,7 +646,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
  *
  * Fix overlaping of menu
  */
-/* line 468, ../../scss/main.scss */
+/* line 469, ../../scss/main.scss */
 #admin-menu {
   z-index: 500;
 }
@@ -655,21 +654,21 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Calendario
  */
-/* line 475, ../../scss/main.scss */
+/* line 476, ../../scss/main.scss */
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
   background-color: #ceedcd;
 }
 
-/* line 481, ../../scss/main.scss */
+/* line 482, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
   background: #ceedcd none repeat scroll 0 0;
 }
 
-/* line 487, ../../scss/main.scss */
+/* line 488, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
@@ -680,11 +679,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Google Map
  */
-/* line 497, ../../scss/main.scss */
+/* line 498, ../../scss/main.scss */
 #map-canvas {
   height: 400px;
 }
-/* line 499, ../../scss/main.scss */
+/* line 500, ../../scss/main.scss */
 #map-canvas img {
   max-width: inherit;
 }
@@ -692,11 +691,42 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Webform contacto
  */
-/* line 508, ../../scss/main.scss */
+/* line 509, ../../scss/main.scss */
 .webform-client-form label {
   display: none;
 }
-/* line 511, ../../scss/main.scss */
+/* line 512, ../../scss/main.scss */
 .webform-client-form #edit-submitted-mensaje {
   margin-bottom: 0;
+}
+
+/**
+ * Patrocionios
+ */
+/* line 520, ../../scss/main.scss */
+.region-sponsors {
+  border-width: 0.07692em;
+  border-style: solid;
+  padding: 1.53846em;
+  border: none;
+  background-color: gray;
+}
+/* line 524, ../../scss/main.scss */
+.region-sponsors h2 {
+  margin-top: 1.61538em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.61538em;
+  font-size: 2.15385em;
+  line-height: 1.5em;
+  font-style: italic;
+  color: white;
+  text-align: center;
+}
+/* line 531, ../../scss/main.scss */
+.region-sponsors .view-content {
+  margin-top: 1.61538em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.61538em;
 }

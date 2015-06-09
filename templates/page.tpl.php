@@ -82,6 +82,14 @@
 </main>
 <!-- Fin  MAIN CONTENT-->
 
+<?php if ($page['sponsors']): ?>
+<!-- Sponsors -->
+<aside id="sponsors">
+<?php print render($page['sponsors']); ?>
+</aside>
+<!-- Fin Sponsors -->
+<?php endif; ?>
+
 <!-- Footer -->
 <footer id="main-footer">
   <section id="footer-section-1">

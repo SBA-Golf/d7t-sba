@@ -16,6 +16,7 @@ regions[slider]            = Slider
 regions[slogan]            = Slogan
 regions[after_content]     = After content
 regions[sidebar_first]     = Sidebar first
+regions[sponsors]          = Sponsors
 regions[footer_first_col]  = Footer first column
 regions[footer_second_col] = Footer second column
 regions[footer_third_col]  = Footer third column

@@ -313,11 +313,12 @@ a.back-to-top {
  * Region Footer colummns
  */
 footer#main-footer {
-  @include rhythm-borders;
+  /*@include rhythm-borders;
   padding-left: 0;
   padding-right: 0;
   padding-bottom: 0;
-  border: none;
+  padding-top: 0;
+  border: none;*/
   color: $gris-claro;
   #footer-section-1 {
     background-color: $gris;
@@ -513,3 +514,21 @@ footer#main-footer {
   }
 }
 
+/**
+ * Patrocionios
+ */
+.region-sponsors {
+  @include rhythm-borders;
+  border: none;
+  background-color: gray;
+  h2 {
+    @include rhythm;
+    @include adjust-font-size-to(28px);
+    font-style: italic;
+    color: white;
+    text-align: center;
+  }
+  .view-content {
+    @include rhythm;
+  }
+}
