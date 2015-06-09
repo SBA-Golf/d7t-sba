@@ -523,6 +523,7 @@ footer#main-footer {
   background-color: gray;
   h2 {
     @include rhythm;
+    margin-top: 0;
     @include adjust-font-size-to(28px);
     font-style: italic;
     color: white;
