@@ -1,5 +1,6 @@
 var vdj = jQuery;
 vdj.noConflict();
+var masonry_container;
 
 vdj(document).ready(function($) {
   // sticky: Inicio
@@ -31,4 +32,17 @@ vdj(document).ready(function($) {
     return false;
   })
 
+  // Masonry
+  /*
+  masonry_container = $("#block-system-main");
+  masonry_container.imagesLoaded(function() {
+    masonry_container.masonry({
+      columnWidth: ".node-noticia",
+      itemSelector: ".node-noticia",
+      percentPosition: "true",
+      gutter: 0
+    });
+    masonry_container.masonry("bindResize");
+  });
+  */
 });

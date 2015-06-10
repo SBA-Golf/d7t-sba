@@ -286,6 +286,24 @@ a.back-to-top {
       }
     }
   }
+  .node-noticia.teaser {
+    min-height: 15em;
+    .links {
+      float: right;
+      .node-readmore {
+        border: 1px solid $verde;
+        color: black;
+        cursor: pointer;
+        display: inline-block;
+        line-height: 18px;
+        padding: 6px 12px;
+      }
+    }
+  }
+  .pager {
+    @include rhythm-borders;
+    border: none;
+  }
   .node-galeria {
     img {
       @include rhythm;
