@@ -51,7 +51,7 @@
   ?>
   <div class="row actions">
     <div class="col-xs-12">
-      <a href="/node/add/partido?field_partido_edicion=<?php print $view->current_entity->nid; ?>"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir partido</a>
+      <a href="/node/add/edicion<?php if ($view->current_entity->field_torneo_interclubs) print '-interclubs'; ?>?field_edicion_torneo=<?php print $view->current_entity->nid; ?>"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir edición</a>
     </div>
   </div>
   <?php endif; ?>
