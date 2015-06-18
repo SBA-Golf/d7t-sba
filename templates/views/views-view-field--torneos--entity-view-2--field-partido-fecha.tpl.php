@@ -25,5 +25,5 @@
 <?php $fecha = new DateTime($variables['row']->field_field_partido_fecha[0]['raw']['value']); ?>
 <div class="partido-date">
   <p class="day"><?php print date('j',$fecha->getTimestamp()); ?></p>
-  <p class="month"><?php print date('M',$fecha->getTimestamp()); ?></p>
+  <p class="month"><?php print date('M - Y',$fecha->getTimestamp()); ?></p>
 </div>
