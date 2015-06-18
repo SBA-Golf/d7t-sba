@@ -95,6 +95,11 @@ function sba_preprocess_block(&$variables) {
   if (in_array($block->region, $regiones) && !empty($block->subject))  {
     $block->subject = '<span>' . $block->subject . '</span>';
   }
+
+  if ($variables['is_front'] && $block->delta == 'main') {
+    $variables['content'] = '<div class="row">' . $variables['content'] . '</div>';
+  }
+
 }
 
 function sba_preprocess_views_view(&$variables) {
@@ -112,6 +117,17 @@ function sba_field__field_noticia_foto__noticia($variables) {
     $output = '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
   }
 
+  return $output;
+}
+
+function sba_field__field_imagen_torneo__torneo($variables) {
+  $output = '';
+
+  foreach ($variables ['items'] as $delta => $item) {
+    $uri = $item ['#item']['uri'];
+    $src = image_style_url('large', $uri);
+    $output = '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+  }
   return $output;
 }
 

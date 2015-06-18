@@ -2,11 +2,9 @@
 /**
  * Teaser
  */
-if ($view_mode == "teaser"):
+if ($teaser):
 ?>
-<?php if (drupal_is_front_page()): ?>
-<div class="col-md-6">
-<?php endif; ?>
+<div class="col-xs-12 col-sm-4">
 <article class="node-noticia teaser">
 <header>
   <?php print render($title_prefix); ?>
@@ -23,7 +21,5 @@ if ($view_mode == "teaser"):
 <?php print render($content['links']); ?>
 </div>
 </article>
-<?php if (drupal_is_front_page()): ?>
 </div>
-<?php endif; ?>
 <?php endif; ?>

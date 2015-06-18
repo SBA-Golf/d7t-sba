@@ -34,7 +34,7 @@ vdj(document).ready(function($) {
 
   // Masonry
   /*
-  masonry_container = $("#block-system-main");
+  masonry_container = $("#block-system-main .content .row");
   masonry_container.imagesLoaded(function() {
     masonry_container.masonry({
       columnWidth: ".node-noticia",

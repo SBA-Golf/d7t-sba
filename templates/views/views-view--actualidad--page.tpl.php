@@ -1,7 +1,8 @@
 <?php
+
 /**
- * @file eva-display-entity-view.tpl.php
- * Entity content view template
+ * @file
+ * Main view template.
  *
  * Variables available:
  * - $classes_array: An array of classes determined in
@@ -29,13 +30,18 @@
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
-    <h2 class="title"><?php print $title; ?></h2>
+    <?php print $title; ?>
   <?php endif; ?>
   <?php print render($title_suffix); ?>
-
   <?php if ($header): ?>
     <div class="view-header">
       <?php print $header; ?>
+    </div>
+  <?php endif; ?>
+
+  <?php if ($exposed): ?>
+    <div class="view-filters">
+      <?php print $exposed; ?>
     </div>
   <?php endif; ?>
 
@@ -45,17 +51,8 @@
     </div>
   <?php endif; ?>
 
-  <?php
-    global $user;
-    if (in_array('editor', $user->roles)|| $user->uid == 1):
-  ?>
-    <div>
-    <a href="/node/add/galeria?field_galeria_partido=<?php print $view->current_entity->nid; ?>"><i class="glyphicon glyphicon-plus"> </i>Añadir galería</a>
-    </div>
-  <?php endif; ?>
-
   <?php if ($rows): ?>
-    <div class="view-content">
+    <div class="view-content row">
       <?php print $rows; ?>
     </div>
   <?php elseif ($empty): ?>
@@ -90,4 +87,4 @@
     </div>
   <?php endif; ?>
 
-</div> <?php /* class view */ ?>
+</div><?php /* class view */ ?>
