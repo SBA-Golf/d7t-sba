@@ -74,6 +74,14 @@ input[type="submit"] {
   padding: 6px 12px;
 }
 
+.glyphicon.inverted-round {
+  @include border-radius(50%);
+  color: white;
+  background-color: $verde;
+  padding: 0.5em;
+  margin: 0 1em;
+}
+
 #header {
   background-color: $gris-oscuro;
   a {
@@ -385,6 +393,9 @@ footer#main-footer {
 /**
  * Galería de fotos
  */
+.row.actions {
+  @include rhythm;
+}
 .portfolio-item {
   position: relative;
   @include rhythm;
