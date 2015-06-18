@@ -641,3 +641,25 @@ a.thumb-info span.thumb-info-action-icon i {
   top: -4px;
   color: white;
 }
+.partido-date {
+  .day {
+    background-color: #fcfcfc;
+    color: #333;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 36px;
+    margin: 0;
+    padding: 20px 30px;
+    text-align: center;
+  }
+  .month {
+    background-color: #a2cd00;
+    color: #fff;
+    font-weight: 700;
+    margin: 0;
+    padding: 5px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    @include border-bottom-radius(4px);
+  }
+}

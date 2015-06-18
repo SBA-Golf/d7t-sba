@@ -866,3 +866,31 @@ a.thumb-info span.thumb-info-action-icon i {
   top: -4px;
   color: white;
 }
+
+/* line 645, ../../scss/main.scss */
+.partido-date .day {
+  background-color: #fcfcfc;
+  color: #333;
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 36px;
+  margin: 0;
+  padding: 20px 30px;
+  text-align: center;
+}
+/* line 655, ../../scss/main.scss */
+.partido-date .month {
+  background-color: #a2cd00;
+  color: #fff;
+  font-weight: 700;
+  margin: 0;
+  padding: 5px 10px;
+  text-align: center;
+  text-transform: uppercase;
+  -moz-border-radius-bottomleft: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
