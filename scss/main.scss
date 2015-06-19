@@ -290,13 +290,13 @@ a.back-to-top {
       @include rhythm;
       img {
         margin: 0 auto;
+        width: 100%;
         @include rhythm;
       }
     }
   }
   .node-noticia.teaser {
     text-align: justify;
-    //min-height: 15em;
     .links {
       @include rhythm;
       float: right;
@@ -319,6 +319,7 @@ a.back-to-top {
       @include rhythm;
     }
   }
+
   // Corrijo posición del botón prev en calendario.
   .date-nav.item-list {
     li {

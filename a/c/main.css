@@ -436,12 +436,13 @@ a.back-to-top {
 /* line 291, ../../scss/main.scss */
 .region-content .node-noticia .content img {
   margin: 0 auto;
+  width: 100%;
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 297, ../../scss/main.scss */
+/* line 298, ../../scss/main.scss */
 .region-content .node-noticia.teaser {
   text-align: justify;
 }
@@ -476,19 +477,19 @@ a.back-to-top {
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 324, ../../scss/main.scss */
+/* line 325, ../../scss/main.scss */
 .region-content .date-nav.item-list li {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 5px;
 }
-/* line 327, ../../scss/main.scss */
+/* line 328, ../../scss/main.scss */
 .region-content .date-nav.item-list li a {
   display: block;
   margin: 0 auto;
 }
-/* line 332, ../../scss/main.scss */
+/* line 333, ../../scss/main.scss */
 .region-content .date-nav.item-list li.date-prev {
   left: 0;
   right: auto;
@@ -498,7 +499,7 @@ a.back-to-top {
 /**
  * Region Footer colummns
  */
-/* line 343, ../../scss/main.scss */
+/* line 344, ../../scss/main.scss */
 footer#main-footer {
   /*@include rhythm-borders;
   padding-left: 0;
@@ -508,11 +509,11 @@ footer#main-footer {
   border: none;*/
   color: #d1d1d1;
 }
-/* line 351, ../../scss/main.scss */
+/* line 352, ../../scss/main.scss */
 footer#main-footer #footer-section-1 {
   background-color: #484f5e;
 }
-/* line 354, ../../scss/main.scss */
+/* line 355, ../../scss/main.scss */
 footer#main-footer #footer-section-2 {
   border-width: 0.07692em;
   border-style: solid;
@@ -520,16 +521,16 @@ footer#main-footer #footer-section-2 {
   border: none;
   background-color: #303745;
 }
-/* line 359, ../../scss/main.scss */
+/* line 360, ../../scss/main.scss */
 footer#main-footer a {
   color: white;
 }
-/* line 361, ../../scss/main.scss */
+/* line 362, ../../scss/main.scss */
 footer#main-footer a:hover, footer#main-footer a:focus {
   color: #0da508;
 }
 
-/* line 367, ../../scss/main.scss */
+/* line 368, ../../scss/main.scss */
 .region-footer-first-col,
 .region-footer-second-col,
 .region-footer-third-col,
@@ -539,7 +540,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0em;
   margin-bottom: 3.23077em;
 }
-/* line 373, ../../scss/main.scss */
+/* line 374, ../../scss/main.scss */
 .region-footer-first-col .block h2,
 .region-footer-second-col .block h2,
 .region-footer-third-col .block h2,
@@ -547,7 +548,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border-bottom: 1px solid #6e737c;
   margin-bottom: 1em;
 }
-/* line 376, ../../scss/main.scss */
+/* line 377, ../../scss/main.scss */
 .region-footer-first-col .block h2 span,
 .region-footer-second-col .block h2 span,
 .region-footer-third-col .block h2 span,
@@ -558,7 +559,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0.5em;
   padding-right: 1em;
 }
-/* line 385, ../../scss/main.scss */
+/* line 386, ../../scss/main.scss */
 .region-footer-first-col .block ul.menu .leaf,
 .region-footer-second-col .block ul.menu .leaf,
 .region-footer-third-col .block ul.menu .leaf,
@@ -570,7 +571,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Galería de fotos
  */
-/* line 396, ../../scss/main.scss */
+/* line 397, ../../scss/main.scss */
 .row.actions {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -578,7 +579,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
 }
 
-/* line 399, ../../scss/main.scss */
+/* line 400, ../../scss/main.scss */
 .portfolio-item {
   position: relative;
   margin-top: 1.61538em;
@@ -587,12 +588,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
   margin-top: 0;
 }
-/* line 404, ../../scss/main.scss */
+/* line 405, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview {
   overflow: hidden;
   position: relative;
 }
-/* line 408, ../../scss/main.scss */
+/* line 409, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay {
   position: absolute;
   top: 0;
@@ -605,7 +606,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transform: translateY(20%);
   transition: transform 0.5s ease 0s;
 }
-/* line 419, ../../scss/main.scss */
+/* line 420, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions {
   position: absolute;
   bottom: 15%;
@@ -614,7 +615,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-top: -24px;
   box-sizing: border-box;
 }
-/* line 426, ../../scss/main.scss */
+/* line 427, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link {
   background-color: #0da508;
@@ -628,13 +629,13 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   text-decoration: none;
   width: 48px;
 }
-/* line 436, ../../scss/main.scss */
+/* line 437, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom i,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link i {
   font-size: 20px;
   line-height: 48px;
 }
-/* line 444, ../../scss/main.scss */
+/* line 445, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description {
   position: absolute;
   top: 50px;
@@ -642,11 +643,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   right: 0;
   color: white;
 }
-/* line 451, ../../scss/main.scss */
+/* line 452, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description h4 a {
   color: white;
 }
-/* line 459, ../../scss/main.scss */
+/* line 460, ../../scss/main.scss */
 .portfolio-item:hover .portfolio-item-overlay {
   opacity: 1;
   transform: translateY(0px);
@@ -655,12 +656,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Magnific Popup
  */
-/* line 468, ../../scss/main.scss */
+/* line 469, ../../scss/main.scss */
 .image-source-link {
   color: #98C3D1;
 }
 
-/* line 472, ../../scss/main.scss */
+/* line 473, ../../scss/main.scss */
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -672,17 +673,17 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.3s ease-out;
 }
 
-/* line 483, ../../scss/main.scss */
+/* line 484, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready .mfp-container {
   opacity: 1;
 }
 
-/* line 486, ../../scss/main.scss */
+/* line 487, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
 
-/* line 490, ../../scss/main.scss */
+/* line 491, ../../scss/main.scss */
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
@@ -693,7 +694,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
  *
  * Fix overlaping of menu
  */
-/* line 500, ../../scss/main.scss */
+/* line 501, ../../scss/main.scss */
 #admin-menu {
   z-index: 500;
 }
@@ -701,21 +702,21 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Calendario
  */
-/* line 507, ../../scss/main.scss */
+/* line 508, ../../scss/main.scss */
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
   background-color: #ceedcd;
 }
 
-/* line 513, ../../scss/main.scss */
+/* line 514, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
   background: #ceedcd none repeat scroll 0 0;
 }
 
-/* line 519, ../../scss/main.scss */
+/* line 520, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
@@ -726,11 +727,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Google Map
  */
-/* line 529, ../../scss/main.scss */
+/* line 530, ../../scss/main.scss */
 #map-canvas {
   height: 400px;
 }
-/* line 531, ../../scss/main.scss */
+/* line 532, ../../scss/main.scss */
 #map-canvas img {
   max-width: inherit;
 }
@@ -738,11 +739,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Webform contacto
  */
-/* line 540, ../../scss/main.scss */
+/* line 541, ../../scss/main.scss */
 .webform-client-form label {
   display: none;
 }
-/* line 543, ../../scss/main.scss */
+/* line 544, ../../scss/main.scss */
 .webform-client-form #edit-submitted-mensaje {
   margin-bottom: 0;
 }
@@ -750,7 +751,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Patrocionios
  */
-/* line 551, ../../scss/main.scss */
+/* line 552, ../../scss/main.scss */
 .region-sponsors {
   border-width: 0.07692em;
   border-style: solid;
@@ -758,7 +759,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border: none;
   background-color: gray;
 }
-/* line 555, ../../scss/main.scss */
+/* line 556, ../../scss/main.scss */
 .region-sponsors h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -771,7 +772,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
   text-align: center;
 }
-/* line 563, ../../scss/main.scss */
+/* line 564, ../../scss/main.scss */
 .region-sponsors .view-content {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -782,7 +783,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Torneos
  */
-/* line 571, ../../scss/main.scss */
+/* line 572, ../../scss/main.scss */
 .thumbnail {
   position: relative;
   border: 1px solid #ddd;
@@ -794,7 +795,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 581, ../../scss/main.scss */
+/* line 582, ../../scss/main.scss */
 a.thumb-info {
   display: block;
   overflow: hidden;
@@ -802,14 +803,14 @@ a.thumb-info {
   text-decoration: none;
 }
 
-/* line 587, ../../scss/main.scss */
+/* line 588, ../../scss/main.scss */
 a.thumb-info img {
   border-radius: 3px;
   position: relative;
   transition: all 0.2s linear 0s;
 }
 
-/* line 592, ../../scss/main.scss */
+/* line 593, ../../scss/main.scss */
 a.thumb-info span.thumb-info-title {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   color: #fff;
@@ -826,7 +827,7 @@ a.thumb-info span.thumb-info-title {
   z-index: 1;
 }
 
-/* line 607, ../../scss/main.scss */
+/* line 608, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   background-color: rgba(244, 245, 255, 0.5);
@@ -843,7 +844,7 @@ a.thumb-info span.thumb-info-action {
   transition: all 0.3s ease 0s;
 }
 
-/* line 622, ../../scss/main.scss */
+/* line 623, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon {
   background: #ccc none repeat scroll 0 0;
   background-color: #0088cc;
@@ -861,23 +862,23 @@ a.thumb-info span.thumb-info-action-icon {
   transition: all 0.3s ease 0s;
 }
 
-/* line 638, ../../scss/main.scss */
+/* line 639, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action {
   opacity: 1;
 }
 
-/* line 641, ../../scss/main.scss */
+/* line 642, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action-icon {
   top: 0;
   right: 0;
 }
 
-/* line 645, ../../scss/main.scss */
+/* line 646, ../../scss/main.scss */
 a.thumb-info:hover img {
   transform: scale(1.2);
 }
 
-/* line 648, ../../scss/main.scss */
+/* line 649, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon i {
   font-size: 24px;
   left: 3px;
@@ -886,7 +887,7 @@ a.thumb-info span.thumb-info-action-icon i {
   color: white;
 }
 
-/* line 656, ../../scss/main.scss */
+/* line 657, ../../scss/main.scss */
 .partido-date .day {
   background-color: #fcfcfc;
   color: #333;
@@ -897,7 +898,7 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 20px 30px;
   text-align: center;
 }
-/* line 666, ../../scss/main.scss */
+/* line 667, ../../scss/main.scss */
 .partido-date .month {
   background-color: #0da508;
   color: #fff;
