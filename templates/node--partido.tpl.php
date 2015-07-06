@@ -24,9 +24,16 @@
 <article class="node-partido full">
   <div class="content">
   <?php hide($content['field_partido_patrocinadores']); ?>
+  <?php hide($content['field_partido_cronica']); ?>
+  <?php hide($content['field_partido_clasificaciones']); ?>
   <?php hide($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
   <?php print render($content); ?>
   </div>
+  <section id="documentos">
+    <h2><?php print t('Documentos'); ?></h2>
+    <?php print render($content['field_partido_cronica']); ?>
+    <?php print render($content['field_partido_clasificaciones']); ?>
+  </section>
   <section id="galeria">
     <?php print render($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
   </section>

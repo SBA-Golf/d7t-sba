@@ -324,7 +324,8 @@ a.back-to-top {
       @include rhythm-borders;
     }
     #patrocinios,
-    #galeria {
+    #galeria,
+    #documentos {
       h2 {
         @include rhythm;
       }
