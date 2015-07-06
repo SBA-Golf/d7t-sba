@@ -151,3 +151,29 @@ function sba_field__field_galeria_foto__galeria($variables) {
     return $output;
   }
 }
+
+function sba_field__field_patrocinador_logo__patrocinador($variables) {
+  $output = '';
+
+  foreach ($variables ['items'] as $delta => $item) {
+    $uri = $item ['#item']['uri'];
+    $src = image_style_url('large', $uri);
+    $output = '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+  }
+
+  return $output;
+}
+
+function sba_field__field_partido_patrocinadores__partido($variables) {
+  $output = '<div class="row">';
+
+  foreach ($variables['items'] as $delta => $item) {
+    $output .= '<div class="col-md-4">';
+    $output .= render($item['node']);
+    $output .= '</div>';
+  }
+
+  $output .= '</div>';
+
+  return $output;
+}

@@ -319,6 +319,17 @@ a.back-to-top {
       @include rhythm;
     }
   }
+  .node-partido {
+    .content {
+      @include rhythm-borders;
+    }
+    #patrocinios,
+    #galeria {
+      h2 {
+        @include rhythm;
+      }
+    }
+  }
 
   // Corrijo posición del botón prev en calendario.
   .date-nav.item-list {
