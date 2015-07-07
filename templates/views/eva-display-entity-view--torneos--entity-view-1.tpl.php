@@ -26,7 +26,8 @@
  * @ingroup views_templates
  */
 $node = node_load($variables['view']->current_entity->nid);
-$interclubs = field_get_items('node',$node,'field_torneo_interclubs')[0]['value'] ? 1 : 0;
+$interclubs = field_get_items('node',$node,'field_torneo_interclubs');
+$interclubs = $interclubs[0]['value'] ? 1 : 0;
 ?>
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>
