@@ -25,6 +25,10 @@
  *
  * @ingroup views_templates
  */
+$node = node_load($variables['view']->current_entity->nid);
+$interclubs = field_get_items('node',$node,'field_torneo_interclubs') ? 1 : 0;
+dpm($interclubs);
+
 ?>
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>
@@ -51,7 +55,7 @@
   ?>
   <div class="row actions">
     <div class="col-xs-12">
-      <a href="/node/add/edicion<?php if ($view->current_entity->field_torneo_interclubs) print '-interclubs'; ?>?field_edicion_torneo=<?php print $view->current_entity->nid; ?>"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir edición</a>
+      <a href="/node/add/edicion<?php if ($interclubs) print '-interclubs'; ?>?field_edicion_torneo=<?php print $view->current_entity->nid; ?>"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir edición</a>
     </div>
   </div>
   <?php endif; ?>
