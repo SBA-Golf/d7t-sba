@@ -772,9 +772,9 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border-style: solid;
   padding: 1.53846em;
   border: none;
-  background-color: gray;
+  background-color: white;
 }
-/* line 568, ../../scss/main.scss */
+/* line 569, ../../scss/main.scss */
 .region-sponsors h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -787,7 +787,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
   text-align: center;
 }
-/* line 576, ../../scss/main.scss */
+/* line 577, ../../scss/main.scss */
 .region-sponsors .view-content {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -798,7 +798,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Torneos
  */
-/* line 584, ../../scss/main.scss */
+/* line 585, ../../scss/main.scss */
 .thumbnail {
   position: relative;
   border: 1px solid #ddd;
@@ -810,7 +810,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 594, ../../scss/main.scss */
+/* line 595, ../../scss/main.scss */
 a.thumb-info {
   display: block;
   overflow: hidden;
@@ -818,14 +818,14 @@ a.thumb-info {
   text-decoration: none;
 }
 
-/* line 600, ../../scss/main.scss */
+/* line 601, ../../scss/main.scss */
 a.thumb-info img {
   border-radius: 3px;
   position: relative;
   transition: all 0.2s linear 0s;
 }
 
-/* line 605, ../../scss/main.scss */
+/* line 606, ../../scss/main.scss */
 a.thumb-info span.thumb-info-title {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   color: #fff;
@@ -842,7 +842,7 @@ a.thumb-info span.thumb-info-title {
   z-index: 1;
 }
 
-/* line 620, ../../scss/main.scss */
+/* line 621, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   background-color: rgba(244, 245, 255, 0.5);
@@ -859,7 +859,7 @@ a.thumb-info span.thumb-info-action {
   transition: all 0.3s ease 0s;
 }
 
-/* line 635, ../../scss/main.scss */
+/* line 636, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon {
   background: #ccc none repeat scroll 0 0;
   background-color: #0088cc;
@@ -877,23 +877,23 @@ a.thumb-info span.thumb-info-action-icon {
   transition: all 0.3s ease 0s;
 }
 
-/* line 651, ../../scss/main.scss */
+/* line 652, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action {
   opacity: 1;
 }
 
-/* line 654, ../../scss/main.scss */
+/* line 655, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action-icon {
   top: 0;
   right: 0;
 }
 
-/* line 658, ../../scss/main.scss */
+/* line 659, ../../scss/main.scss */
 a.thumb-info:hover img {
   transform: scale(1.2);
 }
 
-/* line 661, ../../scss/main.scss */
+/* line 662, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon i {
   font-size: 24px;
   left: 3px;
@@ -902,7 +902,7 @@ a.thumb-info span.thumb-info-action-icon i {
   color: white;
 }
 
-/* line 669, ../../scss/main.scss */
+/* line 670, ../../scss/main.scss */
 .partido-date .day {
   background-color: #fcfcfc;
   color: #333;
@@ -913,7 +913,7 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 20px 30px;
   text-align: center;
 }
-/* line 679, ../../scss/main.scss */
+/* line 680, ../../scss/main.scss */
 .partido-date .month {
   background-color: #0da508;
   color: #fff;

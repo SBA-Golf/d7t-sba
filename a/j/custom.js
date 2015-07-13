@@ -49,7 +49,7 @@ vdj(document).ready(function($) {
   // OWL Carousel 2
   vdj('.owl-carousel').owlCarousel({
     items:4,
-    nav:false,
+    nav:true,
     loop:true,
     margin:10,
     autoplay: true,

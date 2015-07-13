@@ -564,7 +564,8 @@ footer#main-footer {
 .region-sponsors {
   @include rhythm-borders;
   border: none;
-  background-color: gray;
+  //background-color: gray;
+  background-color: white;
   h2 {
     @include rhythm;
     margin-top: 0;

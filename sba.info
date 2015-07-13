@@ -30,7 +30,7 @@ stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap.min.css
 stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap-theme.min.css
 stylesheets[all][] = a/j/slider-revolution/src/css/settings.css
 stylesheets[all][] = a/j/OwlCarousel2/dist/assets/owl.carousel.min.css
-stylesheets[all][] = a/j/OwlCarousel2/dist/assets/owl.theme.default.min.css
+stylesheets[all][] = a/j/OwlCarousel2/dist/assets/owl.theme.green.min.css
 stylesheets[all][] = a/c/main.css
  
 ;;;;;;;;;;;;;;;;;;;;
