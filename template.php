@@ -102,6 +102,10 @@ function sba_preprocess_block(&$variables) {
 
 }
 
+function sba_pager($variables) {
+  //
+}
+
 function sba_preprocess_views_view(&$variables) {
   if ($variables['view']->name == 'calendario_de_torneos' && $variables['view']->current_display == 'block_1') {
     $variables['mini_calendar_month'] = strtolower(t(date('F', $variables['view']->date_info->month)));
