@@ -29,6 +29,8 @@ regions[legal]             = Legal
 stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap.min.css
 stylesheets[all][] = a/j/bootstrap/dist/css/bootstrap-theme.min.css
 stylesheets[all][] = a/j/slider-revolution/src/css/settings.css
+stylesheets[all][] = a/j/OwlCarousel2/dist/assets/owl.carousel.min.css
+stylesheets[all][] = a/j/OwlCarousel2/dist/assets/owl.theme.default.min.css
 stylesheets[all][] = a/c/main.css
  
 ;;;;;;;;;;;;;;;;;;;;
@@ -40,6 +42,7 @@ scripts[] = a/j/slider-revolution/src/js/jquery.themepunch.plugins.min.js
 scripts[] = a/j/sticky/jquery.sticky.js
 scripts[] = a/j/masonry/dist/masonry.pkgd.min.js
 scripts[] = a/j/imagesloaded/imagesloaded.pkgd.min.js
+scripts[] = a/j/OwlCarousel2/dist/owl.carousel.min.js
 scripts[] = a/j/custom.js
 
 ;;;;;;;;;;;;;;;;;;;;

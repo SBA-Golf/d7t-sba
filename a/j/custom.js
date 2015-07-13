@@ -30,7 +30,7 @@ vdj(document).ready(function($) {
     event.preventDefault();
     vdj('html, body').animate({scrollTop: 0}, duration);
     return false;
-  })
+  });
 
   // Masonry
   /*
@@ -45,4 +45,27 @@ vdj(document).ready(function($) {
     masonry_container.masonry("bindResize");
   });
   */
+
+  // OWL Carousel 2
+  vdj('.owl-carousel').owlCarousel({
+    items:4,
+    nav:false,
+    loop:true,
+    margin:10,
+    autoplay: true,
+    autoplayTimeout:5000,
+    autoplayHoverPause:true,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:5,
+        }
+    }
+  });
 });
