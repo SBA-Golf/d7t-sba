@@ -30,9 +30,11 @@
   <?php print render($content); ?>
   </div>
   <section id="documentos">
+  <?php if (!empty($content['field_partido_cronica']['#items']) || !empty($content['field_partido_clasificaciones']['#items'])): ?>
     <h2><?php print t('Documentos'); ?></h2>
     <?php print render($content['field_partido_cronica']); ?>
     <?php print render($content['field_partido_clasificaciones']); ?>
+  <?php endif; ?>
   </section>
   <section id="galeria">
     <?php print render($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
