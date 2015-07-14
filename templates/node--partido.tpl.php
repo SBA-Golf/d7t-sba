@@ -29,6 +29,7 @@
   <?php hide($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
   <?php print render($content); ?>
   </div>
+  <?php if (user_is_logged_in()): ?>
   <section id="documentos">
   <?php if (!empty($content['field_partido_cronica']['#items']) || !empty($content['field_partido_clasificaciones']['#items'])): ?>
     <h2><?php print t('Documentos'); ?></h2>
@@ -36,6 +37,7 @@
     <?php print render($content['field_partido_clasificaciones']); ?>
   <?php endif; ?>
   </section>
+  <?php endif; ?>
   <section id="galeria">
     <?php print render($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
   </section>
