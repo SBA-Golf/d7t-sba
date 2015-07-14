@@ -50,6 +50,7 @@ vdj(document).ready(function($) {
   vdj('.owl-carousel').owlCarousel({
     items:4,
     nav:true,
+    dots:false,
     loop:true,
     margin:10,
     autoplay: true,
