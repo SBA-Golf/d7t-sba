@@ -1,6 +1,6 @@
 var vdj = jQuery;
 vdj.noConflict();
-var masonry_container;
+var $masonry_container;
 
 vdj(document).ready(function($) {
   // sticky: Inicio
@@ -33,18 +33,16 @@ vdj(document).ready(function($) {
   });
 
   // Masonry
-  /*
-  masonry_container = $("#block-system-main .content .row");
-  masonry_container.imagesLoaded(function() {
-    masonry_container.masonry({
-      columnWidth: ".node-noticia",
-      itemSelector: ".node-noticia",
+  $masonry_container = vdj("#block-system-main .row");
+  $masonry_container.imagesLoaded(function() {
+    $masonry_container.masonry({
+      columnWidth: ".noticia",
+      itemSelector: ".noticia",
       percentPosition: "true",
       gutter: 0
     });
-    masonry_container.masonry("bindResize");
+    $masonry_container.masonry("bindResize");
   });
-  */
 
   // OWL Carousel 2
   vdj('.owl-carousel').owlCarousel({

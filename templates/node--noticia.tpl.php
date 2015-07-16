@@ -4,7 +4,7 @@
  */
 if ($teaser):
 ?>
-<div class="col-xs-12 col-sm-4">
+<div class="noticia col-xs-12 col-sm-4">
 <article class="node-noticia teaser">
 <header>
   <?php print render($title_prefix); ?>
