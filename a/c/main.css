@@ -587,14 +587,19 @@ footer#main-footer a:hover, footer#main-footer a:focus {
  * Galería de fotos
  */
 /* line 409, ../../scss/main.scss */
-.row.actions {
+#galeria {
+  overflow: hidden;
+}
+
+/* line 413, ../../scss/main.scss */
+.row.actions div {
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
 
-/* line 412, ../../scss/main.scss */
+/* line 417, ../../scss/main.scss */
 .portfolio-item {
   position: relative;
   margin-top: 1.61538em;
@@ -603,12 +608,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
   margin-top: 0;
 }
-/* line 417, ../../scss/main.scss */
+/* line 422, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview {
   overflow: hidden;
   position: relative;
 }
-/* line 421, ../../scss/main.scss */
+/* line 426, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay {
   position: absolute;
   top: 0;
@@ -621,7 +626,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transform: translateY(20%);
   transition: transform 0.5s ease 0s;
 }
-/* line 432, ../../scss/main.scss */
+/* line 437, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions {
   position: absolute;
   bottom: 15%;
@@ -630,7 +635,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-top: -24px;
   box-sizing: border-box;
 }
-/* line 439, ../../scss/main.scss */
+/* line 444, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link {
   background-color: #0da508;
@@ -644,13 +649,13 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   text-decoration: none;
   width: 48px;
 }
-/* line 449, ../../scss/main.scss */
+/* line 454, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom i,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link i {
   font-size: 20px;
   line-height: 48px;
 }
-/* line 457, ../../scss/main.scss */
+/* line 462, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description {
   position: absolute;
   top: 50px;
@@ -658,11 +663,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   right: 0;
   color: white;
 }
-/* line 464, ../../scss/main.scss */
+/* line 469, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description h4 a {
   color: white;
 }
-/* line 472, ../../scss/main.scss */
+/* line 477, ../../scss/main.scss */
 .portfolio-item:hover .portfolio-item-overlay {
   opacity: 1;
   transform: translateY(0px);
@@ -671,12 +676,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Magnific Popup
  */
-/* line 481, ../../scss/main.scss */
+/* line 486, ../../scss/main.scss */
 .image-source-link {
   color: #98C3D1;
 }
 
-/* line 485, ../../scss/main.scss */
+/* line 490, ../../scss/main.scss */
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -688,17 +693,17 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.3s ease-out;
 }
 
-/* line 496, ../../scss/main.scss */
+/* line 501, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready .mfp-container {
   opacity: 1;
 }
 
-/* line 499, ../../scss/main.scss */
+/* line 504, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
 
-/* line 503, ../../scss/main.scss */
+/* line 508, ../../scss/main.scss */
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
@@ -709,7 +714,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
  *
  * Fix overlaping of menu
  */
-/* line 513, ../../scss/main.scss */
+/* line 518, ../../scss/main.scss */
 #admin-menu {
   z-index: 500;
 }
@@ -717,21 +722,21 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Calendario
  */
-/* line 520, ../../scss/main.scss */
+/* line 525, ../../scss/main.scss */
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
   background-color: #ceedcd;
 }
 
-/* line 526, ../../scss/main.scss */
+/* line 531, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
   background: #ceedcd none repeat scroll 0 0;
 }
 
-/* line 532, ../../scss/main.scss */
+/* line 537, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
@@ -742,11 +747,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Google Map
  */
-/* line 542, ../../scss/main.scss */
+/* line 547, ../../scss/main.scss */
 #map-canvas {
   height: 400px;
 }
-/* line 544, ../../scss/main.scss */
+/* line 549, ../../scss/main.scss */
 #map-canvas img {
   max-width: inherit;
 }
@@ -754,11 +759,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Webform contacto
  */
-/* line 553, ../../scss/main.scss */
+/* line 558, ../../scss/main.scss */
 .webform-client-form label {
   display: none;
 }
-/* line 556, ../../scss/main.scss */
+/* line 561, ../../scss/main.scss */
 .webform-client-form #edit-submitted-mensaje {
   margin-bottom: 0;
 }
@@ -766,7 +771,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Patrocionios
  */
-/* line 564, ../../scss/main.scss */
+/* line 569, ../../scss/main.scss */
 .region-sponsors {
   border-width: 0.07692em;
   border-style: solid;
@@ -774,7 +779,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border: none;
   background-color: white;
 }
-/* line 569, ../../scss/main.scss */
+/* line 574, ../../scss/main.scss */
 .region-sponsors h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -787,7 +792,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
   text-align: center;
 }
-/* line 577, ../../scss/main.scss */
+/* line 582, ../../scss/main.scss */
 .region-sponsors .view-content {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -798,7 +803,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Torneos
  */
-/* line 585, ../../scss/main.scss */
+/* line 590, ../../scss/main.scss */
 .thumbnail {
   position: relative;
   border: 1px solid #ddd;
@@ -810,7 +815,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 595, ../../scss/main.scss */
+/* line 600, ../../scss/main.scss */
 a.thumb-info {
   display: block;
   overflow: hidden;
@@ -818,14 +823,14 @@ a.thumb-info {
   text-decoration: none;
 }
 
-/* line 601, ../../scss/main.scss */
+/* line 606, ../../scss/main.scss */
 a.thumb-info img {
   border-radius: 3px;
   position: relative;
   transition: all 0.2s linear 0s;
 }
 
-/* line 606, ../../scss/main.scss */
+/* line 611, ../../scss/main.scss */
 a.thumb-info span.thumb-info-title {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   color: #fff;
@@ -842,7 +847,7 @@ a.thumb-info span.thumb-info-title {
   z-index: 1;
 }
 
-/* line 621, ../../scss/main.scss */
+/* line 626, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   background-color: rgba(244, 245, 255, 0.5);
@@ -859,7 +864,7 @@ a.thumb-info span.thumb-info-action {
   transition: all 0.3s ease 0s;
 }
 
-/* line 636, ../../scss/main.scss */
+/* line 641, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon {
   background: #ccc none repeat scroll 0 0;
   background-color: #0088cc;
@@ -877,23 +882,23 @@ a.thumb-info span.thumb-info-action-icon {
   transition: all 0.3s ease 0s;
 }
 
-/* line 652, ../../scss/main.scss */
+/* line 657, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action {
   opacity: 1;
 }
 
-/* line 655, ../../scss/main.scss */
+/* line 660, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action-icon {
   top: 0;
   right: 0;
 }
 
-/* line 659, ../../scss/main.scss */
+/* line 664, ../../scss/main.scss */
 a.thumb-info:hover img {
   transform: scale(1.2);
 }
 
-/* line 662, ../../scss/main.scss */
+/* line 667, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon i {
   font-size: 24px;
   left: 3px;
@@ -902,7 +907,7 @@ a.thumb-info span.thumb-info-action-icon i {
   color: white;
 }
 
-/* line 670, ../../scss/main.scss */
+/* line 675, ../../scss/main.scss */
 .partido-date .day {
   background-color: #fcfcfc;
   color: #333;
@@ -913,7 +918,7 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 20px 30px;
   text-align: center;
 }
-/* line 680, ../../scss/main.scss */
+/* line 685, ../../scss/main.scss */
 .partido-date .month {
   background-color: #0da508;
   color: #fff;
@@ -933,7 +938,7 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Actualidad
  */
-/* line 697, ../../scss/main.scss */
+/* line 702, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .view-content .noticia {
   border-width: 0.07692em;
   border-style: solid;

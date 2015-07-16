@@ -406,8 +406,13 @@ footer#main-footer {
 /**
  * Galería de fotos
  */
+#galeria {
+  overflow: hidden;
+}
 .row.actions {
-  @include rhythm;
+  div {
+    @include rhythm;
+  }
 }
 .portfolio-item {
   position: relative;
