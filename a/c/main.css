@@ -929,3 +929,14 @@ a.thumb-info span.thumb-info-action-icon i {
   -webkit-border-bottom-right-radius: 4px;
   border-bottom-right-radius: 4px;
 }
+
+/**
+ * Actualidad
+ */
+/* line 697, ../../scss/main.scss */
+.view-actualidad.view-display-id-page .view-content .noticia {
+  border-width: 0.07692em;
+  border-style: solid;
+  padding: 1.53846em;
+  border: none;
+}

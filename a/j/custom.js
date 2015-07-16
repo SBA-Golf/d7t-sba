@@ -33,7 +33,7 @@ vdj(document).ready(function($) {
   });
 
   // Masonry
-  $masonry_container = vdj("#block-system-main .row");
+  $masonry_container = vdj(".region-content .row");
   $masonry_container.imagesLoaded(function() {
     $masonry_container.masonry({
       columnWidth: ".noticia",

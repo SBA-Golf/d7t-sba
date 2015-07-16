@@ -688,3 +688,15 @@ a.thumb-info span.thumb-info-action-icon i {
     @include border-bottom-radius(4px);
   }
 }
+
+/**
+ * Actualidad
+ */
+.view-actualidad.view-display-id-page {
+  .view-content {
+    .noticia {
+      @include rhythm-borders;
+      border: none;
+    }
+  }
+}
