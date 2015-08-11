@@ -72,7 +72,7 @@ html {
 
 /* line 8, ../../scss/_typography.scss */
 body {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 
 /* line 7, ../../scss/main.scss */
