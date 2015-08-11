@@ -800,10 +800,15 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
 }
 
+/* line 586, ../../scss/main.scss */
+.view-display-id-page_1 .row > div {
+  padding: 1em;
+}
+
 /**
  * Torneos
  */
-/* line 590, ../../scss/main.scss */
+/* line 593, ../../scss/main.scss */
 .thumbnail {
   position: relative;
   border: 1px solid #ddd;
@@ -815,7 +820,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 600, ../../scss/main.scss */
+/* line 603, ../../scss/main.scss */
 a.thumb-info {
   display: block;
   overflow: hidden;
@@ -823,14 +828,14 @@ a.thumb-info {
   text-decoration: none;
 }
 
-/* line 606, ../../scss/main.scss */
+/* line 609, ../../scss/main.scss */
 a.thumb-info img {
   border-radius: 3px;
   position: relative;
   transition: all 0.2s linear 0s;
 }
 
-/* line 611, ../../scss/main.scss */
+/* line 614, ../../scss/main.scss */
 a.thumb-info span.thumb-info-title {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   color: #fff;
@@ -847,7 +852,7 @@ a.thumb-info span.thumb-info-title {
   z-index: 1;
 }
 
-/* line 626, ../../scss/main.scss */
+/* line 629, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   background-color: rgba(244, 245, 255, 0.5);
@@ -864,7 +869,7 @@ a.thumb-info span.thumb-info-action {
   transition: all 0.3s ease 0s;
 }
 
-/* line 641, ../../scss/main.scss */
+/* line 644, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon {
   background: #ccc none repeat scroll 0 0;
   background-color: #0088cc;
@@ -882,23 +887,23 @@ a.thumb-info span.thumb-info-action-icon {
   transition: all 0.3s ease 0s;
 }
 
-/* line 657, ../../scss/main.scss */
+/* line 660, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action {
   opacity: 1;
 }
 
-/* line 660, ../../scss/main.scss */
+/* line 663, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action-icon {
   top: 0;
   right: 0;
 }
 
-/* line 664, ../../scss/main.scss */
+/* line 667, ../../scss/main.scss */
 a.thumb-info:hover img {
   transform: scale(1.2);
 }
 
-/* line 667, ../../scss/main.scss */
+/* line 670, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon i {
   font-size: 24px;
   left: 3px;
@@ -907,7 +912,7 @@ a.thumb-info span.thumb-info-action-icon i {
   color: white;
 }
 
-/* line 675, ../../scss/main.scss */
+/* line 678, ../../scss/main.scss */
 .partido-date .day {
   background-color: #fcfcfc;
   color: #333;
@@ -918,7 +923,7 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 20px 30px;
   text-align: center;
 }
-/* line 685, ../../scss/main.scss */
+/* line 688, ../../scss/main.scss */
 .partido-date .month {
   background-color: #0da508;
   color: #fff;
@@ -938,7 +943,7 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Actualidad
  */
-/* line 702, ../../scss/main.scss */
+/* line 705, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .view-content .noticia {
   border-width: 0.07692em;
   border-style: solid;
