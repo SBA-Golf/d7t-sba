@@ -72,7 +72,7 @@ html {
 
 /* line 8, ../../scss/_typography.scss */
 body {
-  font-family: "Open Sans", sasns-serif;
+  font-family: "Open Sans";
 }
 
 /* line 7, ../../scss/main.scss */
@@ -387,7 +387,7 @@ a.back-to-top {
 }
 /* line 247, ../../scss/main.scss */
 .region-sidebar-first .block h2 {
-  border-bottom: 1px solid #6e737c;
+  border-bottom: 1px solid #6e737d;
   margin-bottom: 1em;
 }
 /* line 250, ../../scss/main.scss */
@@ -560,7 +560,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 .region-footer-second-col .block h2,
 .region-footer-third-col .block h2,
 .region-footer-fourth-col .block h2 {
-  border-bottom: 1px solid #6e737c;
+  border-bottom: 1px solid #6e737d;
   margin-bottom: 1em;
 }
 /* line 389, ../../scss/main.scss */
@@ -726,14 +726,14 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
-  background-color: #ceedcd;
+  background-color: #cfedce;
 }
 
 /* line 531, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
-  background: #ceedcd none repeat scroll 0 0;
+  background: #cfedce none repeat scroll 0 0;
 }
 
 /* line 537, ../../scss/main.scss */
@@ -741,7 +741,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .cutoff {
-  background: #ceedcd none repeat scroll 0 0;
+  background: #cfedce none repeat scroll 0 0;
 }
 
 /**
