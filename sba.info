@@ -23,6 +23,10 @@ regions[footer_third_col]  = Footer third column
 regions[footer_fourth_col] = Footer fourth column
 regions[legal]             = Legal
 
+regions[front_first_col]   = Front page first column
+regions[front_second_col]  = Front page second column
+regions[front_third_col]   = Front page third column
+
 ;;;;;;;;;;;;;;;;;;;;
 ;; stylesheets
 ;;;;;;;;;;;;;;;;;;;;

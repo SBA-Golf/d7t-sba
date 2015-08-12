@@ -950,3 +950,38 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 1.53846em;
   border: none;
 }
+
+/**
+ * Portada
+ */
+/* line 717, ../../scss/main.scss */
+.front-page .front-col > span {
+  display: block;
+  text-align: center;
+  margin-top: 1.61538em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.61538em;
+  margin-top: 0;
+}
+/* line 723, ../../scss/main.scss */
+.front-page .front-col h2 {
+  margin-top: 1.61538em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.61538em;
+  text-align: center;
+  text-transform: uppercase;
+}
+/* line 729, ../../scss/main.scss */
+.front-page ul {
+  list-style-type: disc;
+}
+/* line 731, ../../scss/main.scss */
+.front-page ul a {
+  font-weight: bold;
+}
+/* line 735, ../../scss/main.scss */
+.front-page p {
+  text-align: justify;
+}

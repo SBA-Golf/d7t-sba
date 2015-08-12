@@ -708,3 +708,31 @@ a.thumb-info span.thumb-info-action-icon i {
     }
   }
 }
+
+/**
+ * Portada
+ */
+.front-page {
+  .front-col {
+    &>span {
+      display: block;
+      text-align: center;
+      @include rhythm;
+      margin-top: 0;
+    }
+    h2 {
+      @include rhythm;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  ul {
+    list-style-type: disc;
+    a {
+      font-weight: bold;
+    }
+  }
+  p {
+    text-align: justify;
+  }
+}
