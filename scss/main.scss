@@ -267,16 +267,18 @@ a.back-to-top {
         text-transform: lowercase;
       }
     }
-    li {
-      @include border-radius(5px);
-      padding: 5px;
-      a {
-        display: block;
-        margin: 0 auto;
+    ul {
+      li {
+        @include border-radius(5px);
+        padding: 5px;
+        a {
+          display: block;
+          margin: 0 auto;
+        }
       }
-    }
-    li.date-prev {
-      margin-left: 0;
+      li.date-prev {
+        margin-left: 0;
+      }
     }
   }
 }
@@ -334,18 +336,20 @@ a.back-to-top {
 
   // Corrijo posición del botón prev en calendario.
   .date-nav.item-list {
-    li {
-      @include border-radius(5px);
-      padding: 5px;
-      a {
-        display: block;
-        margin: 0 auto;
+    ul.pager {
+      li {
+        @include border-radius(5px);
+        padding: 5px;
+        a {
+          display: block;
+          margin: 0 auto;
+        }
       }
-    }
-    li.date-prev {
-      left: 0;
-      right: auto;
-      margin-left: 0;
+      li.date-prev {
+        left: 0;
+        right: auto;
+        margin-left: 0;
+      }
     }
   }
 }
@@ -402,6 +406,32 @@ footer#main-footer {
     }
   }
 }
+
+/**
+ * Front page columns
+ */
+.region-front-first-col,
+.region-front-second-col,
+.region-front-third-col {
+  .date-nav.item-list {
+    ul.pager {
+      li {
+        @include border-radius(5px);
+        padding: 5px;
+        a {
+          display: block;
+          margin: 0 auto;
+        }
+      }
+      li.date-prev {
+        left: 0;
+        right: auto;
+        margin-left: 0;
+      }
+    }
+  }
+}
+
 
 /**
  * Galería de fotos
