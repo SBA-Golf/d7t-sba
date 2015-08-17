@@ -744,10 +744,11 @@ a.thumb-info span.thumb-info-action-icon i {
  */
 .front-page {
   .front-col {
+    @include rhythm;
     &>span {
       display: block;
       text-align: center;
-      @include rhythm;
+      //@include rhythm;
       margin-top: 0;
     }
     h2 {

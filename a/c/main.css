@@ -982,17 +982,20 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Portada
  */
-/* line 747, ../../scss/main.scss */
-.front-page .front-col > span {
-  display: block;
-  text-align: center;
+/* line 746, ../../scss/main.scss */
+.front-page .front-col {
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
+}
+/* line 748, ../../scss/main.scss */
+.front-page .front-col > span {
+  display: block;
+  text-align: center;
   margin-top: 0;
 }
-/* line 753, ../../scss/main.scss */
+/* line 754, ../../scss/main.scss */
 .front-page .front-col h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1001,15 +1004,15 @@ a.thumb-info span.thumb-info-action-icon i {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 759, ../../scss/main.scss */
+/* line 760, ../../scss/main.scss */
 .front-page ul {
   list-style-type: disc;
 }
-/* line 761, ../../scss/main.scss */
+/* line 762, ../../scss/main.scss */
 .front-page ul a {
   font-weight: bold;
 }
-/* line 765, ../../scss/main.scss */
+/* line 766, ../../scss/main.scss */
 .front-page p {
   text-align: justify;
 }
