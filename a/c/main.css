@@ -941,7 +941,7 @@ a.thumb-info span.thumb-info-action-icon i {
 }
 
 /* line 708, ../../scss/main.scss */
-.partido-date .day {
+.partido-date .month {
   background-color: #fcfcfc;
   color: #333;
   font-size: 36px;
@@ -952,7 +952,7 @@ a.thumb-info span.thumb-info-action-icon i {
   text-align: center;
 }
 /* line 718, ../../scss/main.scss */
-.partido-date .month {
+.partido-date .day {
   background-color: #0da508;
   color: #fff;
   font-weight: 700;
