@@ -747,10 +747,11 @@ a.thumb-info span.thumb-info-action-icon i {
       margin: 0 0.625em 0 0;
       padding: 0.47375em 1.1em;
       font-size: 1em;;
-      color: #303030;
+      font-weight: 700;
+      color: white;
       line-height: 1.4em;
       @include border-radius(100%);
-      background-color: #d0c90b;
+      background-color: $verde;
     }
     .news-right {
       width: 82%;
@@ -760,7 +761,6 @@ a.thumb-info span.thumb-info-action-icon i {
       font-size: 12px;
       h4 {
         a {
-          color: #d0c90b !important;
         }
       }
     }
@@ -777,6 +777,7 @@ a.thumb-info span.thumb-info-action-icon i {
       margin: 0 0.625em 0 0;
       padding: 0.47375em 1.1em;
       font-size: 1em;;
+      font-weight: 700;
       color: #303030;
       line-height: 1.4em;
       @include border-radius(100%);
