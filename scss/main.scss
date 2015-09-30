@@ -738,6 +738,31 @@ a.thumb-info span.thumb-info-action-icon i {
     }
   }
 }
+.view-actualidad.view-display-id-block_1 {
+  .news-box {
+    overflow: hidden;
+    position: relative;
+    padding: 0;
+    margin: 20px 0 40px;
+    .news-meta {
+      float: left;
+      margin: 0 10px 0 0;
+      padding: 7px 22px;
+      font-size: 20px;
+      color: #303030;
+      line-height: 28px;
+      @include border-radius(50%);
+      background-color: #d0c90b;
+    }
+    .news-right {
+      width: 62%;
+      float: right;
+      margin: 0;
+      padding: 0;
+      font-size: 12px;
+    }
+  }
+}
 
 /**
  * Portada

@@ -91,10 +91,9 @@
   <section id="footer-section-1">
   <div class="container">
     <div class="row">
-      <div class="col-md-3"><?php print render($page['footer_first_col']); ?></div>
-      <div class="col-md-3"><?php print render($page['footer_second_col']); ?></div>
-      <div class="col-md-3"><?php print render($page['footer_third_col']); ?></div>
-      <div class="col-md-3"><?php print render($page['footer_fourth_col']); ?></div>
+      <div class="col-md-4"><?php print render($page['footer_first_col']); ?></div>
+      <div class="col-md-4"><?php print render($page['footer_second_col']); ?></div>
+      <div class="col-md-4"><?php print render($page['footer_third_col']); ?></div>
     </div>
   </section>
   <section id="footer-section-2">
