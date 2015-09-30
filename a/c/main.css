@@ -998,24 +998,31 @@ a.thumb-info span.thumb-info-action-icon i {
   -webkit-border-radius: 100%;
   border-radius: 100%;
   background-color: #0da508;
+  text-align: center;
+  min-width: 4.25em;
+  min-height: 4.25em;
 }
-/* line 756, ../../scss/main.scss */
+/* line 759, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-right {
-  width: 82%;
+  width: 72%;
   float: right;
   margin: 0;
   padding: 0;
   font-size: 12px;
 }
+/* line 765, ../../scss/main.scss */
+.view-actualidad.view-display-id-page .news-box .news-right h4 {
+  font-weight: bold;
+}
 
-/* line 770, ../../scss/main.scss */
+/* line 774, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box {
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 775, ../../scss/main.scss */
+/* line 779, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-meta {
   float: left;
   margin: 0 0.625em 0 0;
@@ -1028,16 +1035,23 @@ a.thumb-info span.thumb-info-action-icon i {
   -webkit-border-radius: 100%;
   border-radius: 100%;
   background-color: #d0c90b;
+  text-align: center;
+  min-width: 4.25em;
+  min-height: 4.25em;
 }
-/* line 786, ../../scss/main.scss */
+/* line 793, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right {
-  width: 82%;
+  width: 72%;
   float: right;
   margin: 0;
   padding: 0;
   font-size: 12px;
 }
-/* line 793, ../../scss/main.scss */
+/* line 799, ../../scss/main.scss */
+.view-actualidad.view-display-id-block_1 .news-box .news-right h4 {
+  font-weight: bold;
+}
+/* line 801, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right h4 a {
   color: #d0c90b !important;
 }
@@ -1045,20 +1059,20 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Portada
  */
-/* line 805, ../../scss/main.scss */
+/* line 813, ../../scss/main.scss */
 .front-page .front-col {
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 807, ../../scss/main.scss */
+/* line 815, ../../scss/main.scss */
 .front-page .front-col > span {
   display: block;
   text-align: center;
   margin-top: 0;
 }
-/* line 813, ../../scss/main.scss */
+/* line 821, ../../scss/main.scss */
 .front-page .front-col h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1067,15 +1081,15 @@ a.thumb-info span.thumb-info-action-icon i {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 819, ../../scss/main.scss */
+/* line 827, ../../scss/main.scss */
 .front-page ul {
   list-style-type: disc;
 }
-/* line 821, ../../scss/main.scss */
+/* line 829, ../../scss/main.scss */
 .front-page ul a {
   font-weight: bold;
 }
-/* line 825, ../../scss/main.scss */
+/* line 833, ../../scss/main.scss */
 .front-page p {
   text-align: justify;
 }
