@@ -61,16 +61,22 @@
         <?php //print render($page['content']); ?>
         <div class="row">
         <div class="col-sm-4 front-col">
+        <?php if ($page['front_first_col']): ?>
         <span class="h1"><i class="glyphicon glyphicon-bullhorn"> </i></span>
-        <?php if ($page['front_first_col']) print render($page['front_first_col']); ?>
+        <?php print render($page['front_first_col']); ?>
+        <?php endif; ?>
         </div>
         <div class="col-sm-4 front-col">
+        <?php if ($page['front_second_col']): ?>
         <span class="h1"><i class="glyphicon glyphicon-calendar"> </i></span>
-        <?php if ($page['front_second_col']) print render($page['front_second_col']); ?>
+        <?php print render($page['front_second_col']); ?>
+        <?php endif; ?>
         </div>
         <div class="col-sm-4 front-col">
+        <?php if ($page['front_third_col']): ?>
         <span class="h1"><i class="glyphicon glyphicon-stats"> </i></span>
-        <?php if ($page['front_third_col']) print render($page['front_third_col']); ?>
+        <?php print render($page['front_third_col']); ?>
+        <?php endif; ?>
         </div>
         </div>
         <?php if ($page['after_content']) print render($page['after_content']); ?>
