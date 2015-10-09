@@ -83,11 +83,23 @@ input[type="submit"] {
 }
 
 #header {
-  background-color: $gris-oscuro;
+  border-bottom: 1px solid #bbb;
+  background-color: #f4f4f4;
   a {
     color: $gris-claro;
     &:hover {
       color: $verde;
+    }
+  }
+}
+
+#block-system-user-menu {
+  .content {
+    ul {
+      text-align: right;
+      li {
+        display: inline;
+      }
     }
   }
 }
@@ -98,7 +110,7 @@ input[type="submit"] {
 .region-top-header {
   overflow: hidden;
   font-weight: 700;
-  @include adjust-font-size-to(10px);
+  @include adjust-font-size-to(12px);
   #block-system-user-menu {
     .content {
       ul {
@@ -126,6 +138,31 @@ input[type="submit"] {
       float: left;
       #edit-submit {
         margin-top: 24px;
+      }
+    }
+  }
+  #block-block-8 {
+    .jumbotron {
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      ul {
+        li {
+          padding: 0.583em 1.75em;
+          border-left: solid 1px #e9e9e9;
+          a {
+            color: black;
+          }
+          &:hover {
+            color: $verde;
+            a {
+              color: $verde;
+            }
+          }
+        }
+        li:first-child {
+          border-left: 0 none;
+        }
       }
     }
   }
@@ -161,6 +198,10 @@ input[type="submit"] {
       li {
         transition: background 0.6s ease 0s;
         border-right: 1px solid white;
+        a {
+          text-transform: uppercase;
+          font-weight: 700;
+        }
         &:hover {
           background-color: $verde;
           a {
@@ -278,6 +319,13 @@ a.back-to-top {
       }
       li.date-prev {
         margin-left: 0;
+      }
+    }
+  }
+  #block-views-calendario-de-torneos-block-2 {
+    .views-field-title {
+      a {
+        font-weight: 700;
       }
     }
   }
@@ -430,6 +478,43 @@ footer#main-footer {
       }
     }
   }
+  #block-views-calendario-de-torneos-block-3 {
+    ul {
+      list-style-type: none;
+    }
+    .upcoming-box {
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      margin: 20px 0 40px;
+      .upcoming-meta {
+        float: left;
+        margin: 0 0.625em 0 0;
+        padding: 0.47375em 1.1em;
+        font-size: 1em;;
+        font-weight: 700;
+        color: white;
+        line-height: 1.4em;
+        @include border-radius(100%);
+        background-color: $verde;
+        text-align: center;
+        min-width: 4.25em;
+        min-height: 4.25em;
+      }
+      .upcoming-right {
+        width: 82%;
+        float: right;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        h4 {
+          font-weight: bold;
+          a {
+          }
+        }
+      }
+    }
+  }
 }
 
 
@@ -555,7 +640,14 @@ footer#main-footer {
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
-  background-color: tint($verde, 80%);
+  background-color: $verde;
+  color: white;
+}
+
+.calendar-calendar tr td.has-events a,
+.calendar-calendar tr.odd td.has-events a,
+.calendar-calendar tr.even td.has-events a {
+  font-weight: bold;
 }
 
 .calendar-calendar .month-view .full td.multi-day div.monthview,
@@ -571,6 +663,9 @@ footer#main-footer {
   background: tint($verde, 80%) none repeat scroll 0 0;
 }
 
+.calendar-calendar tr td {
+  padding: 0.5em;
+}
 /**
  * Google Map
  */
