@@ -243,6 +243,59 @@ input[type="submit"] {
 main {
   @include rhythm-borders;
   border: none;
+  #block-views-calendario-de-torneos-block-1 {
+    .calendar-calendar {
+      tbody {
+        tr {
+          td {
+            text-align: center;
+            .month {
+              padding: 0.5em;
+              max-width: 40px;
+              margin: 0 auto;
+            }
+            &.has-events {
+              .month {
+                background-color: $verde;
+                @include border-radius(50%);
+                a {
+                  color: white;
+                }
+              }
+            }
+            &.today {
+              .month {
+                background-color: white;
+                @include border-radius(100%);
+                border: solid 3px $verde;
+                color: $verde;
+                font-weight: 700;
+                a {
+                  color: $verde;
+                  font-weight: 700;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.front-page {
+    .calendar-calendar {
+      tbody {
+        tr {
+          td {
+            .month {
+              padding: 0.5em;
+              max-width: 40px;
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 #page-title {
@@ -640,7 +693,7 @@ footer#main-footer {
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
-  background-color: $verde;
+  background-color: white;
   color: white;
 }
 
