@@ -169,7 +169,8 @@ function sba_field__field_patrocinador_logo__patrocinador($variables) {
 }
 
 function sba_field__field_partido_patrocinadores__partido($variables) {
-  $output = '<div class="row">';
+  //$output = '<div class="row">';
+  $output = '';
 
   foreach ($variables['items'] as $delta => $item) {
     $output .= '<div class="col-md-4">';
@@ -177,7 +178,7 @@ function sba_field__field_partido_patrocinadores__partido($variables) {
     $output .= '</div>';
   }
 
-  $output .= '</div>';
+  //$output .= '</div>';
 
   return $output;
 }
