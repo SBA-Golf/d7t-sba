@@ -26,6 +26,7 @@
 ?>
 <a href="/node/<?php print $variables['row']->nid; ?>" class="thumb-info">
 <?php foreach ($fields as $id => $field): ?>
+<?php if ($id == 'title' || $id == 'field_imagen_torneo'): ?>
   <?php if (!empty($field->separator)): ?>
     <?php print $field->separator; ?>
   <?php endif; ?>
@@ -34,5 +35,12 @@
     <?php print $field->label_html; ?>
     <?php print $field->content; ?>
   <?php print $field->wrapper_suffix; ?>
+<?php endif; ?>
 <?php endforeach; ?>
 </a>
+<hr/>
+<?php foreach ($fields as $id => $field): ?>
+<?php if ($id == 'field_edicion_reglamento' || $id == 'field_edicion_clasificacion'): ?>
+    <?php print $field->wrapper_prefix . $field->label_html . $field->content . $field->wrapper_suffix; ?>
+<?php endif; ?>
+<?php endforeach; ?>

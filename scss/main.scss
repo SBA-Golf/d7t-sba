@@ -768,6 +768,11 @@ footer#main-footer {
 /**
  * Torneos
  */
+.view-display-id-entity_view_1 {
+  li {
+    min-height: 320px;
+  }
+}
 .thumbnail {
   position: relative;
   border: 1px solid #ddd;
