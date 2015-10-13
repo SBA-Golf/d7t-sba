@@ -41,10 +41,11 @@
 <!-- Fin Slogan -->
 
 <!-- Page title if in not frontpage -->
+
 <?php if (!drupal_is_front_page()): ?>
 <div id="page-title">
 <?php if ($title): ?>
-<h1><?php print $title; ?></h1>
+<!--<h1><?php //print $title; ?></h1>-->
 <?php endif; ?>
 </div>
 <?php endif; ?>
@@ -69,6 +70,9 @@
     <div class="row">
       <div class="col-md-9">
         <aside id="tabs"><?php print render($tabs); ?></aside>
+        <header class="page-title">
+          <h1><span><?php print $title; ?></span></h1>
+        </header>
         <?php print render($page['content']); ?>
         <?php if ($page['after_content']) print render($page['after_content']); ?>
       </div>

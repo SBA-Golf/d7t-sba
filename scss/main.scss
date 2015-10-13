@@ -243,6 +243,20 @@ input[type="submit"] {
 main {
   @include rhythm-borders;
   border: none;
+  .page-title {
+    margin-bottom: 2em;
+    h1 {
+      border-bottom: 1px solid tint($gris-oscuro, 30%);
+      margin-bottom: 1em;
+      span {
+        border-bottom: 2px solid $verde-oscuro;
+        display: inline-block;
+        margin-bottom: -1px;
+        padding-bottom: 0.5em;
+        padding-right: 1em;
+      }
+    }
+  }
   #block-views-calendario-de-torneos-block-1 {
     .calendar-calendar {
       tbody {
