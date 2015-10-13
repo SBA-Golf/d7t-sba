@@ -12,6 +12,7 @@ function sba_preprocess_html(&$variables) {
   }
 
   // Google Map
+  /*
   if (theme_get_setting('google_map_js', 'sba')) {
     drupal_add_js('jQuery(document).ready(function($) {
       var map;
@@ -61,6 +62,7 @@ function sba_preprocess_html(&$variables) {
       }
       });',array('type' => 'inline', 'scope' => 'header'));
   }
+   */
 }
 
 function sba_preprocess_page(&$variables) {
