@@ -91,6 +91,14 @@ input[type="submit"] {
       color: $verde;
     }
   }
+  #user-menu {
+    a {
+      color: #1d1d1d;
+      &:hover {
+        color: $verde;
+      }
+    }
+  }
 }
 
 #block-system-user-menu {

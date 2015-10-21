@@ -72,6 +72,11 @@ function sba_preprocess_page(&$variables) {
     $variables['primary_nav'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
     $variables['primary_nav']['#theme_wrappers'] = array('menu_tree__primary');
   }
+  $variables['secondary_nav'] = FALSE;
+  if ($variables['secondary_menu']) {
+    $variables['secondary_nav'] = menu_tree(variable_get('menu_user_links_source', 'user-menu'));
+    $variables['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
+  }
 }
 
 function sba_preprocess_node(&$variables) {
@@ -79,6 +84,9 @@ function sba_preprocess_node(&$variables) {
 
 function sba_menu_tree__primary(&$variables) {
   return '<ul class="nav navbar-nav">' .$variables['tree'] . '</ul>';
+}
+function sba_menu_tree__secondary(&$variables) {
+  return '<ul id="user-menu" class="list-inline text-right">' .$variables['tree'] . '</ul>';
 }
 
 function sba_preprocess_block(&$variables) {
