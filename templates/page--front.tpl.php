@@ -1,11 +1,5 @@
 <!-- Header -->
 <header id="header" class="clearfix">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <?php print render($secondary_nav); ?>
-      </div>
-    </div>
     <?php print render($page['top_header']); ?>
     <?php print render($page['header']); ?>
   </div>
