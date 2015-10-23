@@ -27,7 +27,7 @@
   <?php hide($content['field_partido_cronica']); ?>
   <?php hide($content['field_partido_menu_comida']); ?>
   <?php hide($content['field_partido_titulo_charla']); ?>
-  <?php hide($content['field_partido_ponente_charla']); ?>
+  <?php hide($content['field_partido_charla_ponente']); ?>
   <?php hide($content['field_partido_resumen_charla']); ?>
   <?php hide($content['field_partido_adjuntos_charla']); ?>
   <?php hide($content['field_partido_patrocinadores']); ?>
@@ -51,22 +51,28 @@
   </section>
   <?php endif; ?>
 
+  <?php if (user_is_logged_in()): ?>
   <section id="comida">
     <h2><?php print t('Comida'); ?></h2>
     <?php print render($content['field_partido_menu_comida']); ?>
   </section>
+  <?php endif; ?>
 
+  <?php if (user_is_logged_in()): ?>
   <section id="charla">
     <h2><?php print t('Charla'); ?></h2>
     <?php print render($content['field_partido_titulo_charla']); ?>
-    <?php print render($content['field_partido_ponente_charla']); ?>
+    <?php print render($content['field_partido_charla_ponente']); ?>
     <?php print render($content['field_partido_resumen_charla']); ?>
     <?php print render($content['field_partido_adjuntos_charla']); ?>
   </section>
+  <?php endif; ?>
 
+  <?php if (user_is_logged_in()): ?>
   <section id="galeria">
     <?php print render($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
   </section>
+  <?php endif; ?>
 
   <section id="patrocinios">
     <h2><?php print t('Patrocinadores'); ?></h2>
