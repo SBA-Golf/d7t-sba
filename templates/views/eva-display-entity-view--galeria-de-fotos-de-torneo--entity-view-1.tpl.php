@@ -49,11 +49,13 @@
     global $user;
     if (in_array('editor', $user->roles)|| $user->uid == 1):
   ?>
+<!--
     <div class="row actions">
       <div class="col-xs-12">
-        <a href="/node/add/galeria?field_galeria_partido=<?php print $view->current_entity->nid; ?>"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir galería</a>
+        <a href="/node/add/galeria?field_galeria_partido=<?php //print $view->current_entity->nid; ?>"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir galería</a>
       </div>
     </div>
+-->
   <?php endif; ?>
 
   <?php if ($rows): ?>
