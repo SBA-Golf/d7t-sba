@@ -29,5 +29,6 @@
   </div>
   <div class="upcoming-right">
     <h4><?php print $fields['title']->content; ?></h4>
+    <p><?php print $fields['field_partido_campo']->content ?></p>
   </div>
 </div>
