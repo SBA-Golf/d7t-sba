@@ -31,7 +31,7 @@
   <?php hide($content['field_partido_patrocinadores']); ?>
   <?php hide($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
 
-  <?php if ($content['field_partido_ultima_hora']): ?>
+  <?php if (isset($content['field_partido_ultima_hora'])): ?>
   <section id="avisos" class="bg-info">
     <?php print render($content['field_partido_ultima_hora']); ?>
   </section>
