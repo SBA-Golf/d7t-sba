@@ -452,10 +452,16 @@ a.back-to-top {
     }
     #patrocinios,
     #galeria,
+    #charla,
+    #comida,
+    #avisos,
     #documentos {
       h2 {
         @include rhythm;
       }
+    }
+    #avisos {
+      margin-bottom: 2em;
     }
   }
 
