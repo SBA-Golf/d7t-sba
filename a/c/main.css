@@ -323,38 +323,41 @@ input[type="submit"] {
 /* line 198, ../../scss/main.scss */
 .navbar-brand {
   height: auto;
+  padding-bottom: 0;
 }
 
-/* line 201, ../../scss/main.scss */
+/* line 202, ../../scss/main.scss */
 #navbar-main-menu {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 204, ../../scss/main.scss */
+  /* line 205, ../../scss/main.scss */
   #navbar-main-menu ul {
     margin: 0;
     padding: 0;
     float: right;
   }
-  /* line 208, ../../scss/main.scss */
+  /* line 209, ../../scss/main.scss */
   #navbar-main-menu ul li {
     transition: background 0.6s ease 0s;
     border-right: 1px solid white;
+    font-size: 0.69231em;
+    line-height: 2.33333em;
   }
-  /* line 211, ../../scss/main.scss */
+  /* line 213, ../../scss/main.scss */
   #navbar-main-menu ul li a {
     text-transform: uppercase;
     font-weight: 700;
   }
-  /* line 215, ../../scss/main.scss */
+  /* line 217, ../../scss/main.scss */
   #navbar-main-menu ul li:hover {
     background-color: #0da508;
   }
-  /* line 217, ../../scss/main.scss */
+  /* line 219, ../../scss/main.scss */
   #navbar-main-menu ul li:hover a {
     color: white;
   }
-  /* line 221, ../../scss/main.scss */
+  /* line 223, ../../scss/main.scss */
   #navbar-main-menu ul li a {
     border-width: 0.07692em;
     border-style: solid;
@@ -364,20 +367,27 @@ input[type="submit"] {
     border: none;
     display: block;
   }
-  /* line 229, ../../scss/main.scss */
+  /* line 231, ../../scss/main.scss */
   #navbar-main-menu ul li.active-trail {
     background-color: #0da508;
   }
-  /* line 231, ../../scss/main.scss */
+  /* line 233, ../../scss/main.scss */
   #navbar-main-menu ul li.active-trail a {
     color: white;
+  }
+}
+@media (min-width: 992px) {
+  /* line 202, ../../scss/main.scss */
+  #navbar-main-menu {
+    font-size: 1.23077em;
+    line-height: 1.3125em;
   }
 }
 
 /**
  * Slider
  */
-/* line 246, ../../scss/main.scss */
+/* line 251, ../../scss/main.scss */
 #slider {
   margin-bottom: 3em;
 }
@@ -385,23 +395,23 @@ input[type="submit"] {
 /**
  * Page title
  */
-/* line 253, ../../scss/main.scss */
+/* line 258, ../../scss/main.scss */
 main {
   border-width: 0.07692em;
   border-style: solid;
   padding: 1.53846em;
   border: none;
 }
-/* line 256, ../../scss/main.scss */
+/* line 261, ../../scss/main.scss */
 main .page-title {
   margin-bottom: 2em;
 }
-/* line 258, ../../scss/main.scss */
+/* line 263, ../../scss/main.scss */
 main .page-title h1 {
   border-bottom: 1px solid #6e737d;
   margin-bottom: 1em;
 }
-/* line 261, ../../scss/main.scss */
+/* line 266, ../../scss/main.scss */
 main .page-title h1 span {
   border-bottom: 2px solid #054403;
   display: inline-block;
@@ -409,28 +419,28 @@ main .page-title h1 span {
   padding-bottom: 0.5em;
   padding-right: 1em;
 }
-/* line 274, ../../scss/main.scss */
+/* line 279, ../../scss/main.scss */
 main #block-views-calendario-de-torneos-block-1 .calendar-calendar tbody tr td {
   text-align: center;
 }
-/* line 276, ../../scss/main.scss */
+/* line 281, ../../scss/main.scss */
 main #block-views-calendario-de-torneos-block-1 .calendar-calendar tbody tr td .month {
   padding: 0.5em;
   max-width: 40px;
   margin: 0 auto;
 }
-/* line 282, ../../scss/main.scss */
+/* line 287, ../../scss/main.scss */
 main #block-views-calendario-de-torneos-block-1 .calendar-calendar tbody tr td.has-events .month {
   background-color: #0da508;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 285, ../../scss/main.scss */
+/* line 290, ../../scss/main.scss */
 main #block-views-calendario-de-torneos-block-1 .calendar-calendar tbody tr td.has-events .month a {
   color: white;
 }
-/* line 291, ../../scss/main.scss */
+/* line 296, ../../scss/main.scss */
 main #block-views-calendario-de-torneos-block-1 .calendar-calendar tbody tr td.today .month {
   background-color: white;
   -moz-border-radius: 100%;
@@ -440,19 +450,19 @@ main #block-views-calendario-de-torneos-block-1 .calendar-calendar tbody tr td.t
   color: #0da508;
   font-weight: 700;
 }
-/* line 297, ../../scss/main.scss */
+/* line 302, ../../scss/main.scss */
 main #block-views-calendario-de-torneos-block-1 .calendar-calendar tbody tr td.today .month a {
   color: #0da508;
   font-weight: 700;
 }
-/* line 313, ../../scss/main.scss */
+/* line 318, ../../scss/main.scss */
 main.front-page .calendar-calendar tbody tr td .month {
   padding: 0.5em;
   max-width: 40px;
   margin: 0 auto;
 }
 
-/* line 325, ../../scss/main.scss */
+/* line 330, ../../scss/main.scss */
 #page-title {
   border-width: 0.07692em;
   border-style: solid;
@@ -469,7 +479,7 @@ main.front-page .calendar-calendar tbody tr td .month {
   -webkit-background-size: contain;
   background-size: contain;
 }
-/* line 337, ../../scss/main.scss */
+/* line 342, ../../scss/main.scss */
 #page-title h1 {
   display: inline-block;
   padding: 1em;
@@ -479,7 +489,7 @@ main.front-page .calendar-calendar tbody tr td .month {
 /**
  * Back to top
  */
-/* line 347, ../../scss/main.scss */
+/* line 352, ../../scss/main.scss */
 a.back-to-top {
   position: fixed;
   bottom: 0;
@@ -495,16 +505,16 @@ a.back-to-top {
 /**
  * Region Sidebar First
  */
-/* line 363, ../../scss/main.scss */
+/* line 368, ../../scss/main.scss */
 .region-sidebar-first .block {
   margin-bottom: 1.5em;
 }
-/* line 365, ../../scss/main.scss */
+/* line 370, ../../scss/main.scss */
 .region-sidebar-first .block h2 {
   border-bottom: 1px solid #6e737d;
   margin-bottom: 1em;
 }
-/* line 368, ../../scss/main.scss */
+/* line 373, ../../scss/main.scss */
 .region-sidebar-first .block h2 span {
   border-bottom: 2px solid #054403;
   display: inline-block;
@@ -512,31 +522,31 @@ a.back-to-top {
   padding-bottom: 0.5em;
   padding-right: 1em;
 }
-/* line 378, ../../scss/main.scss */
+/* line 383, ../../scss/main.scss */
 .region-sidebar-first #block-user-login label {
   display: block;
 }
-/* line 384, ../../scss/main.scss */
+/* line 389, ../../scss/main.scss */
 .region-sidebar-first .date-nav.item-list .date-heading a {
   text-transform: lowercase;
 }
-/* line 389, ../../scss/main.scss */
+/* line 394, ../../scss/main.scss */
 .region-sidebar-first .date-nav.item-list ul li {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 5px;
 }
-/* line 392, ../../scss/main.scss */
+/* line 397, ../../scss/main.scss */
 .region-sidebar-first .date-nav.item-list ul li a {
   display: block;
   margin: 0 auto;
 }
-/* line 397, ../../scss/main.scss */
+/* line 402, ../../scss/main.scss */
 .region-sidebar-first .date-nav.item-list ul li.date-prev {
   margin-left: 0;
 }
-/* line 404, ../../scss/main.scss */
+/* line 409, ../../scss/main.scss */
 .region-sidebar-first #block-views-calendario-de-torneos-block-2 .views-field-title a {
   font-weight: 700;
 }
@@ -544,14 +554,14 @@ a.back-to-top {
 /**
  * Region Content
  */
-/* line 416, ../../scss/main.scss */
+/* line 421, ../../scss/main.scss */
 .region-content .node-noticia .content {
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 418, ../../scss/main.scss */
+/* line 423, ../../scss/main.scss */
 .region-content .node-noticia .content img {
   margin: 0 auto;
   width: 100%;
@@ -560,11 +570,11 @@ a.back-to-top {
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 425, ../../scss/main.scss */
+/* line 430, ../../scss/main.scss */
 .region-content .node-noticia.teaser {
   text-align: justify;
 }
-/* line 427, ../../scss/main.scss */
+/* line 432, ../../scss/main.scss */
 .region-content .node-noticia.teaser .links {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -572,7 +582,7 @@ a.back-to-top {
   margin-bottom: 1.61538em;
   float: right;
 }
-/* line 430, ../../scss/main.scss */
+/* line 435, ../../scss/main.scss */
 .region-content .node-noticia.teaser .links .node-readmore {
   border: 1px solid #0da508;
   color: black;
@@ -581,27 +591,27 @@ a.back-to-top {
   line-height: 18px;
   padding: 6px 12px;
 }
-/* line 440, ../../scss/main.scss */
+/* line 445, ../../scss/main.scss */
 .region-content .pager {
   border-width: 0.07692em;
   border-style: solid;
   padding: 1.53846em;
   border: none;
 }
-/* line 445, ../../scss/main.scss */
+/* line 450, ../../scss/main.scss */
 .region-content .node-galeria img {
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 450, ../../scss/main.scss */
+/* line 455, ../../scss/main.scss */
 .region-content .node-partido .content {
   border-width: 0.07692em;
   border-style: solid;
   padding: 1.53846em;
 }
-/* line 459, ../../scss/main.scss */
+/* line 464, ../../scss/main.scss */
 .region-content .node-partido #patrocinios h2,
 .region-content .node-partido #galeria h2,
 .region-content .node-partido #charla h2,
@@ -613,23 +623,23 @@ a.back-to-top {
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 463, ../../scss/main.scss */
+/* line 468, ../../scss/main.scss */
 .region-content .node-partido #avisos {
   margin-bottom: 2em;
 }
-/* line 471, ../../scss/main.scss */
+/* line 476, ../../scss/main.scss */
 .region-content .date-nav.item-list ul.pager li {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 5px;
 }
-/* line 474, ../../scss/main.scss */
+/* line 479, ../../scss/main.scss */
 .region-content .date-nav.item-list ul.pager li a {
   display: block;
   margin: 0 auto;
 }
-/* line 479, ../../scss/main.scss */
+/* line 484, ../../scss/main.scss */
 .region-content .date-nav.item-list ul.pager li.date-prev {
   left: 0;
   right: auto;
@@ -639,7 +649,7 @@ a.back-to-top {
 /**
  * Region Footer colummns
  */
-/* line 491, ../../scss/main.scss */
+/* line 496, ../../scss/main.scss */
 footer#main-footer {
   /*@include rhythm-borders;
   padding-left: 0;
@@ -649,11 +659,11 @@ footer#main-footer {
   border: none;*/
   color: #d1d1d1;
 }
-/* line 499, ../../scss/main.scss */
+/* line 504, ../../scss/main.scss */
 footer#main-footer #footer-section-1 {
   background-color: #484f5e;
 }
-/* line 502, ../../scss/main.scss */
+/* line 507, ../../scss/main.scss */
 footer#main-footer #footer-section-2 {
   border-width: 0.07692em;
   border-style: solid;
@@ -661,16 +671,16 @@ footer#main-footer #footer-section-2 {
   border: none;
   background-color: #303745;
 }
-/* line 507, ../../scss/main.scss */
+/* line 512, ../../scss/main.scss */
 footer#main-footer a {
   color: white;
 }
-/* line 509, ../../scss/main.scss */
+/* line 514, ../../scss/main.scss */
 footer#main-footer a:hover, footer#main-footer a:focus {
   color: #0da508;
 }
 
-/* line 515, ../../scss/main.scss */
+/* line 520, ../../scss/main.scss */
 .region-footer-first-col,
 .region-footer-second-col,
 .region-footer-third-col,
@@ -680,7 +690,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0em;
   margin-bottom: 3.23077em;
 }
-/* line 521, ../../scss/main.scss */
+/* line 526, ../../scss/main.scss */
 .region-footer-first-col .block h2,
 .region-footer-second-col .block h2,
 .region-footer-third-col .block h2,
@@ -688,7 +698,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border-bottom: 1px solid #6e737d;
   margin-bottom: 1em;
 }
-/* line 524, ../../scss/main.scss */
+/* line 529, ../../scss/main.scss */
 .region-footer-first-col .block h2 span,
 .region-footer-second-col .block h2 span,
 .region-footer-third-col .block h2 span,
@@ -699,7 +709,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0.5em;
   padding-right: 1em;
 }
-/* line 533, ../../scss/main.scss */
+/* line 538, ../../scss/main.scss */
 .region-footer-first-col .block ul.menu .leaf,
 .region-footer-second-col .block ul.menu .leaf,
 .region-footer-third-col .block ul.menu .leaf,
@@ -711,7 +721,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Front page columns
  */
-/* line 549, ../../scss/main.scss */
+/* line 554, ../../scss/main.scss */
 .region-front-first-col .date-nav.item-list ul.pager li,
 .region-front-second-col .date-nav.item-list ul.pager li,
 .region-front-third-col .date-nav.item-list ul.pager li {
@@ -720,14 +730,14 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border-radius: 5px;
   padding: 5px;
 }
-/* line 552, ../../scss/main.scss */
+/* line 557, ../../scss/main.scss */
 .region-front-first-col .date-nav.item-list ul.pager li a,
 .region-front-second-col .date-nav.item-list ul.pager li a,
 .region-front-third-col .date-nav.item-list ul.pager li a {
   display: block;
   margin: 0 auto;
 }
-/* line 557, ../../scss/main.scss */
+/* line 562, ../../scss/main.scss */
 .region-front-first-col .date-nav.item-list ul.pager li.date-prev,
 .region-front-second-col .date-nav.item-list ul.pager li.date-prev,
 .region-front-third-col .date-nav.item-list ul.pager li.date-prev {
@@ -735,13 +745,13 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   right: auto;
   margin-left: 0;
 }
-/* line 565, ../../scss/main.scss */
+/* line 570, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 ul,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 ul,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 ul {
   list-style-type: none;
 }
-/* line 568, ../../scss/main.scss */
+/* line 573, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 .upcoming-box,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 .upcoming-box,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 .upcoming-box {
@@ -750,7 +760,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 573, ../../scss/main.scss */
+/* line 578, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-meta,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-meta,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-meta {
@@ -769,7 +779,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 587, ../../scss/main.scss */
+/* line 592, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right {
@@ -779,7 +789,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding: 0;
   font-size: 12px;
 }
-/* line 593, ../../scss/main.scss */
+/* line 598, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right h4,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right h4,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right h4 {
@@ -789,12 +799,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Galería de fotos
  */
-/* line 607, ../../scss/main.scss */
+/* line 612, ../../scss/main.scss */
 #galeria {
   overflow: hidden;
 }
 
-/* line 611, ../../scss/main.scss */
+/* line 616, ../../scss/main.scss */
 .row.actions div {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -802,7 +812,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
 }
 
-/* line 615, ../../scss/main.scss */
+/* line 620, ../../scss/main.scss */
 .portfolio-item {
   position: relative;
   margin-top: 1.61538em;
@@ -811,12 +821,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
   margin-top: 0;
 }
-/* line 620, ../../scss/main.scss */
+/* line 625, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview {
   overflow: hidden;
   position: relative;
 }
-/* line 624, ../../scss/main.scss */
+/* line 629, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay {
   position: absolute;
   top: 0;
@@ -829,7 +839,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transform: translateY(20%);
   transition: transform 0.5s ease 0s;
 }
-/* line 635, ../../scss/main.scss */
+/* line 640, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions {
   position: absolute;
   bottom: 15%;
@@ -838,7 +848,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-top: -24px;
   box-sizing: border-box;
 }
-/* line 642, ../../scss/main.scss */
+/* line 647, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link {
   background-color: #0da508;
@@ -852,13 +862,13 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   text-decoration: none;
   width: 48px;
 }
-/* line 652, ../../scss/main.scss */
+/* line 657, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom i,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link i {
   font-size: 20px;
   line-height: 48px;
 }
-/* line 660, ../../scss/main.scss */
+/* line 665, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description {
   position: absolute;
   top: 50px;
@@ -866,11 +876,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   right: 0;
   color: white;
 }
-/* line 667, ../../scss/main.scss */
+/* line 672, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description h4 a {
   color: white;
 }
-/* line 675, ../../scss/main.scss */
+/* line 680, ../../scss/main.scss */
 .portfolio-item:hover .portfolio-item-overlay {
   opacity: 1;
   transform: translateY(0px);
@@ -879,12 +889,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Magnific Popup
  */
-/* line 684, ../../scss/main.scss */
+/* line 689, ../../scss/main.scss */
 .image-source-link {
   color: #98C3D1;
 }
 
-/* line 688, ../../scss/main.scss */
+/* line 693, ../../scss/main.scss */
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -896,17 +906,17 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.3s ease-out;
 }
 
-/* line 699, ../../scss/main.scss */
+/* line 704, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready .mfp-container {
   opacity: 1;
 }
 
-/* line 702, ../../scss/main.scss */
+/* line 707, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
 
-/* line 706, ../../scss/main.scss */
+/* line 711, ../../scss/main.scss */
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
@@ -917,7 +927,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
  *
  * Fix overlaping of menu
  */
-/* line 716, ../../scss/main.scss */
+/* line 721, ../../scss/main.scss */
 #admin-menu {
   z-index: 500;
 }
@@ -925,7 +935,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Calendario
  */
-/* line 723, ../../scss/main.scss */
+/* line 728, ../../scss/main.scss */
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
@@ -933,21 +943,21 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
 }
 
-/* line 730, ../../scss/main.scss */
+/* line 735, ../../scss/main.scss */
 .calendar-calendar tr td.has-events a,
 .calendar-calendar tr.odd td.has-events a,
 .calendar-calendar tr.even td.has-events a {
   font-weight: bold;
 }
 
-/* line 736, ../../scss/main.scss */
+/* line 741, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
   background: #cfedce none repeat scroll 0 0;
 }
 
-/* line 742, ../../scss/main.scss */
+/* line 747, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
@@ -955,7 +965,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   background: #cfedce none repeat scroll 0 0;
 }
 
-/* line 749, ../../scss/main.scss */
+/* line 754, ../../scss/main.scss */
 .calendar-calendar tr td {
   padding: 0.5em;
 }
@@ -963,11 +973,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Google Map
  */
-/* line 755, ../../scss/main.scss */
+/* line 760, ../../scss/main.scss */
 #map-canvas {
   height: 400px;
 }
-/* line 757, ../../scss/main.scss */
+/* line 762, ../../scss/main.scss */
 #map-canvas img {
   max-width: inherit;
 }
@@ -975,11 +985,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Webform contacto
  */
-/* line 766, ../../scss/main.scss */
+/* line 771, ../../scss/main.scss */
 .webform-client-form label {
   display: none;
 }
-/* line 769, ../../scss/main.scss */
+/* line 774, ../../scss/main.scss */
 .webform-client-form #edit-submitted-mensaje {
   margin-bottom: 0;
 }
@@ -987,7 +997,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Patrocionios
  */
-/* line 777, ../../scss/main.scss */
+/* line 782, ../../scss/main.scss */
 .region-sponsors {
   border-width: 0.07692em;
   border-style: solid;
@@ -995,7 +1005,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border: none;
   background-color: white;
 }
-/* line 782, ../../scss/main.scss */
+/* line 787, ../../scss/main.scss */
 .region-sponsors h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1008,7 +1018,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
   text-align: center;
 }
-/* line 790, ../../scss/main.scss */
+/* line 795, ../../scss/main.scss */
 .region-sponsors .view-content {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1016,7 +1026,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
 }
 
-/* line 794, ../../scss/main.scss */
+/* line 799, ../../scss/main.scss */
 .view-display-id-page_1 .row > div {
   padding: 1em;
 }
@@ -1024,12 +1034,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Torneos
  */
-/* line 802, ../../scss/main.scss */
+/* line 807, ../../scss/main.scss */
 .view-display-id-entity_view_1 li {
   min-height: 320px;
 }
 
-/* line 806, ../../scss/main.scss */
+/* line 811, ../../scss/main.scss */
 .thumbnail {
   position: relative;
   border: 1px solid #ddd;
@@ -1041,7 +1051,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 816, ../../scss/main.scss */
+/* line 821, ../../scss/main.scss */
 a.thumb-info {
   display: block;
   overflow: hidden;
@@ -1049,14 +1059,14 @@ a.thumb-info {
   text-decoration: none;
 }
 
-/* line 822, ../../scss/main.scss */
+/* line 827, ../../scss/main.scss */
 a.thumb-info img {
   border-radius: 3px;
   position: relative;
   transition: all 0.2s linear 0s;
 }
 
-/* line 827, ../../scss/main.scss */
+/* line 832, ../../scss/main.scss */
 a.thumb-info span.thumb-info-title {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   color: #fff;
@@ -1073,7 +1083,7 @@ a.thumb-info span.thumb-info-title {
   z-index: 1;
 }
 
-/* line 842, ../../scss/main.scss */
+/* line 847, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   background-color: rgba(244, 245, 255, 0.5);
@@ -1090,7 +1100,7 @@ a.thumb-info span.thumb-info-action {
   transition: all 0.3s ease 0s;
 }
 
-/* line 857, ../../scss/main.scss */
+/* line 862, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon {
   background: #ccc none repeat scroll 0 0;
   background-color: #0088cc;
@@ -1108,23 +1118,23 @@ a.thumb-info span.thumb-info-action-icon {
   transition: all 0.3s ease 0s;
 }
 
-/* line 873, ../../scss/main.scss */
+/* line 878, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action {
   opacity: 1;
 }
 
-/* line 876, ../../scss/main.scss */
+/* line 881, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action-icon {
   top: 0;
   right: 0;
 }
 
-/* line 880, ../../scss/main.scss */
+/* line 885, ../../scss/main.scss */
 a.thumb-info:hover img {
   transform: scale(1.2);
 }
 
-/* line 883, ../../scss/main.scss */
+/* line 888, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon i {
   font-size: 24px;
   left: 3px;
@@ -1133,7 +1143,7 @@ a.thumb-info span.thumb-info-action-icon i {
   color: white;
 }
 
-/* line 891, ../../scss/main.scss */
+/* line 896, ../../scss/main.scss */
 .partido-date .month {
   background-color: #fcfcfc;
   color: #333;
@@ -1144,7 +1154,7 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 20px 30px;
   text-align: center;
 }
-/* line 901, ../../scss/main.scss */
+/* line 906, ../../scss/main.scss */
 .partido-date .day {
   background-color: #0da508;
   color: #fff;
@@ -1165,21 +1175,21 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Actualidad
  */
-/* line 919, ../../scss/main.scss */
+/* line 924, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .view-content .noticia {
   border-width: 0.07692em;
   border-style: solid;
   padding: 1.53846em;
   border: none;
 }
-/* line 924, ../../scss/main.scss */
+/* line 929, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box {
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 929, ../../scss/main.scss */
+/* line 934, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-meta {
   float: left;
   margin: 0 0.625em 0 0;
@@ -1196,7 +1206,7 @@ a.thumb-info span.thumb-info-action-icon i {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 943, ../../scss/main.scss */
+/* line 948, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-right {
   width: 72%;
   float: right;
@@ -1204,19 +1214,19 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 0;
   font-size: 12px;
 }
-/* line 949, ../../scss/main.scss */
+/* line 954, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-right h4 {
   font-weight: bold;
 }
 
-/* line 958, ../../scss/main.scss */
+/* line 963, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box {
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 963, ../../scss/main.scss */
+/* line 968, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-meta {
   float: left;
   margin: 0 0.625em 0 0;
@@ -1233,7 +1243,7 @@ a.thumb-info span.thumb-info-action-icon i {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 977, ../../scss/main.scss */
+/* line 982, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right {
   width: 72%;
   float: right;
@@ -1241,11 +1251,11 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 0;
   font-size: 12px;
 }
-/* line 983, ../../scss/main.scss */
+/* line 988, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right h4 {
   font-weight: bold;
 }
-/* line 985, ../../scss/main.scss */
+/* line 990, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right h4 a {
   color: #d0c90b !important;
 }
@@ -1253,20 +1263,20 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Portada
  */
-/* line 997, ../../scss/main.scss */
+/* line 1002, ../../scss/main.scss */
 .front-page .front-col {
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 999, ../../scss/main.scss */
+/* line 1004, ../../scss/main.scss */
 .front-page .front-col > span {
   display: block;
   text-align: center;
   margin-top: 0;
 }
-/* line 1005, ../../scss/main.scss */
+/* line 1010, ../../scss/main.scss */
 .front-page .front-col h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1275,15 +1285,15 @@ a.thumb-info span.thumb-info-action-icon i {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 1011, ../../scss/main.scss */
+/* line 1016, ../../scss/main.scss */
 .front-page ul {
   list-style-type: disc;
 }
-/* line 1013, ../../scss/main.scss */
+/* line 1018, ../../scss/main.scss */
 .front-page ul a {
   font-weight: bold;
 }
-/* line 1017, ../../scss/main.scss */
+/* line 1022, ../../scss/main.scss */
 .front-page p {
   text-align: justify;
 }

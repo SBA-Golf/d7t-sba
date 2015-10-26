@@ -197,6 +197,7 @@ input[type="submit"] {
 }
 .navbar-brand {
   height: auto;
+  padding-bottom: 0;
 }
 #navbar-main-menu {
   width: 100%;
@@ -208,6 +209,7 @@ input[type="submit"] {
       li {
         transition: background 0.6s ease 0s;
         border-right: 1px solid white;
+        @include adjust-font-size-to(9px);
         a {
           text-transform: uppercase;
           font-weight: 700;
@@ -233,6 +235,9 @@ input[type="submit"] {
         }
       }
     }
+  }
+  @media (min-width: 992px) {
+    @include adjust-font-size-to(16px);
   }
 }
 
