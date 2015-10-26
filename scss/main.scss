@@ -816,6 +816,8 @@ footer#main-footer {
   display: block;
   line-height: 20px;
   padding: 4px;
+  //padding: 0;
+  padding-bottom: 8px;
   transition: all 0.2s ease-in-out 0s;
 }
 a.thumb-info {
@@ -825,7 +827,7 @@ a.thumb-info {
   text-decoration: none;
 }
 a.thumb-info img {
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
   position: relative;
   transition: all 0.2s linear 0s;
 }

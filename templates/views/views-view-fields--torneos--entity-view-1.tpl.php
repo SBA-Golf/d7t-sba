@@ -38,7 +38,7 @@
 <?php endif; ?>
 <?php endforeach; ?>
 </a>
-<hr/>
+<hr />
 <div class="text-center">
 <?php foreach ($fields as $id => $field): ?>
 <?php if ($id == 'field_edicion_reglamento' || $id == 'field_edicion_clasificacion'): ?>
