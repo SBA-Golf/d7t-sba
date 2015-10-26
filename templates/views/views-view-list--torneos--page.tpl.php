@@ -5,11 +5,14 @@
   <?php print $list_type_prefix; ?>
     <?php foreach ($rows as $id => $row): ?>
       <li class="<?php print $classes_array[$id]; ?>">
-        <div class="portfolio-item thumbnail">
+<?php 
+  $node = node_load($view->result[$id]->nid);
+  $color = field_get_items('node',$node,'field_torneo_color');
+?>
+  <div class="portfolio-item thumbnail" style="background-color: <?php print $color[0]['rgb']; ?>">
           <?php print $row; ?>
         </div>
       </li>
     <?php endforeach; ?>
   <?php print $list_type_suffix; ?>
 <?php print $wrapper_suffix; ?>
-
