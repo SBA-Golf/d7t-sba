@@ -39,8 +39,10 @@
 <?php endforeach; ?>
 </a>
 <hr/>
+<div class="text-center">
 <?php foreach ($fields as $id => $field): ?>
 <?php if ($id == 'field_edicion_reglamento' || $id == 'field_edicion_clasificacion'): ?>
-    <?php print $field->wrapper_prefix . $field->label_html . $field->content . $field->wrapper_suffix; ?>
+    <?php print $field->content; ?>
 <?php endif; ?>
 <?php endforeach; ?>
+</div>
