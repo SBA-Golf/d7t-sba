@@ -7,7 +7,7 @@
     <?php foreach ($rows as $id => $row): ?>
     <?php $color = $variables['view']->result[0]->field_field_torneo_color[0]['raw']['rgb']; ?>
       <li class="<?php print $classes_array[$id]; ?>">
-        <div class="portfolio-item thumbnail" style="border: solid 3px <?php print $color; ?>;">
+        <div class="portfolio-item thumbnail" style="border: solid 3px <?php print $color; ?>;background-color: <?php print $color; ?>">
           <?php print $row; ?>
         </div>
       </li>

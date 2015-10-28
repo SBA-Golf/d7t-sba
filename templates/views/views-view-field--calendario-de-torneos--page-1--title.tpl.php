@@ -22,9 +22,6 @@
  * the view is modified.
  */
 ?>
-<span class="thumb-info-title" style="background-color: <?php print $row->field_field_torneo_color[0]['raw']['rgb']; ?>"><?php print $row->node_title; ?></span>
-<span class="thumb-info-action">
-  <span class="thumb-info-action-icon" style="background-color: <?php print $row->field_field_torneo_color[0]['raw']['rgb']; ?>">
-    <i class="glyphicon glyphicon-search"> </i>
-  </span>
-</span>
+<div class="text-center" style="background-color: <?php print $row->field_field_torneo_color[0]['raw']['rgb'] ?>;">
+<?php print $output; ?>
+</div>

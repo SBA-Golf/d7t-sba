@@ -627,19 +627,23 @@ a.back-to-top {
 .region-content .node-partido #avisos {
   margin-bottom: 2em;
 }
-/* line 476, ../../scss/main.scss */
+/* line 475, ../../scss/main.scss */
+.region-content .view-id-calendario_de_torneos.view-display-id-page_1 .views-field-title a {
+  color: black;
+}
+/* line 484, ../../scss/main.scss */
 .region-content .date-nav.item-list ul.pager li {
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   padding: 5px;
 }
-/* line 479, ../../scss/main.scss */
+/* line 487, ../../scss/main.scss */
 .region-content .date-nav.item-list ul.pager li a {
   display: block;
   margin: 0 auto;
 }
-/* line 484, ../../scss/main.scss */
+/* line 492, ../../scss/main.scss */
 .region-content .date-nav.item-list ul.pager li.date-prev {
   left: 0;
   right: auto;
@@ -649,7 +653,7 @@ a.back-to-top {
 /**
  * Region Footer colummns
  */
-/* line 496, ../../scss/main.scss */
+/* line 504, ../../scss/main.scss */
 footer#main-footer {
   /*@include rhythm-borders;
   padding-left: 0;
@@ -659,11 +663,11 @@ footer#main-footer {
   border: none;*/
   color: #d1d1d1;
 }
-/* line 504, ../../scss/main.scss */
+/* line 512, ../../scss/main.scss */
 footer#main-footer #footer-section-1 {
   background-color: #484f5e;
 }
-/* line 507, ../../scss/main.scss */
+/* line 515, ../../scss/main.scss */
 footer#main-footer #footer-section-2 {
   border-width: 0.07692em;
   border-style: solid;
@@ -671,16 +675,16 @@ footer#main-footer #footer-section-2 {
   border: none;
   background-color: #303745;
 }
-/* line 512, ../../scss/main.scss */
+/* line 520, ../../scss/main.scss */
 footer#main-footer a {
   color: white;
 }
-/* line 514, ../../scss/main.scss */
+/* line 522, ../../scss/main.scss */
 footer#main-footer a:hover, footer#main-footer a:focus {
   color: #0da508;
 }
 
-/* line 520, ../../scss/main.scss */
+/* line 528, ../../scss/main.scss */
 .region-footer-first-col,
 .region-footer-second-col,
 .region-footer-third-col,
@@ -690,7 +694,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0em;
   margin-bottom: 3.23077em;
 }
-/* line 526, ../../scss/main.scss */
+/* line 534, ../../scss/main.scss */
 .region-footer-first-col .block h2,
 .region-footer-second-col .block h2,
 .region-footer-third-col .block h2,
@@ -698,7 +702,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border-bottom: 1px solid #6e737d;
   margin-bottom: 1em;
 }
-/* line 529, ../../scss/main.scss */
+/* line 537, ../../scss/main.scss */
 .region-footer-first-col .block h2 span,
 .region-footer-second-col .block h2 span,
 .region-footer-third-col .block h2 span,
@@ -709,7 +713,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding-bottom: 0.5em;
   padding-right: 1em;
 }
-/* line 538, ../../scss/main.scss */
+/* line 546, ../../scss/main.scss */
 .region-footer-first-col .block ul.menu .leaf,
 .region-footer-second-col .block ul.menu .leaf,
 .region-footer-third-col .block ul.menu .leaf,
@@ -721,7 +725,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Front page columns
  */
-/* line 554, ../../scss/main.scss */
+/* line 562, ../../scss/main.scss */
 .region-front-first-col .date-nav.item-list ul.pager li,
 .region-front-second-col .date-nav.item-list ul.pager li,
 .region-front-third-col .date-nav.item-list ul.pager li {
@@ -730,14 +734,14 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border-radius: 5px;
   padding: 5px;
 }
-/* line 557, ../../scss/main.scss */
+/* line 565, ../../scss/main.scss */
 .region-front-first-col .date-nav.item-list ul.pager li a,
 .region-front-second-col .date-nav.item-list ul.pager li a,
 .region-front-third-col .date-nav.item-list ul.pager li a {
   display: block;
   margin: 0 auto;
 }
-/* line 562, ../../scss/main.scss */
+/* line 570, ../../scss/main.scss */
 .region-front-first-col .date-nav.item-list ul.pager li.date-prev,
 .region-front-second-col .date-nav.item-list ul.pager li.date-prev,
 .region-front-third-col .date-nav.item-list ul.pager li.date-prev {
@@ -745,13 +749,13 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   right: auto;
   margin-left: 0;
 }
-/* line 570, ../../scss/main.scss */
+/* line 578, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 ul,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 ul,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 ul {
   list-style-type: none;
 }
-/* line 573, ../../scss/main.scss */
+/* line 581, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 .upcoming-box,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 .upcoming-box,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 .upcoming-box {
@@ -760,7 +764,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 578, ../../scss/main.scss */
+/* line 586, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-meta,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-meta,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-meta {
@@ -779,7 +783,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 592, ../../scss/main.scss */
+/* line 600, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right {
@@ -789,7 +793,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   padding: 0;
   font-size: 12px;
 }
-/* line 598, ../../scss/main.scss */
+/* line 606, ../../scss/main.scss */
 .region-front-first-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right h4,
 .region-front-second-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right h4,
 .region-front-third-col #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right h4 {
@@ -799,12 +803,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Galería de fotos
  */
-/* line 612, ../../scss/main.scss */
+/* line 620, ../../scss/main.scss */
 #galeria {
   overflow: hidden;
 }
 
-/* line 616, ../../scss/main.scss */
+/* line 624, ../../scss/main.scss */
 .row.actions div {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -812,7 +816,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
 }
 
-/* line 620, ../../scss/main.scss */
+/* line 628, ../../scss/main.scss */
 .portfolio-item {
   position: relative;
   margin-top: 1.61538em;
@@ -821,12 +825,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
   margin-top: 0;
 }
-/* line 625, ../../scss/main.scss */
+/* line 633, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview {
   overflow: hidden;
   position: relative;
 }
-/* line 629, ../../scss/main.scss */
+/* line 637, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay {
   position: absolute;
   top: 0;
@@ -839,7 +843,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transform: translateY(20%);
   transition: transform 0.5s ease 0s;
 }
-/* line 640, ../../scss/main.scss */
+/* line 648, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions {
   position: absolute;
   bottom: 15%;
@@ -848,7 +852,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-top: -24px;
   box-sizing: border-box;
 }
-/* line 647, ../../scss/main.scss */
+/* line 655, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link {
   background-color: #0da508;
@@ -862,13 +866,13 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   text-decoration: none;
   width: 48px;
 }
-/* line 657, ../../scss/main.scss */
+/* line 665, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom i,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link i {
   font-size: 20px;
   line-height: 48px;
 }
-/* line 665, ../../scss/main.scss */
+/* line 673, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description {
   position: absolute;
   top: 50px;
@@ -876,11 +880,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   right: 0;
   color: white;
 }
-/* line 672, ../../scss/main.scss */
+/* line 680, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description h4 a {
   color: white;
 }
-/* line 680, ../../scss/main.scss */
+/* line 688, ../../scss/main.scss */
 .portfolio-item:hover .portfolio-item-overlay {
   opacity: 1;
   transform: translateY(0px);
@@ -889,12 +893,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Magnific Popup
  */
-/* line 689, ../../scss/main.scss */
+/* line 697, ../../scss/main.scss */
 .image-source-link {
   color: #98C3D1;
 }
 
-/* line 693, ../../scss/main.scss */
+/* line 701, ../../scss/main.scss */
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -906,17 +910,17 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.3s ease-out;
 }
 
-/* line 704, ../../scss/main.scss */
+/* line 712, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready .mfp-container {
   opacity: 1;
 }
 
-/* line 707, ../../scss/main.scss */
+/* line 715, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
 
-/* line 711, ../../scss/main.scss */
+/* line 719, ../../scss/main.scss */
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
@@ -927,7 +931,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
  *
  * Fix overlaping of menu
  */
-/* line 721, ../../scss/main.scss */
+/* line 729, ../../scss/main.scss */
 #admin-menu {
   z-index: 500;
 }
@@ -935,7 +939,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Calendario
  */
-/* line 728, ../../scss/main.scss */
+/* line 736, ../../scss/main.scss */
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
@@ -943,21 +947,21 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
 }
 
-/* line 735, ../../scss/main.scss */
+/* line 743, ../../scss/main.scss */
 .calendar-calendar tr td.has-events a,
 .calendar-calendar tr.odd td.has-events a,
 .calendar-calendar tr.even td.has-events a {
   font-weight: bold;
 }
 
-/* line 741, ../../scss/main.scss */
+/* line 749, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
   background: #cfedce none repeat scroll 0 0;
 }
 
-/* line 747, ../../scss/main.scss */
+/* line 755, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
@@ -965,7 +969,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   background: #cfedce none repeat scroll 0 0;
 }
 
-/* line 754, ../../scss/main.scss */
+/* line 762, ../../scss/main.scss */
 .calendar-calendar tr td {
   padding: 0.5em;
 }
@@ -973,11 +977,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Google Map
  */
-/* line 760, ../../scss/main.scss */
+/* line 768, ../../scss/main.scss */
 #map-canvas {
   height: 400px;
 }
-/* line 762, ../../scss/main.scss */
+/* line 770, ../../scss/main.scss */
 #map-canvas img {
   max-width: inherit;
 }
@@ -985,11 +989,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Webform contacto
  */
-/* line 771, ../../scss/main.scss */
+/* line 779, ../../scss/main.scss */
 .webform-client-form label {
   display: none;
 }
-/* line 774, ../../scss/main.scss */
+/* line 782, ../../scss/main.scss */
 .webform-client-form #edit-submitted-mensaje {
   margin-bottom: 0;
 }
@@ -997,7 +1001,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Patrocionios
  */
-/* line 782, ../../scss/main.scss */
+/* line 790, ../../scss/main.scss */
 .region-sponsors {
   border-width: 0.07692em;
   border-style: solid;
@@ -1005,7 +1009,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border: none;
   background-color: white;
 }
-/* line 787, ../../scss/main.scss */
+/* line 795, ../../scss/main.scss */
 .region-sponsors h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1018,7 +1022,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
   text-align: center;
 }
-/* line 795, ../../scss/main.scss */
+/* line 803, ../../scss/main.scss */
 .region-sponsors .view-content {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1026,7 +1030,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
 }
 
-/* line 799, ../../scss/main.scss */
+/* line 807, ../../scss/main.scss */
 .view-display-id-page_1 .row > div {
   padding: 1em;
 }
@@ -1034,12 +1038,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Torneos
  */
-/* line 807, ../../scss/main.scss */
+/* line 815, ../../scss/main.scss */
 .view-display-id-entity_view_1 li {
   min-height: 320px;
 }
 
-/* line 811, ../../scss/main.scss */
+/* line 819, ../../scss/main.scss */
 .thumbnail {
   position: relative;
   border: 1px solid #ddd;
@@ -1052,7 +1056,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 823, ../../scss/main.scss */
+/* line 831, ../../scss/main.scss */
 a.thumb-info {
   display: block;
   overflow: hidden;
@@ -1060,14 +1064,14 @@ a.thumb-info {
   text-decoration: none;
 }
 
-/* line 829, ../../scss/main.scss */
+/* line 837, ../../scss/main.scss */
 a.thumb-info img {
   border-radius: 3px 3px 0 0;
   position: relative;
   transition: all 0.2s linear 0s;
 }
 
-/* line 834, ../../scss/main.scss */
+/* line 842, ../../scss/main.scss */
 a.thumb-info span.thumb-info-title {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   color: #fff;
@@ -1084,7 +1088,7 @@ a.thumb-info span.thumb-info-title {
   z-index: 1;
 }
 
-/* line 849, ../../scss/main.scss */
+/* line 857, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action {
   color: #fff;
   width: 100%;
@@ -1099,7 +1103,7 @@ a.thumb-info span.thumb-info-action {
   transition: all 0.3s ease 0s;
 }
 
-/* line 864, ../../scss/main.scss */
+/* line 872, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon {
   background: transparent none repeat scroll 0 0;
   background-color: #0da508;
@@ -1116,23 +1120,23 @@ a.thumb-info span.thumb-info-action-icon {
   transition: all 0.3s ease 0s;
 }
 
-/* line 880, ../../scss/main.scss */
+/* line 888, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action {
   opacity: 1;
 }
 
-/* line 883, ../../scss/main.scss */
+/* line 891, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action-icon {
   top: 0;
   right: 0;
 }
 
-/* line 887, ../../scss/main.scss */
+/* line 895, ../../scss/main.scss */
 a.thumb-info:hover img {
   transform: scale(1.2);
 }
 
-/* line 890, ../../scss/main.scss */
+/* line 898, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon i {
   font-size: 24px;
   left: 3px;
@@ -1141,7 +1145,7 @@ a.thumb-info span.thumb-info-action-icon i {
   color: white;
 }
 
-/* line 898, ../../scss/main.scss */
+/* line 906, ../../scss/main.scss */
 .partido-date .month {
   background-color: #fcfcfc;
   color: #333;
@@ -1152,7 +1156,7 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 20px 30px;
   text-align: center;
 }
-/* line 908, ../../scss/main.scss */
+/* line 916, ../../scss/main.scss */
 .partido-date .day {
   background-color: #0da508;
   color: #fff;
@@ -1173,21 +1177,21 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Actualidad
  */
-/* line 926, ../../scss/main.scss */
+/* line 934, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .view-content .noticia {
   border-width: 0.07692em;
   border-style: solid;
   padding: 1.53846em;
   border: none;
 }
-/* line 931, ../../scss/main.scss */
+/* line 939, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box {
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 936, ../../scss/main.scss */
+/* line 944, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-meta {
   float: left;
   margin: 0 0.625em 0 0;
@@ -1204,7 +1208,7 @@ a.thumb-info span.thumb-info-action-icon i {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 950, ../../scss/main.scss */
+/* line 958, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-right {
   width: 72%;
   float: right;
@@ -1212,19 +1216,19 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 0;
   font-size: 12px;
 }
-/* line 956, ../../scss/main.scss */
+/* line 964, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-right h4 {
   font-weight: bold;
 }
 
-/* line 965, ../../scss/main.scss */
+/* line 973, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box {
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 970, ../../scss/main.scss */
+/* line 978, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-meta {
   float: left;
   margin: 0 0.625em 0 0;
@@ -1241,7 +1245,7 @@ a.thumb-info span.thumb-info-action-icon i {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 984, ../../scss/main.scss */
+/* line 992, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right {
   width: 72%;
   float: right;
@@ -1249,11 +1253,11 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 0;
   font-size: 12px;
 }
-/* line 990, ../../scss/main.scss */
+/* line 998, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right h4 {
   font-weight: bold;
 }
-/* line 992, ../../scss/main.scss */
+/* line 1000, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right h4 a {
   color: #d0c90b !important;
 }
@@ -1261,20 +1265,20 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Portada
  */
-/* line 1004, ../../scss/main.scss */
+/* line 1012, ../../scss/main.scss */
 .front-page .front-col {
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 1006, ../../scss/main.scss */
+/* line 1014, ../../scss/main.scss */
 .front-page .front-col > span {
   display: block;
   text-align: center;
   margin-top: 0;
 }
-/* line 1012, ../../scss/main.scss */
+/* line 1020, ../../scss/main.scss */
 .front-page .front-col h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1283,15 +1287,15 @@ a.thumb-info span.thumb-info-action-icon i {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 1018, ../../scss/main.scss */
+/* line 1026, ../../scss/main.scss */
 .front-page ul {
   list-style-type: disc;
 }
-/* line 1020, ../../scss/main.scss */
+/* line 1028, ../../scss/main.scss */
 .front-page ul a {
   font-weight: bold;
 }
-/* line 1024, ../../scss/main.scss */
+/* line 1032, ../../scss/main.scss */
 .front-page p {
   text-align: justify;
 }

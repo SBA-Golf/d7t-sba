@@ -11,7 +11,7 @@
     <span class="thumb-info-title" style="background-color: <?php print $content['field_torneo_color'][0]['#markup']; ?>"><?php print $title; ?></span>
     <?php print render($title_sufix); ?>
     <span class="thumb-info-action">
-      <span class="thumb-info-action-icon" href="#">
+      <span class="thumb-info-action-icon" href="#" style="background-color: <?php print $content['field_torneo_color'][0]['#markup']; ?>">
         <i class="glyphicon glyphicon-search"> </i>
       </span>
     </span>

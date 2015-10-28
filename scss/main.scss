@@ -470,6 +470,14 @@ a.back-to-top {
     }
   }
 
+  .view-id-calendario_de_torneos.view-display-id-page_1 {
+    .views-field-title {
+      a {
+        color: black;
+      }
+    }
+  }
+
   // Corrijo posición del botón prev en calendario.
   .date-nav.item-list {
     ul.pager {
