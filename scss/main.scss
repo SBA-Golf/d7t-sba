@@ -457,6 +457,10 @@ a.back-to-top {
   .node-partido {
     .content {
       @include rhythm-borders;
+      border: none;
+    }
+    #patrocinios {
+      @include rhythm;
     }
     #patrocinios,
     #galeria,
