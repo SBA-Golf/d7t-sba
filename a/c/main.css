@@ -1311,3 +1311,20 @@ a.thumb-info span.thumb-info-action-icon i {
 .front-page p {
   text-align: justify;
 }
+
+/* line 1044, ../../scss/main.scss */
+.large-title {
+  font-size: 22px;
+  padding: 1em 0;
+}
+
+/* line 1048, ../../scss/main.scss */
+.center {
+  text-align: center;
+}
+
+/* line 1051, ../../scss/main.scss */
+.padding-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
