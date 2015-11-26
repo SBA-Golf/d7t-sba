@@ -4,7 +4,7 @@
  */
 ?>
 <?php if ($teaser): ?>
-<article class="node-torneo teaser" style="background-color: <?php print $content['field_torneo_color'][0]['#markup']; ?>; padding: 0.5em;">
+<article class="node-torneo teaser">
   <a href="<?php print $node_url; ?>" class="thumb-info">
     <?php print render($content['field_imagen_torneo']); ?>
     <?php print render($title_prefix); ?>

@@ -67,7 +67,7 @@
 <main>
   <div class="container">
     <div class="row">
-      <div class="col-md-9">
+    <div class="<?php ($page['sidebar_first']? print 'col-md-9' : 'col-md-12'); ?>">
         <aside id="tabs"><?php print render($tabs); ?></aside>
         <header class="page-title">
           <h1><span><?php print $title; ?></span></h1>
@@ -75,11 +75,13 @@
         <?php print render($page['content']); ?>
         <?php if ($page['after_content']) print render($page['after_content']); ?>
       </div>
+      <?php if ($page['sidebar_first']): ?>
       <div class="col-md-3">
         <aside>
           <?php print render($page['sidebar_first']); ?>
         </aside>
       </div>
+      <?php endif; ?>
     </div>
   </div>
 </main>

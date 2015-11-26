@@ -27,18 +27,6 @@
 </nav>
 <!-- Fin Menú principal -->
 
-<!-- Slider -->
-<?php if ($page['slider']): ?>
-<aside id="slider" class="boxedcontainer"><?php print render($page['slider']); ?></aside>
-<?php endif; ?>
-<!-- Fin Slider -->
-
-<!-- Slogan -->
-<?php if ($site_slogan): ?>
-<aside id="slogan"><?php print $site_slogan; ?></aside>
-<?php endif; ?>
-<!-- Fin Slogan -->
-
 <!-- Back to top -->
 <a href="#" class="back-to-top">up</a>
 <!-- Fin Back to top -->
@@ -53,38 +41,29 @@
 <?php endif; ?>
 <!-- Fin Mensajes -->
 
- <?php if ($page['slogan']): ?>
-<div class="container alert alert-danger">
-<?php print render($page['slogan']); ?>
-</div>
-<?php endif; ?>
-
 <!-- MAIN CONTENT -->
-<main class="front-page">
+<main>
   <div class="container">
-        <aside id="tabs"><?php print render($tabs); ?></aside>
-        <?php //print render($page['content']); ?>
-        <div class="row">
-        <?php if ($page['front_first_col']): ?>
-        <div class="col-sm-6 front-col">
-        <span class="h1"><i class="glyphicon glyphicon-bullhorn"> </i></span>
-        <?php print render($page['front_first_col']); ?>
-        </div>
-        <?php endif; ?>
-        <?php if ($page['front_second_col']): ?>
-        <div class="col-sm-4 front-col">
-        <span class="h1"><i class="glyphicon glyphicon-calendar"> </i></span>
-        <?php print render($page['front_second_col']); ?>
-        </div>
-        <?php endif; ?>
-        <?php if ($page['front_third_col']): ?>
-        <div class="col-sm-6 front-col">
-        <span class="h1"><i class="glyphicon glyphicon-stats"> </i></span>
-        <?php print render($page['front_third_col']); ?>
-        </div>
-        <?php endif; ?>
-        </div>
-        <?php if ($page['after_content']) print render($page['after_content']); ?>
+    <div class="row">
+      <div class="<?php ($page['sidebar_first']? print 'col-md-9' : 'col-md-12'); ?>">
+        <article class="node-edicion full">
+          <aside id="tabs"><?php print render($tabs); ?></aside>
+          <header class="page-title">
+          <?php $torneo   = field_get_items('node', $node, 'field_edicion_torneo'); ?>
+            <h1><span><?php print $torneo[0]['entity']->title . ' - ' . $title; ?></span></h1>
+          </header>
+          <?php print render($page['content']); ?>
+          <?php if ($page['after_content']) print render($page['after_content']); ?>
+        </article>
+      </div>
+      <?php if ($page['sidebar_first']): ?>
+      <div class="col-md-3">
+        <aside>
+          <?php print render($page['sidebar_first']); ?>
+        </aside>
+      </div>
+      <?php endif; ?>
+    </div>
   </div>
 </main>
 <!-- Fin  MAIN CONTENT-->

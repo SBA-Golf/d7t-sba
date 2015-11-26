@@ -23,12 +23,15 @@
  **/
 ?>
 
+<a href="<?php print $fields['path']->content; ?>">
 <div class="upcoming-box">
-  <div class="upcoming-meta">
+  <div class="upcoming-meta" style="background-color: <?php print $fields['field_torneo_color']->content; ?>;">
     <?php print $fields['field_partido_fecha']->content; ?>
   </div>
   <div class="upcoming-right">
-    <h4><?php print $fields['title']->content; ?></h4>
+    <h4><?php print $fields['title_field']->content; ?></h4>
     <p><?php print $fields['field_partido_campo']->content ?></p>
   </div>
 </div>
+</a>
+<hr>

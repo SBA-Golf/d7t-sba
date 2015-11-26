@@ -38,11 +38,4 @@
 <?php endif; ?>
 <?php endforeach; ?>
 </a>
-<hr style="margin:0;margin-top: 0.5em;" />
-<div class="text-center" style="background-color: white;padding: 0.5em;">
-<?php foreach ($fields as $id => $field): ?>
-<?php if ($id == 'field_edicion_reglamento' || $id == 'field_edicion_clasificacion'): ?>
-    <?php print $field->content; ?>
-<?php endif; ?>
-<?php endforeach; ?>
-</div>
+

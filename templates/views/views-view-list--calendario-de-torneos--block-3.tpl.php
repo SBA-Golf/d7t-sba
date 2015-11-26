@@ -9,5 +9,4 @@
     <?php endforeach; ?>
   </div>
   <?php print $list_type_suffix; ?>
-<hr/>
 <?php print $wrapper_suffix; ?>

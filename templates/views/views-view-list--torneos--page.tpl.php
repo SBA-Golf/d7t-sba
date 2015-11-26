@@ -9,7 +9,7 @@
   $node = node_load($view->result[$id]->nid);
   $color = field_get_items('node',$node,'field_torneo_color');
 ?>
-  <div class="portfolio-item thumbnail" style="background-color: <?php print $color[0]['rgb']; ?>">
+  <div class="portfolio-item thumbnail">
           <?php print $row; ?>
         </div>
       </li>

@@ -74,12 +74,21 @@ input[type="submit"] {
   padding: 6px 12px;
 }
 
+.padd-vertical-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
 .glyphicon.inverted-round {
   @include border-radius(50%);
   color: white;
   background-color: $verde;
   padding: 0.5em;
   margin: 0 1em;
+}
+
+.nav[role=tablist] li a {
+  text-transform: uppercase;
 }
 
 #header {
@@ -286,7 +295,7 @@ main {
             &.has-events {
               .month {
                 background-color: $verde;
-                @include border-radius(50%);
+                //@include border-radius(50%);
                 a {
                   color: white;
                 }
@@ -295,8 +304,8 @@ main {
             &.today {
               .month {
                 background-color: white;
-                @include border-radius(100%);
-                border: solid 3px $verde;
+                //@include border-radius(100%);
+                //border: solid 3px $verde;
                 color: $verde;
                 font-weight: 700;
                 a {
@@ -597,9 +606,10 @@ footer#main-footer {
         font-size: 1em;;
         font-weight: 700;
         color: white;
+        //color: black;
         line-height: 1.4em;
-        @include border-radius(100%);
-        background-color: $verde;
+        //@include border-radius(100%);
+        //background-color: $verde;
         text-align: center;
         min-width: 4.25em;
         min-height: 4.25em;
@@ -636,6 +646,11 @@ footer#main-footer {
   position: relative;
   @include rhythm;
   margin-top: 0;
+  &.thumbnail {
+    padding: 0;
+    border: solid 1px black;
+    @include border-radius(0);
+  }
 
   .portfolio-item-preview {
     overflow: hidden;
@@ -792,7 +807,7 @@ footer#main-footer {
 }
 
 /**
- * Patrocionios
+ * Patrocinios
  */
 .region-sponsors {
   @include rhythm-borders;
@@ -813,6 +828,7 @@ footer#main-footer {
 }
 .view-display-id-page_1 .row>div {
   padding: 1em;
+  margin: 30px 0;
 }
 
 /**
@@ -820,7 +836,7 @@ footer#main-footer {
  */
 .view-display-id-entity_view_1 {
   li {
-    min-height: 320px;
+    min-height: 200px;
   }
 }
 .thumbnail {
@@ -842,7 +858,7 @@ a.thumb-info {
   text-decoration: none;
 }
 a.thumb-info img {
-  border-radius: 3px 3px 0 0;
+  //border-radius: 3px 3px 0 0;
   position: relative;
   transition: all 0.2s linear 0s;
 }
@@ -1051,4 +1067,58 @@ a.thumb-info span.thumb-info-action-icon i {
 .padding-20 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+
+#block-views-calendario-de-torneos-block-3 {
+    ul {
+      list-style-type: none;
+    }
+    .upcoming-box {
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      margin: 20px 0 40px;
+      .upcoming-meta {
+        float: left;
+        margin: 0 0.625em 0 0;
+        padding: 0.47375em 1.1em;
+        font-size: 1em;;
+        font-weight: 700;
+        color: white;
+        //color: black;
+        line-height: 1.4em;
+        //@include border-radius(100%);
+        //background-color: $verde;
+        text-align: center;
+        min-width: 4.25em;
+        min-height: 4.25em;
+      }
+      .upcoming-right {
+        width: 82%;
+        //float: right;
+        margin: 0;
+        padding: 0;
+        font-size: 12px;
+        h4 {
+          font-weight: bold;
+          a {
+          }
+        }
+      }
+    }
+  }
+
+.nav-pills > li > a {
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills >
+li.active > a:hover {
+  background-color: $verde;
+}
+
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  background-color: $verde;
 }

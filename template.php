@@ -77,6 +77,13 @@ function sba_preprocess_page(&$variables) {
     $variables['secondary_nav'] = menu_tree(variable_get('menu_user_links_source', 'user-menu'));
     $variables['secondary_nav']['#theme_wrappers'] = array('menu_tree__secondary');
   }
+
+  // Page suggestions
+  if (isset($variables['node'])) {
+    $node = $variables['node'];
+    $suggestion = 'page__' . str_replace('-', '--', $node->type);
+    $variables['theme_hook_suggestions'][] = $suggestion;
+  }
 }
 
 function sba_preprocess_node(&$variables) {
