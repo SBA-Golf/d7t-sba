@@ -78,6 +78,9 @@ input[type="submit"] {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.padd-bottom-20 {
+  padding-bottom: 20px;
+}
 
 .glyphicon.inverted-round {
   @include border-radius(50%);
