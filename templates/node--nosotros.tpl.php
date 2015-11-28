@@ -21,6 +21,7 @@
   hide($content['field_inscripcion']);
 ?>
 
+<article class="node-nosotros full">
 <div class="padd-vertical-20">
   <h2 class="padd-bottom-20"><?php print t('Intro'); ?></h2>
   <?php print render($content['field_intro']); ?>
@@ -48,5 +49,6 @@
   <?php print render($content['field_instrucciones']); ?>
   <?php print render($content['field_inscripcion']); ?>
 </div>
+</article>
 
 <?php endif; ?>

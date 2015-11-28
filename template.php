@@ -129,6 +129,19 @@ function sba_preprocess_views_view(&$variables) {
   }
 }
 
+function sba_field__field_imagen_intro__nosotros($variables) {
+  $output = '';
+
+  foreach ($variables ['items'] as $delta => $item) {
+    $uri = $item ['#item']['uri'];
+    //$src = image_style_url('large', $uri);
+    $src = file_create_url($uri);
+    $output = '<img src="' . $src . '" class="img-responsive center-block" typeof="foaf:Image">';
+  }
+
+  return $output;
+}
+
 function sba_field__field_noticia_foto__noticia($variables) {
   $output = '';
 
