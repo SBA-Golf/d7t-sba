@@ -90,6 +90,8 @@ input[type="submit"] {
   margin: 0 1em;
 }
 
+
+
 .nav[role=tablist] li a {
   text-transform: uppercase;
 }
@@ -132,6 +134,10 @@ input[type="submit"] {
       li:first-child {
         border-left: 0 none;
       }
+      li.verde,
+      li.verde a {
+        color: $verde;
+      }
     }
   }
 }
@@ -158,6 +164,7 @@ input[type="submit"] {
   overflow: hidden;
   font-weight: 700;
   @include adjust-font-size-to(12px);
+  text-transform: uppercase;
   #block-system-user-menu {
     .content {
       ul {
