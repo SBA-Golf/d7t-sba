@@ -15,39 +15,46 @@
   hide($content['field_intro']);
   hide($content['field_imagen_intro']);
   hide($content['field_estatutos']);
-  hide($content['field_cargos_funciones']);
-  hide($content['field_reparto_de_tareas']);
+  hide($content['field_cargos']);
+  hide($content['field_funciones']);
   hide($content['field_instrucciones']);
   hide($content['field_inscripcion']);
+  //kpr($variables);
+  if (isset($variables['field_estatutos']) && !empty($variables['field_estatutos'])) {
+    $estatutos = file_create_url($variables['field_estatutos'][0]['uri']);
+  }
+  if (isset($variables['field_cargos']) && !empty($variables['field_cargos'])) {
+    $cargos = file_create_url($variables['field_cargos'][0]['uri']);
+  }
+  if (isset($variables['field_funciones']) && !empty($variables['field_funciones'])) {
+    $funciones = file_create_url($variables['field_funciones'][0]['uri']);
+  }
 ?>
 
 <article class="node-nosotros full">
 <div class="padd-vertical-20">
-  <h2 class="padd-bottom-20"><?php print t('Intro'); ?></h2>
-  <?php print render($content['field_intro']); ?>
-  <?php print render($content['field_imagen_intro']); ?>
-</div>
-
-<div class="padd-vertical-20">
-  <h2 class="padd-bottom-20"><?php print t('Estatutos'); ?></h2>
-  <?php print render($content['field_estatutos']); ?>
-</div>
-
-<div class="padd-vertical-20">
-  <h2 class="padd-bottom-20"><?php print t('Cargos y funciones'); ?></h2>
-  <?php print render($content['field_cargos_funciones']); ?>
-  <?php print render($content['field_reparto_de_tareas']); ?>
-</div>
-
-<div class="padd-vertical-20">
-  <h2 class="padd-bottom-20"><?php print t('Contacto'); ?></h2>
-  <?php print render($content['field_contacto']); ?>
-</div>
-
-<div class="padd-vertical-20">
-  <h2 class="padd-bottom-20"><?php print t('Inscripción'); ?></h2>
-  <?php print render($content['field_instrucciones']); ?>
-  <?php print render($content['field_inscripcion']); ?>
+  <ul class="nav nav-pills nav-justified" role="tablist">
+     <li role="presentation" class="active"><a href="#intro" aria-controls="intro" role="tab" data-toggle="tab">Intro</a></li>
+     <li role="presentation"><a href="<?php print $estatutos; ?>" aria-controls="estatutos" role="tab">Estatutos</a></li>
+     <li role="presentation"><a href="<?php print $cargos; ?>" aria-controls="cargos" role="tab">Cargos</a></li>
+     <li role="presentation"><a href="<?php print $funciones; ?>" aria-controls="funciones" role="tab">Funciones</a></li>
+     <li role="presentation"><a href="#contacto" aria-controls="contacto" role="tab" data-toggle="tab">Contacto</a></li>
+     <li role="presentation"><a href="#inscripcion" aria-controls="inscripcion" role="tab" data-toggle="tab">Inscripción</a></li>
+  </ul>
+  <hr/>
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane padd-vertical-20 active" id="intro">
+      <?php print render($content['field_intro']); ?>
+      <?php print render($content['field_imagen_intro']); ?>
+    </div>
+    <div role="tabpanel" class="tab-pane padd-vertical-20 active" id="contacto">
+      <?php print render($content['field_contacto']); ?>
+    </div>
+    <div role="tabpanel" class="tab-pane padd-vertical-20 active" id="inscripcion">
+      <?php print render($content['field_instrucciones']); ?>
+      <?php print render($content['field_inscripcion']); ?>
+    </div>
+  </div>
 </div>
 </article>
 

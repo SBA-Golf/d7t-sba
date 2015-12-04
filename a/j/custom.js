@@ -52,7 +52,7 @@ vdj(document).ready(function($) {
     loop:true,
     margin:10,
     autoplay: true,
-    autoplayTimeout:5000,
+    autoplayTimeout:2000,
     autoplayHoverPause:true,
     responsiveClass:true,
     responsive:{
