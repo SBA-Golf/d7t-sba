@@ -20,6 +20,7 @@
   hide($content['field_instrucciones']);
   hide($content['field_inscripcion']);
   //kpr($variables);
+  $estatutos = $cargos = $funciones = '#';
   if (isset($variables['field_estatutos']) && !empty($variables['field_estatutos'])) {
     $estatutos = file_create_url($variables['field_estatutos'][0]['uri']);
   }
