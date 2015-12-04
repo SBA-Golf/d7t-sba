@@ -69,7 +69,7 @@
         <?php if ($torneo->nid == 1): ?>
         <li role="presentation"><a href="#charla" aria-controls="charla" role="tab" data-toggle="tab">Charla</a></li>
         <?php endif; ?>
-        <li role="presentation"><a href="#resultados" aria-controls="resultados" role="tab" data-toggle="tab">Resutados</a></li>
+        <li role="presentation"><a href="#resultados" aria-controls="resultados" role="tab" data-toggle="tab">Resultados</a></li>
         <li role="presentation"><a href="#cronica" aria-controls="cronica" role="tab" data-toggle="tab">Crónica</a></li>
         <li role="presentation"><a href="#juegos" aria-controls="juegos" role="tab" data-toggle="tab">Juegos</a></li>
         <li role="presentation"><a href="#galeria" aria-controls="galeria" role="tab" data-toggle="tab">Galería</a></li>
