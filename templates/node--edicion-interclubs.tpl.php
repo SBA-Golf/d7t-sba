@@ -18,6 +18,9 @@
   hide($content['field_edicion_clasificacion']);
   hide($content['links']);
   hide($content['torneos_entity_view_2']);
+
+  $torneo = node_load($variables['field_edicion_torneo'][0]['target_id']);
+  $color = field_get_items('node',$torneo,'field_torneo_color')[0]['rgb'];
 ?>
 <!--
   <div class="padd-vertical-20">
@@ -37,6 +40,13 @@
 -->
 
 <!-- Nav tabs -->
+<style>
+.nav.nav-pills li.active > a,
+.nav.nav-pills li.active > a:hover,
+.partido-date .day {
+  background-color: <?php print $color; ?>
+}
+</style>
 <ul class="nav nav-pills nav-justified" role="tablist">
   <li role="presentation" class="active"><a href="#jornadas" aria-controls="jornadas" role="tab" data-toggle="tab">Jornadas</a></li>
   <li role="presentation"><a href="#reglamento" aria-controls="reglamento" role="tab" data-toggle="tab">Reglamento</a></li>

@@ -25,6 +25,7 @@
  $edicion = field_get_items('node', $node, 'field_partido_edicion');
  $torneo_nid = field_get_items('node',$edicion[0]['entity'],'field_edicion_torneo');
  $torneo = node_load($torneo_nid[0]['target_id']);
+ $color = field_get_items('node',$torneo,'field_torneo_color')[0]['rgb'];
  //$torneo_title = field_get_items('node',$torneo,'title_field');
 ?>
 <article class="node-partido full">
@@ -90,6 +91,13 @@
     <?php if (user_is_logged_in()): ?>
     <section class="padd-vertical-20">
       <!-- Nav tabs -->
+<style>
+.nav.nav-pills li.active > a,
+.nav.nav-pills li.active > a:hover,
+.partido-date .day {
+  background-color: <?php print $color; ?>
+}
+</style>
       <ul class="nav nav-pills nav-justified" role="tablist">
         <li role="presentation" class="active"><a href="<?php print $horarios; ?>" aria-controls="horarios" role="tab">Horarios</a></li>
         <li role="presentation"><a href="<?php print $menu; ?>" aria-controls="menu" role="tab">Menú</a></li>

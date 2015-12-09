@@ -11,7 +11,7 @@
 
 <?php if ($view_mode == 'full'): ?>
 <?php
-//kpr($content);
+  //kpr($variables);
 
   $reglamento = '#';
 
@@ -25,6 +25,8 @@
   if (isset($variables['field_edicion_reglamento']) && !empty($variables['field_edicion_reglamento'])) {
     $reglamento = file_create_url($variables['field_edicion_reglamento'][0]['uri']);
   }
+  $torneo = node_load($variables['field_edicion_torneo'][0]['target_id']);
+  $color = field_get_items('node',$torneo,'field_torneo_color')[0]['rgb'];
 ?>
 <!--
   <div class="padd-vertical-20">
@@ -40,7 +42,14 @@
 -->
 
 <!-- Nav tabs -->
-<ul class="nav nav-pills nav-justified" role="tablist">
+<style>
+.nav.nav-pills li.active > a,
+.nav.nav-pills li.active > a:hover,
+.partido-date .day {
+  background-color: <?php print $color; ?>
+}
+</style>
+<ul class="nav nav-pills nav-justified" role="tablist"">
   <li role="presentation" class="active"><a href="#jornadas" aria-controls="jornadas" role="tab" data-toggle="tab">Jornadas</a></li>
   <li role="presentation"><a href="<?php print $reglamento; ?>" aria-controls="reglamento" role="tab">Reglamento</a></li>
   <li role="presentation"><a href="#clasificaciones" aria-controls="clasificacion" role="tab" data-toggle="tab">Clasificaciones</a></li>
