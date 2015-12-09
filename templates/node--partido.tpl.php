@@ -48,6 +48,22 @@
   </section>
   <?php endif; ?>
 
+  <?php 
+    $menu = $cronica = $horarios = $resultados = '#';
+    if (isset($variables['field_partido_menu_comida']) && !empty($variables['field_partido_menu_comida'])) {
+      $menu = file_create_url($variables['field_partido_menu_comida'][0]['uri']);
+    }
+    if (isset($variables['field_partido_cronica']) && !empty($variables['field_partido_cronica'])) {
+      $cronica = file_create_url($variables['field_partido_cronica'][0]['uri']);
+    }
+    if (isset($variables['field_partido_horarios']) && !empty($variables['field_partido_horarios'])) {
+      $horarios = file_create_url($variables['field_partido_horarios'][0]['uri']);
+    }
+    if (isset($variables['field_partido_clasificaciones']) && !empty($variables['field_partido_clasificaciones'])) {
+      $resultados = file_create_url($variables['field_partido_clasificaciones'][0]['uri']);
+    }
+  ?>
+
   <main class="content">
   <small><?php print render($content['field_partido_edicion']); ?></small>
 
@@ -69,45 +85,24 @@
     <section class="padd-vertical-20">
       <!-- Nav tabs -->
       <ul class="nav nav-pills nav-justified" role="tablist">
-        <li role="presentation" class="active"><a href="#horarios" aria-controls="horarios" role="tab" data-toggle="tab">Horarios</a></li>
-        <li role="presentation"><a href="#menu" aria-controls="menu" role="tab" data-toggle="tab">Menú</a></li>
+        <li role="presentation" class="active"><a href="<?php print $horarios; ?>" aria-controls="horarios" role="tab">Horarios</a></li>
+        <li role="presentation"><a href="<?php print $menu; ?>" aria-controls="menu" role="tab">Menú</a></li>
         <?php if ($torneo->nid == 1): ?>
         <li role="presentation"><a href="#charla" aria-controls="charla" role="tab" data-toggle="tab">Charla</a></li>
         <?php endif; ?>
-        <li role="presentation"><a href="#resultados" aria-controls="resultados" role="tab" data-toggle="tab">Resultados</a></li>
-        <li role="presentation"><a href="#cronica" aria-controls="cronica" role="tab" data-toggle="tab">Crónica</a></li>
+        <li role="presentation"><a href="<?php print $resultados; ?>" aria-controls="resultados" role="tab">Resultados</a></li>
+        <li role="presentation"><a href="<?php print $cronica; ?>" aria-controls="cronica" role="tab">Crónica</a></li>
         <li role="presentation"><a href="#juegos" aria-controls="juegos" role="tab" data-toggle="tab">Juegos</a></li>
         <li role="presentation"><a href="#galeria" aria-controls="galeria" role="tab" data-toggle="tab">Galería</a></li>
       </ul>
 <hr/>
       <!-- Tabs panes -->
       <div class="tab-content">
-        <div role="tabpanel" class="tab-pane padd-vertical-20 active" id="horarios">
-          <?php if ($variables['field_partido_horarios']): ?>
-            <div class="padd-vertical-20"><a target="_blank" href="<?php print render($content['field_partido_horarios'][0]['#markup']); ?>"><span class="h4"><i class="glyphicon glyphicon-file"> </i><?php print t('Horarios'); ?></span></a></div>
-          <?php endif; ?>
-        </div>
-        <div role="tabpanel" class="tab-pane padd-vertical-20" id="menu">
-        <?php //kpr($content); ?>
-          <?php if ($variables['field_partido_menu_comida']): ?>
-            <div class="padd-vertical-20"><?php print render($content['field_partido_menu_comida']); ?></div>
-          <?php endif; ?>
-        </div>
         <div role="tabpanel" class="tab-pane padd-vertical-20" id="charla">
           <p class="h3 text-center"><?php print render($content['field_partido_titulo_charla'][0]['#markup']); ?></p>
           <p class="h5 text-center"><?php print render($content['field_partido_charla_ponente'][0]['#markup']); ?></p>
           <?php print render($content['field_partido_resumen_charla']); ?>
           <div class="padd-vertical-20"><?php print render($content['field_partido_adjuntos_charla']); ?></div>
-        </div>
-        <div role="tabpanel" class="tab-pane padd-vertical-20" id="resultados">
-          <?php if ($variables['field_partido_clasificaciones']): ?>
-            <div class="padd-vertical-20"><a target="_blank" href="<?php print render($content['field_partido_clasificaciones'][0]['#markup']); ?>"><span class="h4"><i class="glyphicon glyphicon-file"> </i><?php print t('Clasificación'); ?></span></a></div>
-          <?php endif; ?>
-        </div>
-        <div role="tabpanel" class="tab-pane padd-vertical-20" id="cronica">
-          <?php if ($variables['field_partido_cronica']): ?>
-            <div class="padd-vertical-20"><a target="_blank" href="<?php print render($content['field_partido_cronica'][0]['#markup']); ?>"><span class="h4"><i class="glyphicon glyphicon-file"> </i><?php print t('Crónica'); ?></span></a></div>
-          <?php endif; ?>
         </div>
         <div role="tabpanel" class="tab-pane padd-vertical-20" id="juegos">
         </div>
