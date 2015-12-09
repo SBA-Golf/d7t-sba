@@ -48,10 +48,10 @@
       <?php print render($content['field_intro']); ?>
       <?php print render($content['field_imagen_intro']); ?>
     </div>
-    <div role="tabpanel" class="tab-pane padd-vertical-20 active" id="contacto">
+    <div role="tabpanel" class="tab-pane padd-vertical-20" id="contacto">
       <?php print render($content['field_contacto']); ?>
     </div>
-    <div role="tabpanel" class="tab-pane padd-vertical-20 active" id="inscripcion">
+    <div role="tabpanel" class="tab-pane padd-vertical-20" id="inscripcion">
       <?php print render($content['field_instrucciones']); ?>
       <?php print render($content['field_inscripcion']); ?>
     </div>
