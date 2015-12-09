@@ -961,7 +961,7 @@ a.thumb-info span.thumb-info-action-icon i {
     padding: 5px 10px;
     text-align: center;
     text-transform: uppercase;
-    @include border-bottom-radius(4px);
+    //@include border-bottom-radius(4px);
   }
 }
 
