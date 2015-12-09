@@ -56,7 +56,10 @@
       <p class="h4"><?php print render($content['field_partido_tipo'][0]['#markup']); ?> &mdash; <?php print render($content['field_partido_modalidad'][0]['#markup']); ?></p>
     </div>
     <div class="col-sm-8">
-    <?php print render($content['field_partido_patrocinadores']); ?>
+      <h2 class="text-uppercase">Patrocinios</h2>
+      <div class="padd-vertical-20">
+        <?php print render($content['field_partido_patrocinadores']); ?>
+      </div>
     </div>
     <div class="clearfix"></div>
 
