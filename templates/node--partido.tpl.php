@@ -37,9 +37,11 @@
   <?php hide($content['field_partido_menu_comida']); ?>
   <?php hide($content['field_partido_titulo_charla']); ?>
   <?php hide($content['field_partido_charla_ponente']); ?>
+  <?php hide($content['field_partido_foto_ponente']); ?>
   <?php hide($content['field_partido_resumen_charla']); ?>
   <?php hide($content['field_partido_adjuntos_charla']); ?>
   <?php hide($content['field_partido_patrocinadores']); ?>
+  <?php hide($content['field_partido_juegos']); ?>
   <?php hide($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
 
   <?php if (isset($content['field_partido_ultima_hora'])): ?>
@@ -61,6 +63,10 @@
     }
     if (isset($variables['field_partido_clasificaciones']) && !empty($variables['field_partido_clasificaciones'])) {
       $resultados = file_create_url($variables['field_partido_clasificaciones'][0]['uri']);
+    }
+    $foto = null;
+    if (isset($variables['field_partido_foto_ponente']) && !empty($variables['field_partido_foto_ponente'])) {
+      $foto = image_style_url('medium',$variables['field_partido_foto_ponente'][0]['uri']);
     }
   ?>
 
@@ -100,11 +106,17 @@
       <div class="tab-content">
         <div role="tabpanel" class="tab-pane padd-vertical-20" id="charla">
           <p class="h3 text-center"><?php print render($content['field_partido_titulo_charla'][0]['#markup']); ?></p>
-          <p class="h5 text-center"><?php print render($content['field_partido_charla_ponente'][0]['#markup']); ?></p>
+          <p class="h5 text-center">
+            <?php if ($foto): ?>
+            <img src="<?php print $foto; ?>" class="img-responsive" style="margin: 0 auto;">
+            <?php endif; ?>
+            <?php print render($content['field_partido_charla_ponente'][0]['#markup']); ?>
+          </p>
           <?php print render($content['field_partido_resumen_charla']); ?>
           <div class="padd-vertical-20"><?php print render($content['field_partido_adjuntos_charla']); ?></div>
         </div>
         <div role="tabpanel" class="tab-pane padd-vertical-20" id="juegos">
+          <?php print render($content['field_partido_juegos']); ?>
         </div>
         <div role="tabpanel" class="tab-pane padd-vertical-20" id="galeria">
         <?php global $user; if (in_array('editor', $user->roles)|| $user->uid == 1): ?>
