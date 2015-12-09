@@ -16,4 +16,4 @@
     <?php print $row; ?>
   </div>
   </div>
-<?php endforeach; ?></h>
+<?php endforeach; ?>

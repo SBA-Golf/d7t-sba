@@ -1236,9 +1236,6 @@ a.thumb-info span.thumb-info-action-icon i {
   font-weight: 700;
   color: white;
   line-height: 1.4em;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
   background-color: #0da508;
   text-align: center;
   min-width: 4.25em;
@@ -1273,9 +1270,6 @@ a.thumb-info span.thumb-info-action-icon i {
   font-weight: 700;
   color: #303030;
   line-height: 1.4em;
-  -moz-border-radius: 100%;
-  -webkit-border-radius: 100%;
-  border-radius: 100%;
   background-color: #d0c90b;
   text-align: center;
   min-width: 4.25em;

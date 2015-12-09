@@ -988,7 +988,7 @@ a.thumb-info span.thumb-info-action-icon i {
       font-weight: 700;
       color: white;
       line-height: 1.4em;
-      @include border-radius(100%);
+      //@include border-radius(100%);
       background-color: $verde;
       text-align: center;
       min-width: 4.25em;
@@ -1022,7 +1022,7 @@ a.thumb-info span.thumb-info-action-icon i {
       font-weight: 700;
       color: #303030;
       line-height: 1.4em;
-      @include border-radius(100%);
+      //@include border-radius(100%);
       background-color: #d0c90b;
       text-align: center;
       min-width: 4.25em;
