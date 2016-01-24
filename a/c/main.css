@@ -581,7 +581,7 @@ a.back-to-top {
   margin-bottom: 1.61538em;
 }
 /* line 445, ../../scss/main.scss */
-.region-content .node-noticia .content img {
+.region-content .node-noticia .content > img {
   margin: 0 auto;
   width: 100%;
   margin-top: 1.61538em;

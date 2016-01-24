@@ -14,6 +14,7 @@ regions[top_header]        = Top header
 regions[header]            = Header
 regions[slider]            = Slider
 regions[slogan]            = Slogan
+regions[promos]            = Promos
 regions[after_content]     = After content
 regions[sidebar_first]     = Sidebar first
 regions[sponsors]          = Sponsors

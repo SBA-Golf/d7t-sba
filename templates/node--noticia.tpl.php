@@ -29,7 +29,7 @@ if ($teaser):
 <?php
 if ($view_mode == "full"):
 ?>
-<article class="node-noticia teaser">
+<article class="node-noticia full">
   <p class="meta">
     <time class="pubdate" datetime="<?php print date(DATE_ATOM, $created); ?>"><?php print format_date($created,'custom','j  M  Y'); ?></time>
   <p>

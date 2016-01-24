@@ -23,8 +23,13 @@
  *
  * @ingroup views_templates
  */
+$url = '/node/' . $row->nid;
+$torneo = node_load($row->node_field_data_field_edicion_torneo_nid);
+$nombre_torneo = (str_replace(' ', '', strtolower($torneo->title)));
+$torneo_url = (isset($row->field_field_edicion_web_torneo) && !empty($row->field_field_edicion_web_torneo)) ? $row->field_field_edicion_web_torneo[0]['raw']['url'] : '#';
+$url = ($nombre_torneo == 'otrostorneos') ? $torneo_url : '/node/' . $row->nid;
 ?>
-<a href="/node/<?php print $variables['row']->nid; ?>" class="thumb-info">
+<a href="<?php print $url; ?>" class="thumb-info">
 <?php foreach ($fields as $id => $field): ?>
 <?php if ($id == 'title' || $id == 'field_imagen_torneo'): ?>
   <?php if (!empty($field->separator)): ?>

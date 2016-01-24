@@ -53,9 +53,15 @@
 <?php endif; ?>
 <!-- Fin Mensajes -->
 
- <?php if ($page['slogan']): ?>
+<?php if ($page['slogan']): ?>
 <div class="container alert alert-danger">
 <?php print render($page['slogan']); ?>
+</div>
+<?php endif; ?>
+
+<?php if ($page['promos']): ?>
+<div class="container alert alert-info">
+<?php print render($page['promos']); ?>
 </div>
 <?php endif; ?>
 
