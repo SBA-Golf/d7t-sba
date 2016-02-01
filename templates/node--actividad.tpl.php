@@ -19,7 +19,7 @@
 </article>
 <?php endif; ?>
 
-<?php if ($iview_mode == "full"): ?>
+<?php if ($view_mode == "full"): ?>
 <article class="node-actividad">
 <?php print render($content); ?>
 </article>
