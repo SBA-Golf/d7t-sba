@@ -1394,3 +1394,9 @@ li.active > a:hover {
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background-color: #0da508;
 }
+
+/* line 1144, ../../scss/main.scss */
+.region-content .view-id-calendario_de_torneos.view-display-id-page_1
+.views-field-title a {
+  color: white;
+}
