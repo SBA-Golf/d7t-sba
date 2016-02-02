@@ -165,6 +165,17 @@ function sba_field__field_imagen_torneo__torneo($variables) {
   return $output;
 }
 
+function sba_field__field_imagen__actividad($variables) {
+  $output = '';
+
+  foreach ($variables ['items'] as $delta => $item) {
+    $uri = $item ['#item']['uri'];
+    $src = image_style_url('panoramica_media', $uri);
+    $output = '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+  }
+  return $output;
+}
+
 function sba_field__field_galeria_foto__galeria($variables) {
   if ($variables['element']['#formatter'] == 'magnific_popup_file_field_formatter') {
     $output = '';
