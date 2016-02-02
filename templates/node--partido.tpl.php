@@ -107,6 +107,8 @@
         <li role="presentation"><a href="<?php print $resultados; ?>" aria-controls="resultados" role="tab">Resultados</a></li>
         <?php if ($torneo->nid != 152 && $torneo->nid != 11): ?>
         <li role="presentation"><a href="<?php print $cronica; ?>" aria-controls="cronica" role="tab">Crónica</a></li>
+        <?php endif; ?>
+        <?php if ($torneo->nid != 152 && $torneo->nid != 11 && $torneo->nid != 245): ?>
         <li role="presentation"><a href="#juegos" aria-controls="juegos" role="tab" data-toggle="tab">Juegos</a></li>
         <?php endif; ?>
         <li role="presentation"><a href="#galeria" aria-controls="galeria" role="tab" data-toggle="tab">Galería</a></li>
