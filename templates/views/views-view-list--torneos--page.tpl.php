@@ -21,7 +21,6 @@
 <?php
   $otros = node_load(223);
   $miniatura = field_get_items('node',$otros,'field_imagen_torneo');
-  $src = file_create_url($miniatura[0]['uri']);
   $img_style = image_style_url('panoramica_media',$miniatura[0]['uri']);
 ?>
   <a href="/otros-torneos" class="thumb-info">
@@ -40,3 +39,4 @@
 
   <?php print $list_type_suffix; ?>
 <?php print $wrapper_suffix; ?>
+<?php dsm($otros);print render($otros->field_imagen_torneo); ?>
