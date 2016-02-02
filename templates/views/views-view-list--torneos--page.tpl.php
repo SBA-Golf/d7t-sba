@@ -22,9 +22,10 @@
   $otros = node_load(223);
   $miniatura = field_get_items('node',$otros,'field_imagen_torneo');
   $src = file_create_url($miniatura[0]['uri']);
+  $img_style = image_style_url('panoramica_media',$miniatura[0]['uri']);
 ?>
   <a href="/otros-torneos" class="thumb-info">
-    <img class="img-responsive" typeof="foaf:Image" src="<?php print $src; ?>">
+    <img class="img-responsive" typeof="foaf:Image" src="<?php print $img_style; ?>">
     <span class="thumb-info-title" style="background-color: #777">Otros Torneos</span>
     <span class="thumb-info-action">
       <span class="thumb-info-action-icon" href="#" style="background-color: #777">
