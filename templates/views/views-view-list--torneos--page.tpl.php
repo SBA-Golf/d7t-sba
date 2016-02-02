@@ -39,4 +39,3 @@
 
   <?php print $list_type_suffix; ?>
 <?php print $wrapper_suffix; ?>
-<?php dsm($otros);print render($otros->field_imagen_torneo); ?>
