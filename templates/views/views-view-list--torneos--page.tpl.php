@@ -14,5 +14,28 @@
         </div>
       </li>
     <?php endforeach; ?>
+<?php if ($view->current_display == "page"): ?>
+<li class="col-xs-12 col-sm-6">
+<div class="portfolio-item thumbnail">
+<article class="node-torneo teaser">
+<?php
+  $otros = node_load(223);
+  $miniatura = field_get_items('node',$otros,'field_imagen_torneo');
+  $src = file_create_url($miniatura[0]['uri']);
+?>
+  <a href="/otros-torneos" class="thumb-info">
+    <img class="img-responsive" typeof="foaf:Image" src="<?php print $src; ?>">
+    <span class="thumb-info-title" style="background-color: #777">Otros Torneos</span>
+    <span class="thumb-info-action">
+      <span class="thumb-info-action-icon" href="#" style="background-color: #777">
+        <i class="glyphicon glyphicon-search"> </i>
+      </span>
+    </span>
+  </a>
+</article>
+</div>
+</li>
+<?php endif; ?>
+
   <?php print $list_type_suffix; ?>
 <?php print $wrapper_suffix; ?>
