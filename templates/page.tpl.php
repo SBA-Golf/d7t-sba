@@ -21,7 +21,7 @@
       </a>
       <div class="collapse navbar-collapse" id="navbar-main-menu">
         <?php print render($primary_nav); ?>
-        <ul class="visible-xs">
+        <ul class="nav navbar-nav visible-xs">
           <li><a href="/user">Área de socios</a></li>
         </ul>
       </div>
