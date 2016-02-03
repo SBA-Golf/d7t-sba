@@ -316,10 +316,12 @@ main {
                 background-color: white;
                 //@include border-radius(100%);
                 //border: solid 3px $verde;
-                color: $verde;
+                //color: $verde;
+                color: #333;
                 font-weight: 700;
                 a {
-                  color: $verde;
+                  //color: $verde;
+                  color: #333;
                   font-weight: 700;
                 }
               }

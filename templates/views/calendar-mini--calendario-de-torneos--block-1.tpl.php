@@ -65,7 +65,7 @@ $colores = array();
             <?php //dsm($cell['data']); ?>
             <?php
               $cal_dia = explode('-',$cell['id'])[3];
-              $data = '<div class="month mini-day-on" style="background-color: ' . $colores[$cal_dia] . '">';
+              $data = '<div class="month mini-day-on" style="background-color: ' . $colores[(int)$cal_dia] . '">';
               $cell['data'] = str_replace('<div class="month mini-day-on">', $data, $cell['data']);
             ?>
             <?php endif; ?>
