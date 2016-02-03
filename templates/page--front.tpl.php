@@ -1,8 +1,6 @@
 <!-- Header -->
 <header id="header" class="clearfix">
-    <?php print render($page['top_header']); ?>
     <?php print render($page['header']); ?>
-  </div>
 </header>
 <!-- Fin Header -->
 
@@ -21,6 +19,9 @@
       </a>
       <div class="collapse navbar-collapse" id="navbar-main-menu">
         <?php print render($primary_nav); ?>
+        <ul class="visible-xs">
+          <li><a href="/user">Área de socios</a></li>
+        </ul>
       </div>
     </div>
   </div>
