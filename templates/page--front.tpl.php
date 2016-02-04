@@ -1,5 +1,6 @@
 <!-- Header -->
 <header id="header" class="clearfix">
+    <?php print render($page['top_header']); ?>
     <?php print render($page['header']); ?>
 </header>
 <!-- Fin Header -->
