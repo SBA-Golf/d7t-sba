@@ -869,12 +869,16 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   -webkit-border-radius: 0;
   border-radius: 0;
 }
-/* line 675, ../../scss/main.scss */
+/* line 673, ../../scss/main.scss */
+.portfolio-item.thumbnail a {
+  z-index: 100;
+}
+/* line 678, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview {
   overflow: hidden;
   position: relative;
 }
-/* line 679, ../../scss/main.scss */
+/* line 682, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay {
   position: absolute;
   top: 0;
@@ -887,7 +891,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transform: translateY(20%);
   transition: transform 0.5s ease 0s;
 }
-/* line 690, ../../scss/main.scss */
+/* line 693, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions {
   position: absolute;
   bottom: 15%;
@@ -896,7 +900,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-top: -24px;
   box-sizing: border-box;
 }
-/* line 697, ../../scss/main.scss */
+/* line 700, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link {
   background-color: #0da508;
@@ -910,13 +914,13 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   text-decoration: none;
   width: 48px;
 }
-/* line 707, ../../scss/main.scss */
+/* line 710, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-zoom i,
 .portfolio-item .portfolio-item-preview .portfolio-item-overlay .portfolio-item-overlay-actions .portfolio-item-link i {
   font-size: 20px;
   line-height: 48px;
 }
-/* line 715, ../../scss/main.scss */
+/* line 718, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description {
   position: absolute;
   top: 50px;
@@ -924,11 +928,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   right: 0;
   color: white;
 }
-/* line 722, ../../scss/main.scss */
+/* line 725, ../../scss/main.scss */
 .portfolio-item .portfolio-item-preview .portfolio-item-description h4 a {
   color: white;
 }
-/* line 730, ../../scss/main.scss */
+/* line 733, ../../scss/main.scss */
 .portfolio-item:hover .portfolio-item-overlay {
   opacity: 1;
   transform: translateY(0px);
@@ -937,12 +941,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Magnific Popup
  */
-/* line 739, ../../scss/main.scss */
+/* line 742, ../../scss/main.scss */
 .image-source-link {
   color: #98C3D1;
 }
 
-/* line 743, ../../scss/main.scss */
+/* line 746, ../../scss/main.scss */
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
@@ -954,17 +958,17 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.3s ease-out;
 }
 
-/* line 754, ../../scss/main.scss */
+/* line 757, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready .mfp-container {
   opacity: 1;
 }
 
-/* line 757, ../../scss/main.scss */
+/* line 760, ../../scss/main.scss */
 .mfp-with-zoom.mfp-ready.mfp-bg {
   opacity: 0.8;
 }
 
-/* line 761, ../../scss/main.scss */
+/* line 764, ../../scss/main.scss */
 .mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
   opacity: 0;
@@ -975,7 +979,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
  *
  * Fix overlaping of menu
  */
-/* line 771, ../../scss/main.scss */
+/* line 774, ../../scss/main.scss */
 #admin-menu {
   z-index: 500;
 }
@@ -983,7 +987,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Calendario
  */
-/* line 778, ../../scss/main.scss */
+/* line 781, ../../scss/main.scss */
 .calendar-calendar tr td.today,
 .calendar-calendar tr.odd td.today,
 .calendar-calendar tr.even td.today {
@@ -991,21 +995,21 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
 }
 
-/* line 785, ../../scss/main.scss */
+/* line 788, ../../scss/main.scss */
 .calendar-calendar tr td.has-events a,
 .calendar-calendar tr.odd td.has-events a,
 .calendar-calendar tr.even td.has-events a {
   font-weight: bold;
 }
 
-/* line 791, ../../scss/main.scss */
+/* line 794, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day div.monthview,
 .calendar-calendar .week-view .full td.multi-day div.weekview,
 .calendar-calendar .day-view .full td.multi-day div.dayview {
   background: #cfedce none repeat scroll 0 0;
 }
 
-/* line 797, ../../scss/main.scss */
+/* line 800, ../../scss/main.scss */
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .continues,
 .calendar-calendar .month-view .full td.multi-day .inner .monthview .cutoff,
 .calendar-calendar .week-view .full td.multi-day .inner .weekview .continues,
@@ -1013,7 +1017,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   background: #cfedce none repeat scroll 0 0;
 }
 
-/* line 804, ../../scss/main.scss */
+/* line 807, ../../scss/main.scss */
 .calendar-calendar tr td {
   padding: 0.5em;
 }
@@ -1021,11 +1025,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Google Map
  */
-/* line 810, ../../scss/main.scss */
+/* line 813, ../../scss/main.scss */
 #map-canvas {
   height: 400px;
 }
-/* line 812, ../../scss/main.scss */
+/* line 815, ../../scss/main.scss */
 #map-canvas img {
   max-width: inherit;
 }
@@ -1033,11 +1037,11 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Webform contacto
  */
-/* line 821, ../../scss/main.scss */
+/* line 824, ../../scss/main.scss */
 .webform-client-form label {
   display: none;
 }
-/* line 824, ../../scss/main.scss */
+/* line 827, ../../scss/main.scss */
 .webform-client-form #edit-submitted-mensaje {
   margin-bottom: 0;
 }
@@ -1045,7 +1049,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Patrocinios
  */
-/* line 832, ../../scss/main.scss */
+/* line 835, ../../scss/main.scss */
 .region-sponsors {
   border-width: 0.07692em;
   border-style: solid;
@@ -1053,7 +1057,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   border: none;
   background-color: white;
 }
-/* line 837, ../../scss/main.scss */
+/* line 840, ../../scss/main.scss */
 .region-sponsors h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1066,7 +1070,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   color: white;
   text-align: center;
 }
-/* line 845, ../../scss/main.scss */
+/* line 848, ../../scss/main.scss */
 .region-sponsors .view-content {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1074,7 +1078,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   margin-bottom: 1.61538em;
 }
 
-/* line 849, ../../scss/main.scss */
+/* line 852, ../../scss/main.scss */
 .view-display-id-page_1 .row > div {
   padding: 1em;
   margin: 30px 0;
@@ -1083,12 +1087,12 @@ footer#main-footer a:hover, footer#main-footer a:focus {
 /**
  * Torneos
  */
-/* line 858, ../../scss/main.scss */
+/* line 861, ../../scss/main.scss */
 .view-display-id-entity_view_1 li {
   min-height: 200px;
 }
 
-/* line 862, ../../scss/main.scss */
+/* line 865, ../../scss/main.scss */
 .thumbnail {
   position: relative;
   border: 1px solid #ddd;
@@ -1101,7 +1105,7 @@ footer#main-footer a:hover, footer#main-footer a:focus {
   transition: all 0.2s ease-in-out 0s;
 }
 
-/* line 874, ../../scss/main.scss */
+/* line 877, ../../scss/main.scss */
 a.thumb-info {
   display: block;
   overflow: hidden;
@@ -1109,13 +1113,13 @@ a.thumb-info {
   text-decoration: none;
 }
 
-/* line 880, ../../scss/main.scss */
+/* line 883, ../../scss/main.scss */
 a.thumb-info img {
   position: relative;
   transition: all 0.2s linear 0s;
 }
 
-/* line 885, ../../scss/main.scss */
+/* line 888, ../../scss/main.scss */
 a.thumb-info span.thumb-info-title {
   background: rgba(36, 27, 28, 0.9) none repeat scroll 0 0;
   color: #fff;
@@ -1132,7 +1136,7 @@ a.thumb-info span.thumb-info-title {
   z-index: 1;
 }
 
-/* line 900, ../../scss/main.scss */
+/* line 903, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action {
   color: #fff;
   width: 100%;
@@ -1147,7 +1151,7 @@ a.thumb-info span.thumb-info-action {
   transition: all 0.3s ease 0s;
 }
 
-/* line 915, ../../scss/main.scss */
+/* line 918, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon {
   background: transparent none repeat scroll 0 0;
   background-color: #0da508;
@@ -1164,23 +1168,23 @@ a.thumb-info span.thumb-info-action-icon {
   transition: all 0.3s ease 0s;
 }
 
-/* line 931, ../../scss/main.scss */
+/* line 934, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action {
   opacity: 1;
 }
 
-/* line 934, ../../scss/main.scss */
+/* line 937, ../../scss/main.scss */
 a.thumb-info:hover span.thumb-info-action-icon {
   top: 0;
   right: 0;
 }
 
-/* line 938, ../../scss/main.scss */
+/* line 941, ../../scss/main.scss */
 a.thumb-info:hover img {
   transform: scale(1.2);
 }
 
-/* line 941, ../../scss/main.scss */
+/* line 944, ../../scss/main.scss */
 a.thumb-info span.thumb-info-action-icon i {
   font-size: 24px;
   left: 3px;
@@ -1189,7 +1193,7 @@ a.thumb-info span.thumb-info-action-icon i {
   color: white;
 }
 
-/* line 949, ../../scss/main.scss */
+/* line 952, ../../scss/main.scss */
 .partido-date .month {
   background-color: #fcfcfc;
   color: #333;
@@ -1200,7 +1204,7 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 20px 30px;
   text-align: center;
 }
-/* line 959, ../../scss/main.scss */
+/* line 962, ../../scss/main.scss */
 .partido-date .day {
   background-color: #0da508;
   color: #fff;
@@ -1215,21 +1219,21 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Actualidad
  */
-/* line 977, ../../scss/main.scss */
+/* line 980, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .view-content .noticia {
   border-width: 0.07692em;
   border-style: solid;
   padding: 1.53846em;
   border: none;
 }
-/* line 982, ../../scss/main.scss */
+/* line 985, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box {
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 987, ../../scss/main.scss */
+/* line 990, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-meta {
   float: left;
   margin: 0 0.625em 0 0;
@@ -1243,7 +1247,7 @@ a.thumb-info span.thumb-info-action-icon i {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 1001, ../../scss/main.scss */
+/* line 1004, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-right {
   width: 72%;
   float: right;
@@ -1251,19 +1255,19 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 0;
   font-size: 12px;
 }
-/* line 1007, ../../scss/main.scss */
+/* line 1010, ../../scss/main.scss */
 .view-actualidad.view-display-id-page .news-box .news-right h4 {
   font-weight: bold;
 }
 
-/* line 1016, ../../scss/main.scss */
+/* line 1019, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box {
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 1021, ../../scss/main.scss */
+/* line 1024, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-meta {
   float: left;
   margin: 0 0.625em 0 0;
@@ -1277,7 +1281,7 @@ a.thumb-info span.thumb-info-action-icon i {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 1035, ../../scss/main.scss */
+/* line 1038, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right {
   width: 72%;
   float: right;
@@ -1285,11 +1289,11 @@ a.thumb-info span.thumb-info-action-icon i {
   padding: 0;
   font-size: 12px;
 }
-/* line 1041, ../../scss/main.scss */
+/* line 1044, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right h4 {
   font-weight: bold;
 }
-/* line 1043, ../../scss/main.scss */
+/* line 1046, ../../scss/main.scss */
 .view-actualidad.view-display-id-block_1 .news-box .news-right h4 a {
   color: #d0c90b !important;
 }
@@ -1297,20 +1301,20 @@ a.thumb-info span.thumb-info-action-icon i {
 /**
  * Portada
  */
-/* line 1055, ../../scss/main.scss */
+/* line 1058, ../../scss/main.scss */
 .front-page .front-col {
   margin-top: 1.61538em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.61538em;
 }
-/* line 1057, ../../scss/main.scss */
+/* line 1060, ../../scss/main.scss */
 .front-page .front-col > span {
   display: block;
   text-align: center;
   margin-top: 0;
 }
-/* line 1063, ../../scss/main.scss */
+/* line 1066, ../../scss/main.scss */
 .front-page .front-col h2 {
   margin-top: 1.61538em;
   padding-top: 0em;
@@ -1319,48 +1323,48 @@ a.thumb-info span.thumb-info-action-icon i {
   text-align: center;
   text-transform: uppercase;
 }
-/* line 1069, ../../scss/main.scss */
+/* line 1072, ../../scss/main.scss */
 .front-page ul {
   list-style-type: disc;
 }
-/* line 1071, ../../scss/main.scss */
+/* line 1074, ../../scss/main.scss */
 .front-page ul a {
   font-weight: bold;
 }
-/* line 1075, ../../scss/main.scss */
+/* line 1078, ../../scss/main.scss */
 .front-page p {
   text-align: justify;
 }
 
-/* line 1080, ../../scss/main.scss */
+/* line 1083, ../../scss/main.scss */
 .large-title {
   font-size: 22px;
   padding: 1em 0;
 }
 
-/* line 1084, ../../scss/main.scss */
+/* line 1087, ../../scss/main.scss */
 .center {
   text-align: center;
 }
 
-/* line 1087, ../../scss/main.scss */
+/* line 1090, ../../scss/main.scss */
 .padding-20 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-/* line 1094, ../../scss/main.scss */
+/* line 1097, ../../scss/main.scss */
 #block-views-calendario-de-torneos-block-3 ul {
   list-style-type: none;
 }
-/* line 1097, ../../scss/main.scss */
+/* line 1100, ../../scss/main.scss */
 #block-views-calendario-de-torneos-block-3 .upcoming-box {
   overflow: hidden;
   position: relative;
   padding: 0;
   margin: 20px 0 40px;
 }
-/* line 1102, ../../scss/main.scss */
+/* line 1105, ../../scss/main.scss */
 #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-meta {
   float: left;
   margin: 0 0.625em 0 0;
@@ -1373,42 +1377,42 @@ a.thumb-info span.thumb-info-action-icon i {
   min-width: 4.25em;
   min-height: 4.25em;
 }
-/* line 1117, ../../scss/main.scss */
+/* line 1120, ../../scss/main.scss */
 #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right {
   width: 82%;
   margin: 0;
   padding: 0;
   font-size: 12px;
 }
-/* line 1123, ../../scss/main.scss */
+/* line 1126, ../../scss/main.scss */
 #block-views-calendario-de-torneos-block-3 .upcoming-box .upcoming-right h4 {
   font-weight: bold;
   text-transform: uppercase;
 }
 
-/* line 1133, ../../scss/main.scss */
+/* line 1136, ../../scss/main.scss */
 .nav-pills > li > a {
   font-weight: 700;
   letter-spacing: 1px;
 }
 
-/* line 1138, ../../scss/main.scss */
+/* line 1141, ../../scss/main.scss */
 .nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills >
 li.active > a:hover {
   background-color: #0da508;
 }
 
-/* line 1143, ../../scss/main.scss */
+/* line 1146, ../../scss/main.scss */
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background-color: #0da508;
 }
 
-/* line 1146, ../../scss/main.scss */
+/* line 1149, ../../scss/main.scss */
 #block-views-patrocinios-block-1 .owl-item img {
   border: solid 1px black;
 }
 
-/* line 1151, ../../scss/main.scss */
+/* line 1154, ../../scss/main.scss */
 .region-content .view-id-calendario_de_torneos.view-display-id-page_1
 .views-field-title a {
   color: white;

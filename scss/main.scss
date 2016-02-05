@@ -670,6 +670,9 @@ footer#main-footer {
     padding: 0;
     border: solid 1px black;
     @include border-radius(0);
+    a {
+      z-index: 100;
+    }
   }
 
   .portfolio-item-preview {
