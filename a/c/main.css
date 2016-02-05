@@ -1403,7 +1403,12 @@ li.active > a:hover {
   background-color: #0da508;
 }
 
-/* line 1148, ../../scss/main.scss */
+/* line 1146, ../../scss/main.scss */
+#block-views-patrocinios-block-1 .owl-item img {
+  border: solid 1px black;
+}
+
+/* line 1151, ../../scss/main.scss */
 .region-content .view-id-calendario_de_torneos.view-display-id-page_1
 .views-field-title a {
   color: white;
