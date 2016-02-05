@@ -21,7 +21,11 @@
       <div class="collapse navbar-collapse" id="navbar-main-menu">
         <?php print render($primary_nav); ?>
         <ul class="nav navbar-nav visible-xs">
+          <?php if (!$logged_in): ?>
           <li><a href="/user">Área de socios</a></li>
+          <?php else: ?>
+          <li><a href="/user/logout">Cerrar sesión</a></li>
+          <?php endif; ?>
         </ul>
       </div>
     </div>
