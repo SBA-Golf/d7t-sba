@@ -410,6 +410,7 @@ a.back-to-top {
     .date-heading {
       a {
         text-transform: lowercase;
+        @include adjust-font-size-to(10px);
       }
     }
     ul {
