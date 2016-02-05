@@ -64,6 +64,7 @@
         </article>
       </div>
       <?php if ($page['sidebar_first']): ?>
+      <div class="clearfix"></div>
       <div class="col-md-3">
         <aside>
           <?php print render($page['sidebar_first']); ?>

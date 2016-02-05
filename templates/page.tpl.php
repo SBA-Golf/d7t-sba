@@ -83,6 +83,7 @@
         <?php if ($page['after_content']) print render($page['after_content']); ?>
       </div>
       <?php if ($page['sidebar_first']): ?>
+      <div class="clearfix"></div>
       <div class="col-md-3">
         <aside>
           <?php print render($page['sidebar_first']); ?>
