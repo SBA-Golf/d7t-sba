@@ -10,10 +10,12 @@
 <?php if (!empty($title)): ?>
   <h3><?php print $title; ?></h3>
 <?php endif; ?>
+<div class="row">
 <?php foreach ($rows as $id => $row): ?>
-  <div class="col-sm-6">
-  <div<?php if ($classes_array[$id]) { print ' class="' . $classes_array[$id] .'"'; } ?>>
+  <div class="col-xs-2">
+  <div class="logo-patrocinador">
     <?php print $row; ?>
   </div>
   </div>
 <?php endforeach; ?>
+</div>

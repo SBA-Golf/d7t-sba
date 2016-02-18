@@ -1146,14 +1146,17 @@ li.active > a:hover {
 .owl-theme .owl-nav [class*="owl-"]:hover {
   background-color: $verde;
 }
-#block-views-patrocinios-block-1 .owl-item  .item {
+#block-views-patrocinios-block-1 .owl-item  .item,
+.logo-patrocinador {
   border: solid 1px #ddd;
+  padding: 0.5em;
   a {
-  }
-  img {
-    width: 100%;
-    max-width: 120px;
-    margin: 0 auto;
+    img {
+      display:block;
+      width: 100%;
+      max-width: 120px;
+      margin: 0 auto;
+    }
   }
 }
 

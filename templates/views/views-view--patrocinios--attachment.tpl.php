@@ -28,7 +28,7 @@
  * @ingroup views_templates
  */
 ?>
-<div class="<?php print $classes; ?> col-md-6">
+<div class="<?php print $classes; ?> col-xs-12">
   <?php print render($title_prefix); ?>
   <?php if ($title): ?>
     <?php print $title; ?>
