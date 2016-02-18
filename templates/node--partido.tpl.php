@@ -80,10 +80,12 @@
     </div>
     <div class="col-sm-8">
       <?php if ($variables['field_partido_patrocinadores']): ?>
-      <h2 class="text-uppercase">Patrocinadores</h2>
+      <p class="text-uppercase h3">Patrocinadores</p>
       <?php endif; ?>
       <div class="padd-vertical-20">
+        <div class="row">
         <?php print render($content['field_partido_patrocinadores']); ?>
+        </div>
       </div>
     </div>
     <div class="clearfix"></div>

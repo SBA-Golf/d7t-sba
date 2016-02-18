@@ -1409,12 +1409,14 @@ li.active > a:hover {
 
 /* line 1149, ../../scss/main.scss */
 #block-views-patrocinios-block-1 .owl-item .item,
+.node-patrocinador,
 .logo-patrocinador {
   border: solid 1px #ddd;
   padding: 0.5em;
 }
-/* line 1154, ../../scss/main.scss */
+/* line 1155, ../../scss/main.scss */
 #block-views-patrocinios-block-1 .owl-item .item a img,
+.node-patrocinador a img,
 .logo-patrocinador a img {
   display: block;
   width: 100%;
@@ -1422,7 +1424,7 @@ li.active > a:hover {
   margin: 0 auto;
 }
 
-/* line 1164, ../../scss/main.scss */
+/* line 1165, ../../scss/main.scss */
 .region-content .view-id-calendario_de_torneos.view-display-id-page_1
 .views-field-title a {
   color: white;
