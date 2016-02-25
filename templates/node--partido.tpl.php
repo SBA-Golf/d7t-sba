@@ -20,7 +20,13 @@
 <?php endif; ?>
 
 <?php if ($view_mode == 'full'): ?>
-<?php //kpr($variables); ?>
+<?php 
+$ed = array_shift($field_partido_edicion);
+$ed = node_load($ed['target_id']);
+$tor = field_get_items('node',$ed,'field_edicion_torneo');
+$tor = array_shift($tor);
+$tor = node_load($tor['target_id']);
+ ?>
 <?php 
  $edicion = field_get_items('node', $node, 'field_partido_edicion');
  $torneo_nid = field_get_items('node',$edicion[0]['entity'],'field_edicion_torneo');
@@ -72,7 +78,11 @@
   ?>
 
   <main class="content">
-  <small><?php print render($content['field_partido_edicion']); ?></small>
+  <p class="lead">
+    <a href="/<?php global $language; print $language->language; ?>/torneos">TORNEOS</a> &raquo;&raquo; 
+    <a href="/<?php print $language->language . '/' . drupal_get_path_alias('node/' . $tor->nid,$language->language); ?>"><?php print $tor->title; ?></a> &raquo;&raquo; 
+    <a href="/<?php print $language->language . '/' . drupal_get_path_alias('node/' . $ed->nid, $language->language); ?>"><?php print $ed->title; ?></a>
+  </p>
 
     <div class="col-sm-4">
       <p class="h3"><?php print $content['field_partido_fecha'][0]['#markup']; ?></p>

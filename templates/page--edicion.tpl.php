@@ -48,6 +48,11 @@
 <?php endif; ?>
 <!-- Fin Mensajes -->
 
+<?php
+  $tor = field_get_items('node',$node,'field_edicion_torneo');
+  $tor = array_shift($tor);
+  $tor = node_load($tor['target_id']);
+?>
 <!-- MAIN CONTENT -->
 <main>
   <div class="container">
@@ -55,6 +60,10 @@
       <div class="<?php ($page['sidebar_first']? print 'col-md-9' : 'col-md-12'); ?>">
         <article class="node-edicion full">
           <aside id="tabs"><?php print render($tabs); ?></aside>
+             <p class="lead">
+               <a href="/<?php global $language; print $language->language; ?>/torneos">TORNEOS</a> &raquo;&raquo; 
+               <a href="/<?php print $language->language . '/' . drupal_get_path_alias('node/' . $tor->nid,$language->language); ?>"><?php print $tor->title; ?></a>
+             </p>
           <header class="page-title">
           <?php $torneo   = field_get_items('node', $node, 'field_edicion_torneo'); ?>
             <h1><span><?php print $torneo[0]['entity']->title . ' - ' . $title; ?></span></h1>
