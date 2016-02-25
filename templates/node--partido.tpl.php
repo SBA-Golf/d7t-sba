@@ -77,6 +77,7 @@
     <div class="col-sm-4">
       <p class="h3"><?php print $content['field_partido_fecha'][0]['#markup']; ?></p>
       <p class="h4"><?php print render($content['field_partido_tipo'][0]['#markup']); ?> &mdash; <?php print render($content['field_partido_modalidad'][0]['#markup']); ?></p>
+      <p class="h4"><?php print render($content['field_partido_campo'][0]['#markup']); ?></p>
     </div>
     <div class="col-sm-8">
       <?php if ($variables['field_partido_patrocinadores']): ?>
