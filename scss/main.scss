@@ -1151,6 +1151,8 @@ li.active > a:hover {
 .logo-patrocinador {
   border: solid 1px #ddd;
   padding: 0.5em;
+  min-height: 150px;
+  margin-bottom: 1em;
   a {
     img {
       display:block;

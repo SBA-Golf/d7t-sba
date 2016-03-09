@@ -203,7 +203,7 @@ function sba_field__field_patrocinador_logo__patrocinador($variables) {
   foreach ($variables ['items'] as $delta => $item) {
     $uri = $item ['#item']['uri'];
     $src = image_style_url('large', $uri);
-    $output = '<img src="' . $src . '" class="img-responsive" typeof="foaf:Image">';
+    $output = '<img src="' . $src . '" class="img-responsive center-block" typeof="foaf:Image">';
   }
 
   return $output;

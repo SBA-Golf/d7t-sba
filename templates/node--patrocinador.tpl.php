@@ -8,7 +8,7 @@
 <?php if ($variables['field_patrocinador_web']): ?>
   <a href="<?php print $variables['field_patrocinador_web']['und'][0]['url']; ?>" target="_blank"><?php print render($content); ?></a>
 <?php else: ?>
-  <?php print render($content); ?>
+  <a href="#"><?php print render($content); ?></a>
 <?php endif; ?>
 </article>
 <?php endif; ?>
