@@ -1435,3 +1435,8 @@ li.active > a:hover {
 .views-field-title a {
   color: white;
 }
+
+/* line 1179, ../../scss/main.scss */
+#block-views-notificaciones-block h2 {
+  margin-bottom: 0.5em;
+}
