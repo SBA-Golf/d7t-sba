@@ -1440,3 +1440,7 @@ li.active > a:hover {
 #block-views-notificaciones-block h2 {
   margin-bottom: 0.5em;
 }
+/* line 1182, ../../scss/main.scss */
+#block-views-notificaciones-block .views-row {
+  margin-bottom: 1em;
+}

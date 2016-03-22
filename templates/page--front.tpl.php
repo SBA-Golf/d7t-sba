@@ -60,8 +60,12 @@
 <!-- Fin Mensajes -->
 
 <?php if ($page['slogan']): ?>
-<div class="container alert alert-danger">
 <?php print render($page['slogan']); ?>
+<?php endif; ?>
+
+<?php if ($page['alertas']): ?>
+<div class="container alert alert-danger">
+<?php print render($page['alertas']); ?>
 </div>
 <?php endif; ?>
 
