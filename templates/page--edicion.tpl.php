@@ -106,13 +106,15 @@
   <section id="footer-section-2">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12">
+        <div class="col-xs-12 col-md-4 pull-right">
           <img src="<?php print $logo; ?>" class="img-responsive" typeof="foaf:Image">
-          <a href="http://golfbasozabal.com/" target="_blank"><img src="/<?php print drupal_get_path('theme','sba') . '/a/i/basozabal.png'; ?>" class="img-responsive" typeof="foaf:Image"></a>
+          <br>
+          <a href="http://golfbasozabal.com/" target="_blank"><img src="/<?php print drupal_get_path('theme','sba') . '/a/i/basozabal.png'; ?>" class="img-responsive center-block" typeof="foaf:Image"><p class="text-center">www.golfbasozabal.com</p></a>
           <?php print render($page['legal']); ?>
         </div>
       </div>
     </div>
   </section>
 </footer>
+
 <!-- Fin Footer -->
