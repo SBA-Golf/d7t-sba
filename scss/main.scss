@@ -1163,6 +1163,7 @@ li.active > a:hover {
     img {
       display:block;
       width: 100%;
+      max-width: 100%;
       max-width: 120px;
       margin: 0 auto;
     }
@@ -1175,10 +1176,10 @@ li.active > a:hover {
   a {
     img {
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      top: 4px;
+      right: 4px;
+      bottom: 4px;
+      left: 4px;
       margin: auto;
     }
   }

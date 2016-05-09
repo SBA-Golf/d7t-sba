@@ -1426,39 +1426,40 @@ li.active > a:hover {
 .logo-patrocinador a img {
   display: block;
   width: 100%;
+  max-width: 100%;
   max-width: 120px;
   margin: 0 auto;
 }
 
-/* line 1171, ../../scss/main.scss */
+/* line 1172, ../../scss/main.scss */
 #block-views-patrocinios-block-1 .owl-item .item,
 .node-patrocinador,
 .logo-patrocinador {
   position: relative;
 }
-/* line 1176, ../../scss/main.scss */
+/* line 1177, ../../scss/main.scss */
 #block-views-patrocinios-block-1 .owl-item .item a img,
 .node-patrocinador a img,
 .logo-patrocinador a img {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  left: 4px;
   margin: auto;
 }
 
-/* line 1188, ../../scss/main.scss */
+/* line 1189, ../../scss/main.scss */
 .region-content .view-id-calendario_de_torneos.view-display-id-page_1
 .views-field-title a {
   color: white;
 }
 
-/* line 1194, ../../scss/main.scss */
+/* line 1195, ../../scss/main.scss */
 #block-views-notificaciones-block h2 {
   margin-bottom: 0.5em;
 }
-/* line 1197, ../../scss/main.scss */
+/* line 1198, ../../scss/main.scss */
 #block-views-notificaciones-block .views-row {
   margin-bottom: 1em;
 }
