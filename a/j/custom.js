@@ -33,6 +33,7 @@ vdj(document).ready(function($) {
   });
 
   // Masonry
+  /*
   $masonry_container = vdj(".region-content .row");
   $masonry_container.imagesLoaded(function() {
     $masonry_container.masonry({
@@ -43,6 +44,7 @@ vdj(document).ready(function($) {
     });
     $masonry_container.masonry("bindResize");
   });
+  */
 
   // OWL Carousel 2
   vdj('.owl-carousel').owlCarousel({

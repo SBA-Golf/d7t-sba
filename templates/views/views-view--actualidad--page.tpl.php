@@ -52,6 +52,7 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
+    <?php dsm($rows); ?>
     <div class="view-content row">
       <?php print $rows; ?>
     </div>
