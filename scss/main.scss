@@ -217,6 +217,12 @@ input[type="submit"] {
 .navbar-brand {
   height: auto;
   padding-bottom: 0;
+  img {
+    width: 234px;
+    @media (min-width: 992px) {
+      width: 100%;
+    }
+  }
 }
 #navbar-main-menu {
   width: 100%;
