@@ -61,7 +61,7 @@
         <article class="node-edicion full">
           <aside id="tabs"><?php print render($tabs); ?></aside>
              <p class="lead">
-               <a href="/<?php global $language; print $language->language; ?>/torneos">TORNEOS</a> &raquo;&raquo; 
+               <a href="/<?php global $language; print $language->language; ?>/torneos">TORNEOS</a> &raquo;&raquo;
                <a href="/<?php print $language->language . '/' . drupal_get_path_alias('node/' . $tor->nid,$language->language); ?>"><?php print $tor->title; ?></a>
              </p>
           <header class="page-title">
@@ -111,7 +111,7 @@
           <br>
         </div>
         <div class="col-xs-12 col-md-4 pull-right">
-          <a href="http://golfbasozabal.com/" target="_blank"><img src="/<?php print drupal_get_path('theme','sba') . '/a/i/Logo-Basozabal-1.png'; ?>" class="img-responsive center-block" typeof="foaf:Image"><p class="text-center">www.golfbasozabal.com</p></a>
+          <a href="http://golfbasozabal.com/" target="_blank"><img src="/<?php print drupal_get_path('theme','sba') . '/a/i/Logo-Basozabal.png'; ?>" class="img-responsive center-block" typeof="foaf:Image"><p class="text-center">www.golfbasozabal.com</p></a>
           <?php print render($page['legal']); ?>
         </div>
       </div>
