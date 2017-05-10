@@ -149,12 +149,15 @@ $tor = node_load($tor['target_id']);
           <p><small><a href="/node/add/galeria?field_galeria_partido=<?php print $nid; ?>" title="Añadir galería"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir galería</a></small></p>
           <?php endif; ?>
           <div class="padd-vertical-20"><?php print render($content['galeria_de_fotos_de_torneo_entity_view_1']); ?></div>
+          
+          <?php if (isset($variables['field_galerias_externas']) && !empty($variables['field_galerias_externas'])): ?>
           <div class="padd-vertical-20">
             <header class="page-title">
               <h1><span>Galerías externas</span></h1>
             </header>
             <?php print render($content['field_galerias_externas']); ?>
           </div>
+        <?php endif; ?>
         </div>
       </div>
     </section>
