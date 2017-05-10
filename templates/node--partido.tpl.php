@@ -20,14 +20,14 @@
 <?php endif; ?>
 
 <?php if ($view_mode == 'full'): ?>
-<?php 
+<?php
 $ed = array_shift($field_partido_edicion);
 $ed = node_load($ed['target_id']);
 $tor = field_get_items('node',$ed,'field_edicion_torneo');
 $tor = array_shift($tor);
 $tor = node_load($tor['target_id']);
  ?>
-<?php 
+<?php
  $edicion = field_get_items('node', $node, 'field_partido_edicion');
  $torneo_nid = field_get_items('node',$edicion[0]['entity'],'field_edicion_torneo');
  $torneo = node_load($torneo_nid[0]['target_id']);
@@ -50,6 +50,7 @@ $tor = node_load($tor['target_id']);
   <?php hide($content['field_partido_patrocinadores']); ?>
   <?php hide($content['field_partido_juegos']); ?>
   <?php hide($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
+  <?php hide($content['field_galerias_externas']); ?>
 
   <?php if (isset($content['field_partido_ultima_hora'])): ?>
   <section id="avisos" class="alert alert-info">
@@ -57,7 +58,7 @@ $tor = node_load($tor['target_id']);
   </section>
   <?php endif; ?>
 
-  <?php 
+  <?php
     $menu = $cronica = $horarios = $resultados = '#';
     if (isset($variables['field_partido_menu_comida']) && !empty($variables['field_partido_menu_comida'])) {
       $menu = file_create_url($variables['field_partido_menu_comida'][0]['uri']);
@@ -79,8 +80,8 @@ $tor = node_load($tor['target_id']);
 
   <main class="content">
   <p class="lead">
-    <a href="/<?php global $language; print $language->language; ?>/torneos">TORNEOS</a> &raquo;&raquo; 
-    <a href="/<?php print $language->language . '/' . drupal_get_path_alias('node/' . $tor->nid,$language->language); ?>"><?php print $tor->title; ?></a> &raquo;&raquo; 
+    <a href="/<?php global $language; print $language->language; ?>/torneos">TORNEOS</a> &raquo;&raquo;
+    <a href="/<?php print $language->language . '/' . drupal_get_path_alias('node/' . $tor->nid,$language->language); ?>"><?php print $tor->title; ?></a> &raquo;&raquo;
     <a href="/<?php print $language->language . '/' . drupal_get_path_alias('node/' . $ed->nid, $language->language); ?>"><?php print $ed->title; ?></a>
   </p>
 
@@ -144,10 +145,16 @@ $tor = node_load($tor['target_id']);
           <?php print render($content['field_partido_juegos']); ?>
         </div>
         <div role="tabpanel" class="tab-pane padd-vertical-20" id="galeria">
-        <?php global $user; if (in_array('editor', $user->roles)|| $user->uid == 1): ?>
+          <?php global $user; if (in_array('editor', $user->roles)|| $user->uid == 1): ?>
           <p><small><a href="/node/add/galeria?field_galeria_partido=<?php print $nid; ?>" title="Añadir galería"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir galería</a></small></p>
           <?php endif; ?>
           <div class="padd-vertical-20"><?php print render($content['galeria_de_fotos_de_torneo_entity_view_1']); ?></div>
+          <div class="padd-vertical-20">
+            <header class="page-title">
+              <h1><span>Galerías externas</span></h1>
+            </header>
+            <?php print render($content['field_galerias_externas']); ?>
+          </div>
         </div>
       </div>
     </section>
