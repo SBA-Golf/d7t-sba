@@ -563,6 +563,11 @@ footer#main-footer {
   padding-top: 0;
   border: none;*/
   color: $gris-claro;
+  input.form-text
+   {
+    color: white;
+    width: 100%;
+  }
   #footer-section-1 {
     background-color: $gris;
   }
@@ -583,8 +588,8 @@ footer#main-footer {
 .region-footer-second-col,
 .region-footer-third-col,
 .region-footer-fourth-col {
-  @include rhythm(2);
   .block {
+    @include rhythm(2);
     h2 {
       border-bottom: 1px solid tint($gris-oscuro, 30%);
       margin-bottom: 1em;
@@ -767,9 +772,9 @@ footer#main-footer {
 	opacity: 0;
 	-webkit-backface-visibility: hidden;
 	/* ideally, transition speed should match zoom duration */
-	-webkit-transition: all 0.3s ease-out; 
-	-moz-transition: all 0.3s ease-out; 
-	-o-transition: all 0.3s ease-out; 
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 }
 
@@ -780,7 +785,7 @@ footer#main-footer {
 		opacity: 0.8;
 }
 
-.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing .mfp-container,
 .mfp-with-zoom.mfp-removing.mfp-bg {
 	opacity: 0;
 }
@@ -1216,4 +1221,16 @@ li.active > a:hover {
 .node-actividad .field-name-field-galeria-foto img {
   max-width: 100%;
   height: auto;
+}
+
+.search-api-page-results {
+  h2 {
+    @include rhythm();
+  }
+  .search-result {
+    margin-bottom: 1.5em;
+    mark {
+      background-color: #d0c90b
+    }
+  }
 }

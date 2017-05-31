@@ -50,7 +50,7 @@ function sba_preprocess_html(&$variables) {
             draggable: true,
             position: myLatLon
           });
- 
+
           google.maps.event.addDomListener(window, "resize", function() {
             map.setCenter(myLatLon);
           });
@@ -199,11 +199,13 @@ function sba_field__field_galeria_foto__galeria($variables) {
 
 function sba_field__field_patrocinador_logo__patrocinador($variables) {
   $output = '';
-
+  //dsm($variables);
   foreach ($variables ['items'] as $delta => $item) {
     $uri = $item ['#item']['uri'];
     $src = image_style_url('large', $uri);
-    $output = '<img src="' . $src . '" class="img-responsive center-block" typeof="foaf:Image">';
+    $alt = $variables['element']['#object']->title;
+    $title = $alt = $variables['element']['#object']->title;
+    $output = '<img src="' . $src . '" class="img-responsive center-block" typeof="foaf:Image" alt="' . $alt . '" title="' . $title . '">';
   }
 
   return $output;

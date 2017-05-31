@@ -71,6 +71,7 @@
 <!-- Fin Mensajes -->
 
 <!-- MAIN CONTENT -->
+<?php //dsm($variables); ?>
 <main>
   <div class="container">
     <div class="row">
