@@ -1507,3 +1507,82 @@ li.active > a:hover {
 .search-api-page-results .search-result mark {
   background-color: #d0c90b;
 }
+
+/* line 1239, ../../scss/main.scss */
+#forum table {
+  width: 100%;
+}
+/* line 1242, ../../scss/main.scss */
+#forum table thead th {
+  padding: 0.5em 1em;
+}
+/* line 1248, ../../scss/main.scss */
+#forum table tbody tr td {
+  padding: 0.5em;
+}
+
+/* line 1256, ../../scss/main.scss */
+.node-forum div {
+  margin-bottom: 1em;
+}
+/* line 1259, ../../scss/main.scss */
+.node-forum .links-wrapper {
+  text-align: right;
+}
+/* line 1261, ../../scss/main.scss */
+.node-forum .links-wrapper .links {
+  padding: 0.5em;
+  background-color: #deedde;
+}
+/* line 1266, ../../scss/main.scss */
+.node-forum .links-wrapper .links [class^='comment'] a:hover,
+.node-forum .links-wrapper .links [class*=' comment'] a:hover {
+  /*color: #F00;*/
+  color: #267326;
+}
+/* line 1273, ../../scss/main.scss */
+.node-forum .comment {
+  display: table;
+}
+/* line 1275, ../../scss/main.scss */
+.node-forum .comment .attribution {
+  /*border: solid 1px hsl(120, 30%, 90%);*/
+  display: table-cell;
+  padding: 0 3em 0 0;
+}
+/* line 1279, ../../scss/main.scss */
+.node-forum .comment .attribution .user-picture {
+  margin-bottom: 0;
+}
+/* line 1281, ../../scss/main.scss */
+.node-forum .comment .attribution .user-picture img {
+  border: solid 1px #deedde;
+}
+/* line 1286, ../../scss/main.scss */
+.node-forum .comment .comment-text {
+  border: solid 1px #deedde;
+  display: table-cell;
+  vertical-align: top;
+  width: 100%;
+  padding: 0 1em;
+  position: relative;
+}
+/* line 1294, ../../scss/main.scss */
+.node-forum .comment .submitted {
+  text-align: center;
+}
+/* line 1296, ../../scss/main.scss */
+.node-forum .comment .submitted .comment-time {
+  background-color: #deedde;
+}
+/* line 1300, ../../scss/main.scss */
+.node-forum .comment .links {
+  text-align: right;
+  display: block;
+  width: 100%;
+  margin: 0 -1em;
+  /*margin-bottom: -0.5em;*/
+  background-color: #deedde;
+  position: absolute;
+  bottom: 0;
+}

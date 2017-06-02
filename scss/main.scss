@@ -1234,3 +1234,78 @@ li.active > a:hover {
     }
   }
 }
+
+#forum {
+  table {
+    width: 100%;
+    thead {
+      th {
+        padding: 0.5em 1em;
+      }
+    }
+    tbody {
+      tr {
+        td {
+          padding: 0.5em;
+        }
+      }
+    }
+  }
+}
+.node-forum {
+  div {
+    margin-bottom: 1em;
+  }
+  .links-wrapper {
+    text-align: right;
+    .links {
+      padding: 0.5em;
+      background-color: hsl(120, 30%, 90%);
+      [class^='comment'],
+      [class*=' comment'] {
+        a:hover {
+          /*color: #F00;*/
+          color: hsl(120, 50%, 30%)
+        }
+      }
+    }
+  }
+  .comment {
+    display: table;
+    .attribution {
+      /*border: solid 1px hsl(120, 30%, 90%);*/
+      display: table-cell;
+      padding: 0 3em 0 0;
+      .user-picture {
+        margin-bottom: 0;
+        img {
+          border: solid 1px hsl(120, 30%, 90%);
+        }
+      }
+    }
+    .comment-text {
+      border: solid 1px hsl(120, 30%, 90%);
+      display: table-cell;
+      vertical-align: top;
+      width: 100%;
+      padding: 0 1em;
+      position: relative;
+    }
+    .submitted {
+      text-align: center;
+      .comment-time {
+        background-color: hsl(120, 30%, 90%);
+      }
+    }
+    .links {
+      text-align: right;
+      display: block;
+      width: 100%;
+      margin: 0 -1em;
+      /*margin-bottom: -0.5em;*/
+      background-color: hsl(120, 30%, 90%);
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}
