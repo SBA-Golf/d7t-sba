@@ -19,7 +19,7 @@
 ?>
 <?php if ($forums_defined): ?>
 <div id="forum">
-  <p class="lead"><?php print $parents[0]->description; ?></p>
+  <p class="lead"><?php print end($parents)->description; ?></p>
   <?php print $forums; ?>
   <?php print $topics; ?>
 </div>

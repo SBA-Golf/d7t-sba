@@ -87,11 +87,11 @@ function sba_preprocess_page(&$variables) {
 }
 
 function sba_preprocess_node(&$variables) {
-  if ($variables['type'] == 'forum') {
+  /*if ($variables['type'] == 'forum') {
     foreach ($variables['content']['links']['comment']['#links'] as $id => $link) {
       $link['attributes']['class'] = array('button', 'button-3d', 'button-mini', 'button-rounded', 'button-green');
     }
-  }
+  }*/
 }
 
 function sba_menu_tree__primary(&$variables) {
