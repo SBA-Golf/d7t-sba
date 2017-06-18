@@ -64,6 +64,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 7, ../../scss/_colors.scss */
+.bg-gray {
+  background-color: #dadcdf;
+}
+
 /* line 106, ../../../../../../../../../.rvm/gems/ruby-2.4.0/gems/compass-core-1.0.3/stylesheets/compass/typography/_vertical_rhythm.scss */
 html {
   font-size: 81.25%;
@@ -1585,4 +1590,25 @@ li.active > a:hover {
   background-color: #deedde;
   position: absolute;
   bottom: 0;
+}
+
+/* line 1313, ../../scss/main.scss */
+#promos {
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+/* line 1316, ../../scss/main.scss */
+#promos h2 {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+/* line 1322, ../../scss/main.scss */
+.promociones .item {
+  display: inline-block;
+}
+/* line 1324, ../../scss/main.scss */
+.promociones .item img {
+  display: block;
+  margin: 0 auto;
 }

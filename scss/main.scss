@@ -1309,3 +1309,21 @@ li.active > a:hover {
     }
   }
 }
+
+#promos {
+  padding-top: 2em;
+  padding-bottom: 2em;
+  h2 {
+    margin-bottom: 2em;
+    text-align: center;
+  }
+}
+.promociones {
+  .item {
+    display: inline-block;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}

@@ -70,9 +70,9 @@
 <?php endif; ?>
 
 <?php if ($page['promos']): ?>
-<div class="container alert alert-info">
+<aside id="promos" class="container-full">
 <?php print render($page['promos']); ?>
-</div>
+</aside>
 <?php endif; ?>
 
 <!-- MAIN CONTENT -->
