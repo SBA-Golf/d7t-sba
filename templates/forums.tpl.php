@@ -17,7 +17,7 @@
  */
  //dsm($variables);
 ?>
-<p><small><a href="/node/add/forum" title="Añadir tema nuevo"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir tema nuevo</a></small></p>
+<p class="padd-bottom-20"><small><a href="/node/add/forum" title="Añadir tema nuevo"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir tema nuevo</a></small></p>
 <?php if ($forums_defined): ?>
 <div id="forum">
   <p class="lead"><?php print end($parents)->description; ?></p>
