@@ -74,6 +74,9 @@ input[type="submit"] {
   padding: 6px 12px;
 }
 
+.padd-20 {
+  padding: 20px;
+}
 .padd-vertical-20 {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -90,6 +93,17 @@ input[type="submit"] {
   margin: 0 1em;
 }
 
+.field-type-text-long {
+  ol,ul {
+    list-style-position: inside;
+  }
+  ol {
+    list-style-type: decimal;
+  }
+  ul {
+    list-style-type: square;
+  }
+}
 
 
 .nav[role=tablist] li a {
@@ -1256,6 +1270,9 @@ li.active > a:hover {
   div {
     margin-bottom: 1em;
   }
+  .content {
+    overflow: hidden;
+  }
   .links-wrapper {
     text-align: right;
     .links {
@@ -1325,5 +1342,12 @@ li.active > a:hover {
       display: block;
       margin: 0 auto;
     }
+  }
+}
+
+.comment-text {
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
