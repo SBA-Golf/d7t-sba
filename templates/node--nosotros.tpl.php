@@ -41,6 +41,9 @@
      <li role="presentation"><a href="<?php print $funciones; ?>" aria-controls="funciones" role="tab">Funciones</a></li>
      <li role="presentation"><a href="#contacto" aria-controls="contacto" role="tab" data-toggle="tab">Contacto</a></li>
      <li role="presentation"><a href="#inscripcion" aria-controls="inscripcion" role="tab" data-toggle="tab">Inscripción</a></li>
+     <?php if (user_has_role(5) || $user->uid == 1): ?>
+     <li role="presentation"><a href="#direccion" aria-controls="inscripcion" role="tab" data-toggle="tab">Dirección</a></li>
+     <?php endif; ?>
   </ul>
   <hr/>
   <div class="tab-content">
@@ -54,6 +57,12 @@
     <div role="tabpanel" class="tab-pane padd-vertical-20" id="inscripcion">
       <?php print render($content['field_instrucciones']); ?>
       <?php print render($content['field_inscripcion']); ?>
+    </div>
+    <div role="tabpanel" class="tab-pane padd-vertical-20" id="direccion">
+      <ul class="list-inline">
+        <li><a class="h4 bg-success padd-20" href="/reuniones">Reuniones de la directiva</a></li>
+        <li><a class="h4 bg-success padd-20" href="/asambleas">Asambleas</a></li>
+      </ul>
     </div>
   </div>
 </div>
