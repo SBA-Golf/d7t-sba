@@ -47,6 +47,19 @@ $tor = node_load($tor['target_id']);
   <?php hide($content['field_partido_foto_ponente']); ?>
   <?php hide($content['field_partido_resumen_charla']); ?>
   <?php hide($content['field_partido_adjuntos_charla']); ?>
+
+  <?php hide($content['field_partido_titulo_charla_2']); ?>
+  <?php hide($content['field_partido_charla_ponente_2']); ?>
+  <?php hide($content['field_partido_foto_ponente_2']); ?>
+  <?php hide($content['field_partido_resumen_charla_2']); ?>
+  <?php hide($content['field_partido_adjuntos_charla_2']); ?>
+
+  <?php hide($content['field_partido_titulo_charla_3']); ?>
+  <?php hide($content['field_partido_charla_ponente_3']); ?>
+  <?php hide($content['field_partido_foto_ponente_3']); ?>
+  <?php hide($content['field_partido_resumen_charla_3']); ?>
+  <?php hide($content['field_partido_adjuntos_charla_3']); ?>
+
   <?php hide($content['field_partido_patrocinadores']); ?>
   <?php hide($content['field_partido_juegos']); ?>
   <?php hide($content['galeria_de_fotos_de_torneo_entity_view_1']); ?>
@@ -72,9 +85,17 @@ $tor = node_load($tor['target_id']);
     if (isset($variables['field_partido_clasificaciones']) && !empty($variables['field_partido_clasificaciones'])) {
       $resultados = file_create_url($variables['field_partido_clasificaciones'][0]['uri']);
     }
-    $foto = null;
+    $foto  = null;
+    $foto2 = null;
+    $foto3 = null;
     if (isset($variables['field_partido_foto_ponente']) && !empty($variables['field_partido_foto_ponente'])) {
       $foto = image_style_url('medium',$variables['field_partido_foto_ponente'][0]['uri']);
+    }
+    if (isset($variables['field_partido_foto_ponente_2']) && !empty($variables['field_partido_foto_ponente_2'])) {
+      $foto2 = image_style_url('medium',$variables['field_partido_foto_ponente_2'][0]['uri']);
+    }
+    if (isset($variables['field_partido_foto_ponente_3']) && !empty($variables['field_partido_foto_ponente_3'])) {
+      $foto3 = image_style_url('medium',$variables['field_partido_foto_ponente_3'][0]['uri']);
     }
   ?>
 
@@ -116,7 +137,7 @@ $tor = node_load($tor['target_id']);
         <li role="presentation" class="active"><a href="<?php print $horarios; ?>" aria-controls="horarios" role="tab">Horarios</a></li>
         <li role="presentation"><a href="<?php print $menu; ?>" aria-controls="menu" role="tab">Menú</a></li>
         <?php if ($torneo->nid == 1): ?>
-        <li role="presentation"><a href="#charla" aria-controls="charla" role="tab" data-toggle="tab">Charla</a></li>
+        <li role="presentation"><a href="#charlas" aria-controls="charlas" role="tab" data-toggle="tab">Charlas</a></li>
         <?php endif; ?>
         <li role="presentation"><a href="<?php print $resultados; ?>" aria-controls="resultados" role="tab">Resultados</a></li>
         <?php if ($torneo->nid != 152 && $torneo->nid != 11): ?>
@@ -130,17 +151,59 @@ $tor = node_load($tor['target_id']);
 <hr/>
       <!-- Tabs panes -->
       <div class="tab-content">
-        <div role="tabpanel" class="tab-pane padd-vertical-20" id="charla">
-          <p class="h3 text-center"><?php print render($content['field_partido_titulo_charla'][0]['#markup']); ?></p>
-          <p class="h5 text-center">
-            <?php if ($foto): ?>
-            <img src="<?php print $foto; ?>" class="img-responsive" style="margin: 0 auto;">
-            <?php endif; ?>
-            <?php print render($content['field_partido_charla_ponente'][0]['#markup']); ?>
-          </p>
-          <?php print render($content['field_partido_resumen_charla']); ?>
-          <div class="padd-vertical-20"><?php print render($content['field_partido_adjuntos_charla']); ?></div>
+
+        <div role="tabpanel" class="tab-pane padd-vertical-20" id="charlas">
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <p class="h3">Charla 1: <?php print render($content['field_partido_titulo_charla'][0]['#markup']); ?></p>
+            </div>
+            <div class="panel-body">
+              <p class="h5 text-center">
+                <?php if ($foto): ?>
+                <img src="<?php print $foto; ?>" class="img-responsive" style="margin: 0 auto;">
+                <?php endif; ?>
+                <?php print render($content['field_partido_charla_ponente'][0]['#markup']); ?>
+              </p>
+              <?php print render($content['field_partido_resumen_charla']); ?>
+              <div class="padd-vertical-20"><?php print render($content['field_partido_adjuntos_charla']); ?></div>
+            </div>
+          </div>
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <p class="h3">Charla 2: <?php print render($content['field_partido_titulo_charla_2'][0]['#markup']); ?></p>
+            </div>
+            <div class="panel-body">
+              <p class="h5 text-center">
+                <?php if ($foto2): ?>
+                <img src="<?php print $foto2; ?>" class="img-responsive" style="margin: 0 auto;">
+                <?php endif; ?>
+                <?php print render($content['field_partido_charla_ponente_2'][0]['#markup']); ?>
+              </p>
+              <?php print render($content['field_partido_resumen_charla_2']); ?>
+              <div class="padd-vertical-20"><?php print render($content['field_partido_adjuntos_charla_2']); ?></div>
+            </div>
+          </div>
+
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <p class="h3">Charla 3: <?php print render($content['field_partido_titulo_charla_3'][0]['#markup']); ?></p>
+            </div>
+            <div class="panel-body">
+              <p class="h5 text-center">
+                <?php if ($foto3): ?>
+                <img src="<?php print $foto3; ?>" class="img-responsive" style="margin: 0 auto;">
+                <?php endif; ?>
+                <?php print render($content['field_partido_charla_ponente_3'][0]['#markup']); ?>
+              </p>
+              <?php print render($content['field_partido_resumen_charla_3']); ?>
+              <div class="padd-vertical-20"><?php print render($content['field_partido_adjuntos_charla_3']); ?></div>
+            </div>
+          </div>
+
         </div>
+
         <div role="tabpanel" class="tab-pane padd-vertical-20" id="juegos">
           <?php print render($content['field_partido_juegos']); ?>
         </div>
@@ -149,7 +212,7 @@ $tor = node_load($tor['target_id']);
           <p><small><a href="/node/add/galeria?field_galeria_partido=<?php print $nid; ?>" title="Añadir galería"><i class="glyphicon glyphicon-plus inverted-round"> </i>Añadir galería</a></small></p>
           <?php endif; ?>
           <div class="padd-vertical-20"><?php print render($content['galeria_de_fotos_de_torneo_entity_view_1']); ?></div>
-          
+
           <?php if (isset($variables['field_galerias_externas']) && !empty($variables['field_galerias_externas'])): ?>
           <div class="padd-vertical-20">
             <header class="page-title">
