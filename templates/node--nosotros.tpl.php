@@ -62,6 +62,7 @@
       <ul class="list-inline">
         <li><a class="h4 bg-success padd-20" href="/reuniones">Reuniones de la directiva</a></li>
         <li><a class="h4 bg-success padd-20" href="/asambleas">Asambleas</a></li>
+        <li><a class="h4 bg-success padd-20" href="/direccion-varios">Varios</a></li>
       </ul>
     </div>
   </div>
