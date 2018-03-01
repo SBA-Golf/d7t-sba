@@ -19,6 +19,10 @@
   hide($content['links']);
   hide($content['torneos_entity_view_2']);
 
+  if (isset($variables['field_edicion_reglamento']) && !empty($variables['field_edicion_reglamento'])) {
+    $reglamento = file_create_url($variables['field_edicion_reglamento'][0]['uri']);
+  }
+
   $torneo = node_load($variables['field_edicion_torneo'][0]['target_id']);
   $color = field_get_items('node',$torneo,'field_torneo_color')[0]['rgb'];
 ?>
@@ -49,7 +53,7 @@
 </style>
 <ul class="nav nav-pills nav-justified" role="tablist">
   <li role="presentation" class="active"><a href="#jornadas" aria-controls="jornadas" role="tab" data-toggle="tab">Jornadas</a></li>
-  <li role="presentation"><a href="#reglamento" aria-controls="reglamento" role="tab" data-toggle="tab">Reglamento</a></li>
+  <li role="presentation"><a href="<?php print $reglamento; ?>" aria-controls="reglamento" role="tab" data-toggle="tab">Reglamento</a></li>
   <li role="presentation"><a href="#clasificacion" aria-controls="clasificacion" role="tab" data-toggle="tab">Clasificación</a></li>
 </ul>
 <hr/>
@@ -58,14 +62,9 @@
   <div role="tabpanel" class="tab-pane active" id="jornadas">
     <?php print render($content['torneos_entity_view_2']); ?>
   </div>
-  <div role="tabpanel" class="tab-pane" id="reglamento">
-    <?php if ($variables['field_edicion_reglamento']): ?>
-    <div class="padd-vertical-20"><a target="_blank" href="<?php print render($content['field_edicion_reglamento'][0]['#markup']); ?>"><span class="h4"><i class="glyphicon glyphicon-file"> </i><?php print t('Rules'); ?></span></a></div>
-    <?php endif; ?>
-  </div>
   <div role="tabpanel" class="tab-pane" id="clasificacion">
     <?php if ($variables['field_edicion_clasificacion']): ?>
-    <div class="padd-vertical-20"><a target="_blank" href="<?php print render($content['field_edicion_clasificacion'][0]['#markup']); ?>"><span class="h4"><i class="glyphicon glyphicon-file"> </i><?php print t('Clasificación'); ?></span></a></div>
+    <div class="padd-vertical-20"><?php print render($content['field_edicion_clasificacion']); ?></div>
     <?php endif; ?>
   </div>
 </div>

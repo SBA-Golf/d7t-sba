@@ -49,7 +49,7 @@
   background-color: <?php print $color; ?>
 }
 </style>
-<ul class="nav nav-pills nav-justified" role="tablist"">
+<ul class="nav nav-pills nav-justified" role="tablist">
   <li role="presentation" class="active"><a href="#jornadas" aria-controls="jornadas" role="tab" data-toggle="tab">Jornadas</a></li>
   <li role="presentation"><a href="<?php print $reglamento; ?>" aria-controls="reglamento" role="tab">Reglamento</a></li>
   <li role="presentation"><a href="#clasificaciones" aria-controls="clasificacion" role="tab" data-toggle="tab">Clasificaciones</a></li>
